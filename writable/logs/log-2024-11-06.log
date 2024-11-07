@@ -1,0 +1,1420 @@
+ERROR - 2024-11-06 01:05:51 --> mysqli_sql_exception: Unknown column 'consultorio.idDoctor' in 'where clause' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select consulto...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select consulto...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select consulto...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\ConsultorioM.php(50): CodeIgniter\Database\BaseConnection->query('select consulto...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Consultorio.php(25): App\Models\ConsultorioM->getDireccion()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Consultorio->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-06 01:05:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'consultorio.idDoctor' in 'where clause'
+[Method: GET, Route: consultorio]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\ConsultorioM.php(50): CodeIgniter\Database\BaseConnection->query('select consultorio.*, direccion.*, doctor.*
+                from consultorio,direccion, doctor 
+                where consultorio.idDireccion = direccion.idDireccion and consultorio.idDoctor = doctor.idDoctor
+        ')
+ 2 APPPATH\Controllers\Consultorio.php(25): App\Models\ConsultorioM->getDireccion()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:05:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'consultorio.idDoctor' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select consultorio.*, direccion.*, doctor.*
+                from consultorio,direccion, doctor 
+                where consultorio.idDireccion = direccion.idDireccion and consultorio.idDoctor = doctor.idDoctor
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select consultorio.*, direccion.*, doctor.*
+                from consultorio,direccion, doctor 
+                where consultorio.idDireccion = direccion.idDireccion and consultorio.idDoctor = doctor.idDoctor
+        ')
+ 3 APPPATH\Models\ConsultorioM.php(50): CodeIgniter\Database\BaseConnection->query('select consultorio.*, direccion.*, doctor.*
+                from consultorio,direccion, doctor 
+                where consultorio.idDireccion = direccion.idDireccion and consultorio.idDoctor = doctor.idDoctor
+        ')
+ 4 APPPATH\Controllers\Consultorio.php(25): App\Models\ConsultorioM->getDireccion()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:05:51 --> [Caused by] mysqli_sql_exception: Unknown column 'consultorio.idDoctor' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select consultorio.*, direccion.*, doctor.*
+                from consultorio,direccion, doctor 
+                where consultorio.idDireccion = direccion.idDireccion and consultorio.idDoctor = doctor.idDoctor
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select consultorio.*, direccion.*, doctor.*
+                from consultorio,direccion, doctor 
+                where consultorio.idDireccion = direccion.idDireccion and consultorio.idDoctor = doctor.idDoctor
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select consultorio.*, direccion.*, doctor.*
+                from consultorio,direccion, doctor 
+                where consultorio.idDireccion = direccion.idDireccion and consultorio.idDoctor = doctor.idDoctor
+        ')
+ 4 APPPATH\Models\ConsultorioM.php(50): CodeIgniter\Database\BaseConnection->query('select consultorio.*, direccion.*, doctor.*
+                from consultorio,direccion, doctor 
+                where consultorio.idDireccion = direccion.idDireccion and consultorio.idDoctor = doctor.idDoctor
+        ')
+ 5 APPPATH\Controllers\Consultorio.php(25): App\Models\ConsultorioM->getDireccion()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-11-06 01:07:16 --> mysqli_sql_exception: Unknown column 'consultorio.idDoctor' in 'where clause' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select consulto...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select consulto...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select consulto...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\ConsultorioM.php(50): CodeIgniter\Database\BaseConnection->query('select consulto...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Consultorio.php(25): App\Models\ConsultorioM->getDireccion()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Consultorio->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-06 01:07:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'consultorio.idDoctor' in 'where clause'
+[Method: GET, Route: consultorio]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\ConsultorioM.php(50): CodeIgniter\Database\BaseConnection->query('select consultorio.*, direccion.*, doctor.*
+                from consultorio,direccion, doctor 
+                where consultorio.idDireccion = direccion.idDireccion and consultorio.idDoctor = doctor.idDoctor
+        ')
+ 2 APPPATH\Controllers\Consultorio.php(25): App\Models\ConsultorioM->getDireccion()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:07:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'consultorio.idDoctor' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select consultorio.*, direccion.*, doctor.*
+                from consultorio,direccion, doctor 
+                where consultorio.idDireccion = direccion.idDireccion and consultorio.idDoctor = doctor.idDoctor
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select consultorio.*, direccion.*, doctor.*
+                from consultorio,direccion, doctor 
+                where consultorio.idDireccion = direccion.idDireccion and consultorio.idDoctor = doctor.idDoctor
+        ')
+ 3 APPPATH\Models\ConsultorioM.php(50): CodeIgniter\Database\BaseConnection->query('select consultorio.*, direccion.*, doctor.*
+                from consultorio,direccion, doctor 
+                where consultorio.idDireccion = direccion.idDireccion and consultorio.idDoctor = doctor.idDoctor
+        ')
+ 4 APPPATH\Controllers\Consultorio.php(25): App\Models\ConsultorioM->getDireccion()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:07:16 --> [Caused by] mysqli_sql_exception: Unknown column 'consultorio.idDoctor' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select consultorio.*, direccion.*, doctor.*
+                from consultorio,direccion, doctor 
+                where consultorio.idDireccion = direccion.idDireccion and consultorio.idDoctor = doctor.idDoctor
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select consultorio.*, direccion.*, doctor.*
+                from consultorio,direccion, doctor 
+                where consultorio.idDireccion = direccion.idDireccion and consultorio.idDoctor = doctor.idDoctor
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select consultorio.*, direccion.*, doctor.*
+                from consultorio,direccion, doctor 
+                where consultorio.idDireccion = direccion.idDireccion and consultorio.idDoctor = doctor.idDoctor
+        ')
+ 4 APPPATH\Models\ConsultorioM.php(50): CodeIgniter\Database\BaseConnection->query('select consultorio.*, direccion.*, doctor.*
+                from consultorio,direccion, doctor 
+                where consultorio.idDireccion = direccion.idDireccion and consultorio.idDoctor = doctor.idDoctor
+        ')
+ 5 APPPATH\Controllers\Consultorio.php(25): App\Models\ConsultorioM->getDireccion()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-11-06 01:07:16 --> mysqli_sql_exception: Unknown column 'consultorio.idDoctor' in 'where clause' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select consulto...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select consulto...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select consulto...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\ConsultorioM.php(50): CodeIgniter\Database\BaseConnection->query('select consulto...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Consultorio.php(25): App\Models\ConsultorioM->getDireccion()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Consultorio->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-06 01:07:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'consultorio.idDoctor' in 'where clause'
+[Method: GET, Route: consultorio]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\ConsultorioM.php(50): CodeIgniter\Database\BaseConnection->query('select consultorio.*, direccion.*, doctor.*
+                from consultorio,direccion, doctor 
+                where consultorio.idDireccion = direccion.idDireccion and consultorio.idDoctor = doctor.idDoctor
+        ')
+ 2 APPPATH\Controllers\Consultorio.php(25): App\Models\ConsultorioM->getDireccion()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:07:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'consultorio.idDoctor' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select consultorio.*, direccion.*, doctor.*
+                from consultorio,direccion, doctor 
+                where consultorio.idDireccion = direccion.idDireccion and consultorio.idDoctor = doctor.idDoctor
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select consultorio.*, direccion.*, doctor.*
+                from consultorio,direccion, doctor 
+                where consultorio.idDireccion = direccion.idDireccion and consultorio.idDoctor = doctor.idDoctor
+        ')
+ 3 APPPATH\Models\ConsultorioM.php(50): CodeIgniter\Database\BaseConnection->query('select consultorio.*, direccion.*, doctor.*
+                from consultorio,direccion, doctor 
+                where consultorio.idDireccion = direccion.idDireccion and consultorio.idDoctor = doctor.idDoctor
+        ')
+ 4 APPPATH\Controllers\Consultorio.php(25): App\Models\ConsultorioM->getDireccion()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:07:16 --> [Caused by] mysqli_sql_exception: Unknown column 'consultorio.idDoctor' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select consultorio.*, direccion.*, doctor.*
+                from consultorio,direccion, doctor 
+                where consultorio.idDireccion = direccion.idDireccion and consultorio.idDoctor = doctor.idDoctor
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select consultorio.*, direccion.*, doctor.*
+                from consultorio,direccion, doctor 
+                where consultorio.idDireccion = direccion.idDireccion and consultorio.idDoctor = doctor.idDoctor
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select consultorio.*, direccion.*, doctor.*
+                from consultorio,direccion, doctor 
+                where consultorio.idDireccion = direccion.idDireccion and consultorio.idDoctor = doctor.idDoctor
+        ')
+ 4 APPPATH\Models\ConsultorioM.php(50): CodeIgniter\Database\BaseConnection->query('select consultorio.*, direccion.*, doctor.*
+                from consultorio,direccion, doctor 
+                where consultorio.idDireccion = direccion.idDireccion and consultorio.idDoctor = doctor.idDoctor
+        ')
+ 5 APPPATH\Controllers\Consultorio.php(25): App\Models\ConsultorioM->getDireccion()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:08:52 --> BadMethodCallException: Call to undefined method App\Models\ConsultorioM::getDireccion
+[Method: GET, Route: consultorio]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Consultorio.php(25): CodeIgniter\Model->__call('getDireccion', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-11-06 01:09:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-06 01:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-06 01:10:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-06 01:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-06 01:10:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-06 01:10:49 --> mysqli_sql_exception: Unknown column 'cita.idDoctor' in 'where clause' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, ...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, ...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, ...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, ...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Cita->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-06 01:10:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'cita.idDoctor' in 'where clause'
+[Method: GET, Route: cita]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, doctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.idDoctor = doctor.idDoctor and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:10:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'cita.idDoctor' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, doctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.idDoctor = doctor.idDoctor and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, doctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.idDoctor = doctor.idDoctor and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, doctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.idDoctor = doctor.idDoctor and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:10:49 --> [Caused by] mysqli_sql_exception: Unknown column 'cita.idDoctor' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, doctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.idDoctor = doctor.idDoctor and cita.idPaciente = paciente.idPaciente
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, doctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.idDoctor = doctor.idDoctor and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, doctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.idDoctor = doctor.idDoctor and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, doctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.idDoctor = doctor.idDoctor and cita.idPaciente = paciente.idPaciente
+        ')
+ 5 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-11-06 01:13:56 --> mysqli_sql_exception: Unknown table 'consultorio.consultorioDoctor' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, ...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, ...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, ...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, ...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Cita->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-06 01:13:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'consultorio.consultorioDoctor'
+[Method: GET, Route: cita]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:13:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'consultorio.consultorioDoctor'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:13:56 --> [Caused by] mysqli_sql_exception: Unknown table 'consultorio.consultorioDoctor'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 5 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-11-06 01:13:58 --> mysqli_sql_exception: Unknown table 'consultorio.consultorioDoctor' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, ...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, ...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, ...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, ...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Cita->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-06 01:13:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'consultorio.consultorioDoctor'
+[Method: GET, Route: cita]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:13:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'consultorio.consultorioDoctor'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:13:58 --> [Caused by] mysqli_sql_exception: Unknown table 'consultorio.consultorioDoctor'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 5 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-11-06 01:14:06 --> mysqli_sql_exception: Unknown table 'consultorio.consultorioDoctor' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, ...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, ...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, ...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, ...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Cita->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-06 01:14:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'consultorio.consultorioDoctor'
+[Method: GET, Route: cita]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:14:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'consultorio.consultorioDoctor'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:14:06 --> [Caused by] mysqli_sql_exception: Unknown table 'consultorio.consultorioDoctor'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 5 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-11-06 01:14:43 --> mysqli_sql_exception: Unknown table 'consultorio.consultorioDoctor' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, ...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, ...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, ...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, ...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Cita->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-06 01:14:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'consultorio.consultorioDoctor'
+[Method: GET, Route: cita]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:14:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'consultorio.consultorioDoctor'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:14:43 --> [Caused by] mysqli_sql_exception: Unknown table 'consultorio.consultorioDoctor'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 5 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-11-06 01:14:44 --> mysqli_sql_exception: Unknown table 'consultorio.consultorioDoctor' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, ...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, ...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, ...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, ...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Cita->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-06 01:14:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'consultorio.consultorioDoctor'
+[Method: GET, Route: cita]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:14:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'consultorio.consultorioDoctor'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:14:44 --> [Caused by] mysqli_sql_exception: Unknown table 'consultorio.consultorioDoctor'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 5 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-11-06 01:14:45 --> mysqli_sql_exception: Unknown table 'consultorio.consultorioDoctor' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, ...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, ...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, ...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, ...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Cita->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-06 01:14:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'consultorio.consultorioDoctor'
+[Method: GET, Route: cita]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:14:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'consultorio.consultorioDoctor'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:14:45 --> [Caused by] mysqli_sql_exception: Unknown table 'consultorio.consultorioDoctor'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 5 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-11-06 01:14:58 --> mysqli_sql_exception: Unknown table 'consultorio.consultorioDoctor' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, ...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, ...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, ...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, ...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Cita->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-06 01:14:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'consultorio.consultorioDoctor'
+[Method: GET, Route: cita]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:14:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'consultorio.consultorioDoctor'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:14:58 --> [Caused by] mysqli_sql_exception: Unknown table 'consultorio.consultorioDoctor'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 5 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-11-06 01:14:59 --> mysqli_sql_exception: Unknown table 'consultorio.consultorioDoctor' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, ...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, ...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, ...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, ...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Cita->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-06 01:14:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'consultorio.consultorioDoctor'
+[Method: GET, Route: cita]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:14:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'consultorio.consultorioDoctor'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:14:59 --> [Caused by] mysqli_sql_exception: Unknown table 'consultorio.consultorioDoctor'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 5 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-11-06 01:15:02 --> mysqli_sql_exception: Unknown table 'consultorio.consultorioDoctor' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, ...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, ...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, ...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, ...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Cita->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-06 01:15:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'consultorio.consultorioDoctor'
+[Method: GET, Route: cita]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:15:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'consultorio.consultorioDoctor'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:15:02 --> [Caused by] mysqli_sql_exception: Unknown table 'consultorio.consultorioDoctor'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 5 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-11-06 01:15:32 --> mysqli_sql_exception: Unknown table 'consultorio.consultorioDoctor' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, ...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, ...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, ...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, ...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Cita->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-06 01:15:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'consultorio.consultorioDoctor'
+[Method: GET, Route: cita]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:15:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'consultorio.consultorioDoctor'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:15:32 --> [Caused by] mysqli_sql_exception: Unknown table 'consultorio.consultorioDoctor'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 5 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-11-06 01:17:42 --> mysqli_sql_exception: Unknown table 'consultorio.consultorioDoctor' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, ...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, ...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, ...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, ...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Cita->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-06 01:17:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'consultorio.consultorioDoctor'
+[Method: GET, Route: cita]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:17:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'consultorio.consultorioDoctor'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:17:42 --> [Caused by] mysqli_sql_exception: Unknown table 'consultorio.consultorioDoctor'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 5 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-11-06 01:17:43 --> mysqli_sql_exception: Unknown table 'consultorio.consultorioDoctor' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, ...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, ...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, ...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, ...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Cita->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-06 01:17:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'consultorio.consultorioDoctor'
+[Method: GET, Route: cita]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:17:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'consultorio.consultorioDoctor'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:17:43 --> [Caused by] mysqli_sql_exception: Unknown table 'consultorio.consultorioDoctor'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 5 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-11-06 01:17:54 --> mysqli_sql_exception: Unknown table 'consultorio.consultoriodoctor' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, ...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, ...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, ...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, ...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Cita->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-06 01:17:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'consultorio.consultoriodoctor'
+[Method: GET, Route: cita]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultoriodoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:17:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'consultorio.consultoriodoctor'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultoriodoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultoriodoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultoriodoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:17:54 --> [Caused by] mysqli_sql_exception: Unknown table 'consultorio.consultoriodoctor'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, consultoriodoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultoriodoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultoriodoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultoriodoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 5 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-11-06 01:17:55 --> mysqli_sql_exception: Unknown table 'consultorio.consultoriodoctor' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, ...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, ...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, ...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, ...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Cita->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-06 01:17:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'consultorio.consultoriodoctor'
+[Method: GET, Route: cita]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultoriodoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:17:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'consultorio.consultoriodoctor'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultoriodoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultoriodoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultoriodoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-06 01:17:55 --> [Caused by] mysqli_sql_exception: Unknown table 'consultorio.consultoriodoctor'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, consultoriodoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultoriodoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultoriodoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Models\CitaM.php(49): CodeIgniter\Database\BaseConnection->query('select cita.*, consultoriodoctor.*, paciente.*
+                from cita, doctor, paciente
+                where cita.id = consultoriodoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 5 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')

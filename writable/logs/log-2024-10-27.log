@@ -1,0 +1,134 @@
+INFO - 2024-10-27 02:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-27 02:44:18 --> ErrorException: Undefined array key "nombre"
+[Method: GET, Route: pagina]
+in APPPATH\Views\menu.php on line 31.
+ 1 APPPATH\Views\menu.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'C:\\xampp\\htdocs\\aod\\app\\Views\\menu.php', 31)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\aod\\app\\Views\\menu.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('menu', [], true)
+ 5 APPPATH\Controllers\Product.php(25): view('menu')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Product->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\aod\\public\\index.php')
+CRITICAL - 2024-10-27 02:45:29 --> ErrorException: Undefined variable $producto
+[Method: GET, Route: pagina]
+in APPPATH\Views\pagina\detalleProducto.php on line 23.
+ 1 APPPATH\Views\pagina\detalleProducto.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'C:\\xampp\\htdocs\\aod\\app\\Views\\pagina\\detalleProducto.php', 23)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\aod\\app\\Views\\pagina\\detalleProducto.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('pagina/detalleProducto', [], true)
+ 5 APPPATH\Controllers\Product.php(26): view('pagina/detalleProducto')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Product->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\aod\\public\\index.php')
+CRITICAL - 2024-10-27 02:48:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "topMenu.php"
+[Method: GET, Route: pagina]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('topMenu.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('topMenu', [], true)
+ 3 APPPATH\Controllers\Product.php(24): view('topMenu')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Product->ver()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\aod\\public\\index.php')
+CRITICAL - 2024-10-27 02:51:34 --> ErrorException: Undefined variable $producto
+[Method: GET, Route: pagina]
+in APPPATH\Views\pagina\detalleProducto.php on line 6.
+ 1 APPPATH\Views\pagina\detalleProducto.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'C:\\xampp\\htdocs\\aod\\app\\Views\\pagina\\detalleProducto.php', 6)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\aod\\app\\Views\\pagina\\detalleProducto.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('pagina/detalleProducto', [], true)
+ 5 APPPATH\Controllers\Product.php(25): view('pagina/detalleProducto')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Product->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\aod\\public\\index.php')
+CRITICAL - 2024-10-27 02:53:15 --> ErrorException: Undefined variable $producto
+[Method: GET, Route: pagina]
+in APPPATH\Views\pagina\detalleProducto.php on line 6.
+ 1 APPPATH\Views\pagina\detalleProducto.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'C:\\xampp\\htdocs\\aod\\app\\Views\\pagina\\detalleProducto.php', 6)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\aod\\app\\Views\\pagina\\detalleProducto.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('pagina/detalleProducto', [], true)
+ 5 APPPATH\Controllers\Product.php(25): view('pagina/detalleProducto')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Product->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\aod\\public\\index.php')
+CRITICAL - 2024-10-27 02:55:39 --> ErrorException: Undefined variable $producto
+[Method: GET, Route: pagina]
+in APPPATH\Views\pagina\detalleProducto.php on line 6.
+ 1 APPPATH\Views\pagina\detalleProducto.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'C:\\xampp\\htdocs\\aod\\app\\Views\\pagina\\detalleProducto.php', 6)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\aod\\app\\Views\\pagina\\detalleProducto.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('pagina/detalleProducto', [], true)
+ 5 APPPATH\Controllers\Product.php(28): view('pagina/detalleProducto')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Product->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\aod\\public\\index.php')
+CRITICAL - 2024-10-27 02:56:19 --> ErrorException: Undefined variable $producto
+[Method: GET, Route: pagina]
+in APPPATH\Views\pagina\detalleProducto.php on line 6.
+ 1 APPPATH\Views\pagina\detalleProducto.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'C:\\xampp\\htdocs\\aod\\app\\Views\\pagina\\detalleProducto.php', 6)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\aod\\app\\Views\\pagina\\detalleProducto.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('pagina/detalleProducto', [], true)
+ 5 APPPATH\Controllers\Product.php(28): view('pagina/detalleProducto')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Product->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\aod\\public\\index.php')
+CRITICAL - 2024-10-27 02:56:19 --> ErrorException: Undefined variable $producto
+[Method: GET, Route: pagina]
+in APPPATH\Views\pagina\detalleProducto.php on line 6.
+ 1 APPPATH\Views\pagina\detalleProducto.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'C:\\xampp\\htdocs\\aod\\app\\Views\\pagina\\detalleProducto.php', 6)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\aod\\app\\Views\\pagina\\detalleProducto.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('pagina/detalleProducto', [], true)
+ 5 APPPATH\Controllers\Product.php(28): view('pagina/detalleProducto')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Product->ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\aod\\public\\index.php')
+CRITICAL - 2024-10-27 03:43:52 --> ErrorException: Undefined variable $productos
+[Method: GET, Route: pagina/lista]
+in APPPATH\Views\pagina\listaProductos.php on line 3.
+ 1 APPPATH\Views\pagina\listaProductos.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $productos', 'C:\\xampp\\htdocs\\aod\\app\\Views\\pagina\\listaProductos.php', 3)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\aod\\app\\Views\\pagina\\listaProductos.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('pagina/listaProductos', [], true)
+ 5 APPPATH\Controllers\Product.php(27): view('pagina/listaProductos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Product->listaProductos()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\aod\\public\\index.php')

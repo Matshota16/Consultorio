@@ -1,0 +1,443 @@
+CRITICAL - 2024-09-18 19:49:32 --> ErrorException: Undefined array key "usuario"
+[Method: POST, Route: usuario/acceder]
+in APPPATH/Controllers/Usuario.php on line 16.
+ 1 APPPATH/Controllers/Usuario.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usuario"', '/Applications/XAMPP/xamppfiles/htdocs/dulceria/app/Controllers/Usuario.php', 16)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Usuario->acceder()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+ERROR - 2024-09-18 19:50:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and pass =' at line 3 in /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/MySQLi/Connection.php(312): mysqli->query('select nombre, ...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select nombre, ...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select nombre, ...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/dulceria/app/Models/UsuarioM.php(48): CodeIgniter\Database\BaseConnection->query('select nombre, ...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/dulceria/app/Controllers/Usuario.php(21): App\Models\UsuarioM->valida('', '')
+#5 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(933): App\Controllers\Usuario->acceder()
+#6 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#7 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/rewrite.php(44): require_once('/Applications/X...')
+#12 {main}
+CRITICAL - 2024-09-18 19:50:17 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and pass =' at line 3
+[Method: POST, Route: usuario/acceder]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 APPPATH/Models/UsuarioM.php(48): CodeIgniter\Database\BaseConnection->query('select nombre, tipo
+        from usuario 
+        where nombre =  and pass = ')
+ 2 APPPATH/Controllers/Usuario.php(21): App\Models\UsuarioM->valida('', '')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Usuario->acceder()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-09-18 19:50:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and pass =' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select nombre, tipo
+        from usuario 
+        where nombre =  and pass = ')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select nombre, tipo
+        from usuario 
+        where nombre =  and pass = ')
+ 3 APPPATH/Models/UsuarioM.php(48): CodeIgniter\Database\BaseConnection->query('select nombre, tipo
+        from usuario 
+        where nombre =  and pass = ')
+ 4 APPPATH/Controllers/Usuario.php(21): App\Models\UsuarioM->valida('', '')
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Usuario->acceder()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-09-18 19:50:17 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and pass =' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('select nombre, tipo
+        from usuario 
+        where nombre =  and pass = ', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select nombre, tipo
+        from usuario 
+        where nombre =  and pass = ')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select nombre, tipo
+        from usuario 
+        where nombre =  and pass = ')
+ 4 APPPATH/Models/UsuarioM.php(48): CodeIgniter\Database\BaseConnection->query('select nombre, tipo
+        from usuario 
+        where nombre =  and pass = ')
+ 5 APPPATH/Controllers/Usuario.php(21): App\Models\UsuarioM->valida('', '')
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Usuario->acceder()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+ERROR - 2024-09-18 19:51:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and pass =' at line 3 in /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/MySQLi/Connection.php(312): mysqli->query('select nombre, ...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select nombre, ...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select nombre, ...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/dulceria/app/Models/UsuarioM.php(48): CodeIgniter\Database\BaseConnection->query('select nombre, ...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/dulceria/app/Controllers/Usuario.php(21): App\Models\UsuarioM->valida('', '')
+#5 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(933): App\Controllers\Usuario->acceder()
+#6 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#7 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/rewrite.php(44): require_once('/Applications/X...')
+#12 {main}
+CRITICAL - 2024-09-18 19:51:07 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and pass =' at line 3
+[Method: POST, Route: usuario/acceder]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 APPPATH/Models/UsuarioM.php(48): CodeIgniter\Database\BaseConnection->query('select nombre, tipo
+        from usuario 
+        where nombre =  and pass =')
+ 2 APPPATH/Controllers/Usuario.php(21): App\Models\UsuarioM->valida('', '')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Usuario->acceder()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-09-18 19:51:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and pass =' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select nombre, tipo
+        from usuario 
+        where nombre =  and pass =')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select nombre, tipo
+        from usuario 
+        where nombre =  and pass =')
+ 3 APPPATH/Models/UsuarioM.php(48): CodeIgniter\Database\BaseConnection->query('select nombre, tipo
+        from usuario 
+        where nombre =  and pass =')
+ 4 APPPATH/Controllers/Usuario.php(21): App\Models\UsuarioM->valida('', '')
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Usuario->acceder()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-09-18 19:51:07 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and pass =' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('select nombre, tipo
+        from usuario 
+        where nombre =  and pass =', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select nombre, tipo
+        from usuario 
+        where nombre =  and pass =')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select nombre, tipo
+        from usuario 
+        where nombre =  and pass =')
+ 4 APPPATH/Models/UsuarioM.php(48): CodeIgniter\Database\BaseConnection->query('select nombre, tipo
+        from usuario 
+        where nombre =  and pass =')
+ 5 APPPATH/Controllers/Usuario.php(21): App\Models\UsuarioM->valida('', '')
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Usuario->acceder()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+ERROR - 2024-09-18 19:51:11 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and pass =' at line 3 in /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/MySQLi/Connection.php(312): mysqli->query('select nombre, ...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select nombre, ...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select nombre, ...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/dulceria/app/Models/UsuarioM.php(48): CodeIgniter\Database\BaseConnection->query('select nombre, ...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/dulceria/app/Controllers/Usuario.php(21): App\Models\UsuarioM->valida('', '')
+#5 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(933): App\Controllers\Usuario->acceder()
+#6 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#7 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/rewrite.php(44): require_once('/Applications/X...')
+#12 {main}
+CRITICAL - 2024-09-18 19:51:11 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and pass =' at line 3
+[Method: POST, Route: usuario/acceder]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 APPPATH/Models/UsuarioM.php(48): CodeIgniter\Database\BaseConnection->query('select nombre, tipo
+        from usuario 
+        where nombre =  and pass =')
+ 2 APPPATH/Controllers/Usuario.php(21): App\Models\UsuarioM->valida('', '')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Usuario->acceder()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-09-18 19:51:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and pass =' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select nombre, tipo
+        from usuario 
+        where nombre =  and pass =')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select nombre, tipo
+        from usuario 
+        where nombre =  and pass =')
+ 3 APPPATH/Models/UsuarioM.php(48): CodeIgniter\Database\BaseConnection->query('select nombre, tipo
+        from usuario 
+        where nombre =  and pass =')
+ 4 APPPATH/Controllers/Usuario.php(21): App\Models\UsuarioM->valida('', '')
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Usuario->acceder()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-09-18 19:51:11 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and pass =' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('select nombre, tipo
+        from usuario 
+        where nombre =  and pass =', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select nombre, tipo
+        from usuario 
+        where nombre =  and pass =')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select nombre, tipo
+        from usuario 
+        where nombre =  and pass =')
+ 4 APPPATH/Models/UsuarioM.php(48): CodeIgniter\Database\BaseConnection->query('select nombre, tipo
+        from usuario 
+        where nombre =  and pass =')
+ 5 APPPATH/Controllers/Usuario.php(21): App\Models\UsuarioM->valida('', '')
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Usuario->acceder()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+ERROR - 2024-09-18 19:51:33 --> mysqli_sql_exception: Unknown column 'dede' in 'where clause' in /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/MySQLi/Connection.php(312): mysqli->query('select nombre, ...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select nombre, ...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select nombre, ...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/dulceria/app/Models/UsuarioM.php(48): CodeIgniter\Database\BaseConnection->query('select nombre, ...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/dulceria/app/Controllers/Usuario.php(21): App\Models\UsuarioM->valida('dede', 'dede')
+#5 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(933): App\Controllers\Usuario->acceder()
+#6 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#7 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/rewrite.php(44): require_once('/Applications/X...')
+#12 {main}
+CRITICAL - 2024-09-18 19:51:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dede' in 'where clause'
+[Method: POST, Route: usuario/acceder]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 APPPATH/Models/UsuarioM.php(48): CodeIgniter\Database\BaseConnection->query('select nombre, tipo
+        from usuario 
+        where nombre = dede and pass =dede')
+ 2 APPPATH/Controllers/Usuario.php(21): App\Models\UsuarioM->valida('dede', 'dede')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Usuario->acceder()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-09-18 19:51:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dede' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select nombre, tipo
+        from usuario 
+        where nombre = dede and pass =dede')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select nombre, tipo
+        from usuario 
+        where nombre = dede and pass =dede')
+ 3 APPPATH/Models/UsuarioM.php(48): CodeIgniter\Database\BaseConnection->query('select nombre, tipo
+        from usuario 
+        where nombre = dede and pass =dede')
+ 4 APPPATH/Controllers/Usuario.php(21): App\Models\UsuarioM->valida('dede', 'dede')
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Usuario->acceder()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-09-18 19:51:33 --> [Caused by] mysqli_sql_exception: Unknown column 'dede' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('select nombre, tipo
+        from usuario 
+        where nombre = dede and pass =dede', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select nombre, tipo
+        from usuario 
+        where nombre = dede and pass =dede')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select nombre, tipo
+        from usuario 
+        where nombre = dede and pass =dede')
+ 4 APPPATH/Models/UsuarioM.php(48): CodeIgniter\Database\BaseConnection->query('select nombre, tipo
+        from usuario 
+        where nombre = dede and pass =dede')
+ 5 APPPATH/Controllers/Usuario.php(21): App\Models\UsuarioM->valida('dede', 'dede')
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Usuario->acceder()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+ERROR - 2024-09-18 19:52:26 --> mysqli_sql_exception: Unknown column 'dede' in 'where clause' in /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/MySQLi/Connection.php(312): mysqli->query('select nombre, ...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select nombre, ...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select nombre, ...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/dulceria/app/Models/UsuarioM.php(48): CodeIgniter\Database\BaseConnection->query('select nombre, ...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/dulceria/app/Controllers/Usuario.php(21): App\Models\UsuarioM->valida('dede', 'dede')
+#5 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(933): App\Controllers\Usuario->acceder()
+#6 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#7 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/rewrite.php(44): require_once('/Applications/X...')
+#12 {main}
+CRITICAL - 2024-09-18 19:52:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dede' in 'where clause'
+[Method: POST, Route: usuario/acceder]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 APPPATH/Models/UsuarioM.php(48): CodeIgniter\Database\BaseConnection->query('select nombre, tipo
+        from usuario 
+        where nombre = dede and pass =dede')
+ 2 APPPATH/Controllers/Usuario.php(21): App\Models\UsuarioM->valida('dede', 'dede')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Usuario->acceder()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-09-18 19:52:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dede' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select nombre, tipo
+        from usuario 
+        where nombre = dede and pass =dede')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select nombre, tipo
+        from usuario 
+        where nombre = dede and pass =dede')
+ 3 APPPATH/Models/UsuarioM.php(48): CodeIgniter\Database\BaseConnection->query('select nombre, tipo
+        from usuario 
+        where nombre = dede and pass =dede')
+ 4 APPPATH/Controllers/Usuario.php(21): App\Models\UsuarioM->valida('dede', 'dede')
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Usuario->acceder()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-09-18 19:52:26 --> [Caused by] mysqli_sql_exception: Unknown column 'dede' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('select nombre, tipo
+        from usuario 
+        where nombre = dede and pass =dede', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select nombre, tipo
+        from usuario 
+        where nombre = dede and pass =dede')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select nombre, tipo
+        from usuario 
+        where nombre = dede and pass =dede')
+ 4 APPPATH/Models/UsuarioM.php(48): CodeIgniter\Database\BaseConnection->query('select nombre, tipo
+        from usuario 
+        where nombre = dede and pass =dede')
+ 5 APPPATH/Controllers/Usuario.php(21): App\Models\UsuarioM->valida('dede', 'dede')
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Usuario->acceder()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+ERROR - 2024-09-18 19:52:30 --> mysqli_sql_exception: Unknown column 'dede' in 'where clause' in /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/MySQLi/Connection.php(312): mysqli->query('select nombre, ...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select nombre, ...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select nombre, ...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/dulceria/app/Models/UsuarioM.php(48): CodeIgniter\Database\BaseConnection->query('select nombre, ...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/dulceria/app/Controllers/Usuario.php(21): App\Models\UsuarioM->valida('dede', 'dede')
+#5 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(933): App\Controllers\Usuario->acceder()
+#6 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#7 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/rewrite.php(44): require_once('/Applications/X...')
+#12 {main}
+CRITICAL - 2024-09-18 19:52:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dede' in 'where clause'
+[Method: POST, Route: usuario/acceder]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 APPPATH/Models/UsuarioM.php(48): CodeIgniter\Database\BaseConnection->query('select nombre, tipo
+        from usuario 
+        where nombre = dede and pass =dede')
+ 2 APPPATH/Controllers/Usuario.php(21): App\Models\UsuarioM->valida('dede', 'dede')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Usuario->acceder()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-09-18 19:52:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dede' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select nombre, tipo
+        from usuario 
+        where nombre = dede and pass =dede')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select nombre, tipo
+        from usuario 
+        where nombre = dede and pass =dede')
+ 3 APPPATH/Models/UsuarioM.php(48): CodeIgniter\Database\BaseConnection->query('select nombre, tipo
+        from usuario 
+        where nombre = dede and pass =dede')
+ 4 APPPATH/Controllers/Usuario.php(21): App\Models\UsuarioM->valida('dede', 'dede')
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Usuario->acceder()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-09-18 19:52:30 --> [Caused by] mysqli_sql_exception: Unknown column 'dede' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('select nombre, tipo
+        from usuario 
+        where nombre = dede and pass =dede', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select nombre, tipo
+        from usuario 
+        where nombre = dede and pass =dede')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select nombre, tipo
+        from usuario 
+        where nombre = dede and pass =dede')
+ 4 APPPATH/Models/UsuarioM.php(48): CodeIgniter\Database\BaseConnection->query('select nombre, tipo
+        from usuario 
+        where nombre = dede and pass =dede')
+ 5 APPPATH/Controllers/Usuario.php(21): App\Models\UsuarioM->valida('dede', 'dede')
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Usuario->acceder()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-09-18 19:54:13 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: POST, Route: usuario/acceder]
+in APPPATH/Controllers/Usuario.php on line 22.
+ 1 APPPATH/Controllers/Usuario.php(22): count(null)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Usuario->acceder()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+INFO - 2024-09-18 19:58:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

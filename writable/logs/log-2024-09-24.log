@@ -1,0 +1,484 @@
+INFO - 2024-09-24 15:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-24 15:41:37 --> ErrorException: Undefined array key "nombre"
+[Method: GET, Route: consultorio/add/]
+in APPPATH\Views\menu.php on line 28.
+ 1 APPPATH\Views\menu.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\menu.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\menu.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('menu', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(41): view('menu')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-24 15:41:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-24 15:41:38 --> ErrorException: Undefined array key "nombre"
+[Method: GET, Route: consultorio/add/]
+in APPPATH\Views\menu.php on line 28.
+ 1 APPPATH\Views\menu.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\menu.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\menu.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('menu', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(41): view('menu')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-24 15:41:47 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "usaario;"
+[Method: GET, Route: usaario;]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('usaario;')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('usaario;')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-24 15:41:53 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "usaario;"
+[Method: GET, Route: usaario;]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('usaario;')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('usaario;')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-24 15:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 15:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 15:45:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 15:45:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-24 15:45:36 --> ErrorException: Undefined property: stdClass::$estado
+[Method: GET, Route: consultorio/add/]
+in APPPATH\Views\consultorio\add.php on line 41.
+ 1 APPPATH\Views\consultorio\add.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$estado', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/add', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(42): view('consultorio/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-24 15:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-24 15:48:33 --> ErrorException: Undefined property: stdClass::$estado
+[Method: GET, Route: consultorio/add/]
+in APPPATH\Views\consultorio\add.php on line 41.
+ 1 APPPATH\Views\consultorio\add.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$estado', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/add', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(42): view('consultorio/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-24 15:49:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-24 15:49:16 --> ErrorException: Undefined property: stdClass::$idDoctor
+[Method: GET, Route: consultorio/add/]
+in APPPATH\Views\consultorio\add.php on line 48.
+ 1 APPPATH\Views\consultorio\add.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idDoctor', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php', 48)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/add', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(42): view('consultorio/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-24 15:50:01 --> BadMethodCallException: Call to undefined method App\Models\DireccionM::getDireccion
+[Method: GET, Route: consultorio/add/]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Consultorio.php(37): CodeIgniter\Model->__call('getDireccion', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->add()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-24 15:51:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-24 15:51:17 --> ErrorException: Undefined property: stdClass::$estado
+[Method: GET, Route: consultorio/add/]
+in APPPATH\Views\consultorio\add.php on line 41.
+ 1 APPPATH\Views\consultorio\add.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$estado', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/add', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(42): view('consultorio/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-24 15:52:41 --> BadMethodCallException: Call to undefined method App\Models\DireccionM::getConsultorio
+[Method: GET, Route: consultorio/add/]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Consultorio.php(37): CodeIgniter\Model->__call('getConsultorio', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->add()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-24 15:53:41 --> BadMethodCallException: Call to undefined method App\Models\DireccionM::getDireccion
+[Method: GET, Route: consultorio/add/]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Consultorio.php(37): CodeIgniter\Model->__call('getDireccion', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->add()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-24 15:54:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-24 15:54:16 --> ErrorException: Undefined property: stdClass::$estado
+[Method: GET, Route: consultorio/add/]
+in APPPATH\Views\consultorio\add.php on line 41.
+ 1 APPPATH\Views\consultorio\add.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$estado', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/add', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(42): view('consultorio/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-24 15:54:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-24 15:54:39 --> ErrorException: Undefined property: stdClass::$idDoctor
+[Method: GET, Route: consultorio/add/]
+in APPPATH\Views\consultorio\add.php on line 48.
+ 1 APPPATH\Views\consultorio\add.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idDoctor', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php', 48)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/add', [...], true)
+ 5 APPPATH\Controllers\Consultorio.php(42): view('consultorio/add', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-24 15:55:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-24 15:55:09 --> ErrorException: Undefined variable $consultorio1
+[Method: GET, Route: consultorio/add/]
+in APPPATH\Views\consultorio\add.php on line 47.
+ 1 APPPATH\Views\consultorio\add.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $consultorio1', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php', 47)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/add', [...], true)
+ 5 APPPATH\Controllers\Consultorio.php(42): view('consultorio/add', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-24 15:55:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-24 15:55:32 --> ErrorException: Undefined variable $consultorio1
+[Method: GET, Route: consultorio/add/]
+in APPPATH\Views\consultorio\add.php on line 47.
+ 1 APPPATH\Views\consultorio\add.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $consultorio1', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php', 47)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/add', [...], true)
+ 5 APPPATH\Controllers\Consultorio.php(42): view('consultorio/add', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-24 15:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 15:57:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 15:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 15:58:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 15:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 15:58:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 15:58:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 15:58:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 15:58:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 15:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 15:59:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 15:59:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 16:01:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 16:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 16:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 16:05:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-24 16:05:06 --> ErrorException: Undefined property: stdClass::$calle
+[Method: GET, Route: consultorio]
+in APPPATH\Views\consultorio\show.php on line 36.
+ 1 APPPATH\Views\consultorio\show.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$calle', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\show.php', 36)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/show', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(30): view('consultorio/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-24 16:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 16:18:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 16:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 16:18:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 16:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 16:18:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 16:18:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 16:19:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 16:19:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 16:19:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 16:19:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 16:19:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-24 16:19:57 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: consultorio/edit/1]
+in APPPATH\Views\consultorio\edit.php on line 10.
+ 1 APPPATH\Views\consultorio\edit.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\edit.php', 10)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/edit', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(57): view('consultorio/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-24 16:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 16:20:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-24 16:20:07 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: consultorio/edit/1]
+in APPPATH\Views\consultorio\edit.php on line 10.
+ 1 APPPATH\Views\consultorio\edit.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\edit.php', 10)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/edit', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(57): view('consultorio/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-24 16:26:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-24 16:26:06 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: consultorio/edit/1]
+in APPPATH\Views\consultorio\edit.php on line 22.
+ 1 APPPATH\Views\consultorio\edit.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\edit.php', 22)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/edit', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(57): view('consultorio/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-24 16:27:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-24 16:27:33 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: consultorio/edit/1]
+in APPPATH\Views\consultorio\edit.php on line 28.
+ 1 APPPATH\Views\consultorio\edit.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\edit.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/edit', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(57): view('consultorio/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-24 16:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-24 16:32:45 --> ErrorException: Undefined variable $direccion
+[Method: GET, Route: consultorio/edit/1]
+in APPPATH\Views\consultorio\edit.php on line 42.
+ 1 APPPATH\Views\consultorio\edit.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $direccion', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\edit.php', 42)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/edit', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(57): view('consultorio/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-24 16:36:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-24 16:36:55 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: consultorio/edit/1]
+in APPPATH\Views\consultorio\edit.php on line 49.
+ 1 APPPATH\Views\consultorio\edit.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\edit.php', 49)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/edit', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(57): view('consultorio/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-24 16:37:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-24 16:37:48 --> ErrorException: Undefined array key "idPaciente"
+[Method: POST, Route: paciente/update/]
+in APPPATH\Controllers\Paciente.php on line 59.
+ 1 APPPATH\Controllers\Paciente.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idPaciente"', 'C:\\xampp\\htdocs\\Consultorio\\app\\Controllers\\Paciente.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-24 16:38:14 --> ErrorException: Undefined array key "idPaciente"
+[Method: POST, Route: paciente/update/]
+in APPPATH\Controllers\Paciente.php on line 59.
+ 1 APPPATH\Controllers\Paciente.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idPaciente"', 'C:\\xampp\\htdocs\\Consultorio\\app\\Controllers\\Paciente.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-24 16:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 16:38:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-24 16:38:19 --> ErrorException: Undefined variable $consultorio
+[Method: POST, Route: consultorio/update/]
+in APPPATH\Views\consultorio\edit.php on line 10.
+ 1 APPPATH\Views\consultorio\edit.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $consultorio', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\edit.php', 10)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/edit', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(94): view('consultorio/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->update()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-24 16:38:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 16:38:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-24 16:38:39 --> ErrorException: Undefined variable $consultorio
+[Method: POST, Route: consultorio/update/]
+in APPPATH\Views\consultorio\edit.php on line 10.
+ 1 APPPATH\Views\consultorio\edit.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $consultorio', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\edit.php', 10)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/edit', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(94): view('consultorio/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->update()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-24 16:43:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-24 16:43:23 --> Error: Cannot use object of type stdClass as array
+[Method: POST, Route: consultorio/update/]
+in APPPATH\Views\consultorio\edit.php on line 10.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/edit', [], true)
+ 4 APPPATH\Controllers\Consultorio.php(96): view('consultorio/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->update()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-24 16:45:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-24 16:45:45 --> ErrorException: Undefined variable $consultorio
+[Method: POST, Route: consultorio/update/]
+in APPPATH\Views\consultorio\edit.php on line 10.
+ 1 APPPATH\Views\consultorio\edit.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $consultorio', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\edit.php', 10)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/edit', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(94): view('consultorio/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->update()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-24 16:48:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-24 16:48:01 --> ErrorException: Undefined variable $consultorio
+[Method: POST, Route: consultorio/update/]
+in APPPATH\Views\consultorio\edit.php on line 10.
+ 1 APPPATH\Views\consultorio\edit.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $consultorio', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\edit.php', 10)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/edit', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(94): view('consultorio/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->update()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-24 16:48:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 16:48:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 16:48:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 16:48:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-24 16:48:26 --> ErrorException: Undefined variable $doctor
+[Method: POST, Route: doctor/update/]
+in APPPATH\Views\doctor\edit.php on line 10.
+ 1 APPPATH\Views\doctor\edit.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $doctor', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\doctor\\edit.php', 10)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\doctor\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('doctor/edit', [], true)
+ 5 APPPATH\Controllers\Doctor.php(95): view('doctor/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Doctor->update()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Doctor))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-24 16:48:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 16:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 16:48:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 16:48:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,374 @@
+CRITICAL - 2024-11-07 01:47:30 --> ErrorException: Undefined property: stdClass::$imagen
+[Method: GET, Route: consultorio]
+in APPPATH\Views\consultorio\show.php on line 37.
+ 1 APPPATH\Views\consultorio\show.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$imagen', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\show.php', 37)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/show', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(30): view('consultorio/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-11-07 01:49:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-07 01:49:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-07 01:50:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-07 01:50:31 --> ErrorException: Undefined variable $lastDireccion
+[Method: POST, Route: consultorio/insert]
+in APPPATH\Views\consultorio\add.php on line 39.
+ 1 APPPATH\Views\consultorio\add.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lastDireccion', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/add', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(117): view('consultorio/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-11-07 01:50:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-07 01:50:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-07 01:50:51 --> ErrorException: Undefined variable $lastDireccion
+[Method: POST, Route: consultorio/insert]
+in APPPATH\Views\consultorio\add.php on line 39.
+ 1 APPPATH\Views\consultorio\add.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lastDireccion', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/add', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(117): view('consultorio/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-11-07 01:51:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-07 01:52:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-07 01:52:32 --> ErrorException: Undefined variable $lastDireccion
+[Method: POST, Route: consultorio/insert]
+in APPPATH\Views\consultorio\add.php on line 39.
+ 1 APPPATH\Views\consultorio\add.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lastDireccion', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/add', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(117): view('consultorio/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-11-07 01:53:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-07 01:53:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-07 01:53:17 --> ErrorException: Undefined variable $lastDireccion
+[Method: POST, Route: consultorio/insert]
+in APPPATH\Views\consultorio\add.php on line 39.
+ 1 APPPATH\Views\consultorio\add.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lastDireccion', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/add', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(115): view('consultorio/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-11-07 01:53:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-07 01:53:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-07 01:53:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-07 01:53:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-07 01:53:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-07 01:53:47 --> ErrorException: Undefined variable $lastDireccion
+[Method: POST, Route: consultorio/insert]
+in APPPATH\Views\consultorio\add.php on line 39.
+ 1 APPPATH\Views\consultorio\add.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lastDireccion', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/add', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(115): view('consultorio/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-11-07 01:59:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-07 01:59:59 --> ErrorException: Undefined variable $lastDireccion
+[Method: POST, Route: consultorio/insert]
+in APPPATH\Views\consultorio\add.php on line 39.
+ 1 APPPATH\Views\consultorio\add.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lastDireccion', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/add', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(141): view('consultorio/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-11-07 02:00:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-07 02:00:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-07 02:00:03 --> ErrorException: Undefined variable $lastDireccion
+[Method: POST, Route: consultorio/insert]
+in APPPATH\Views\consultorio\add.php on line 39.
+ 1 APPPATH\Views\consultorio\add.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lastDireccion', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/add', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(141): view('consultorio/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-11-07 02:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-07 02:01:11 --> ErrorException: Undefined variable $lastDireccion
+[Method: POST, Route: consultorio/insert]
+in APPPATH\Views\consultorio\add.php on line 39.
+ 1 APPPATH\Views\consultorio\add.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lastDireccion', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/add', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(141): view('consultorio/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-11-07 02:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-07 02:02:03 --> ErrorException: Undefined variable $lastDireccion
+[Method: POST, Route: consultorio/insert]
+in APPPATH\Views\consultorio\add.php on line 39.
+ 1 APPPATH\Views\consultorio\add.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lastDireccion', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/add', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(141): view('consultorio/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-11-07 02:02:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-07 02:02:54 --> ErrorException: Undefined variable $lastDireccion
+[Method: POST, Route: consultorio/insert]
+in APPPATH\Views\consultorio\add.php on line 39.
+ 1 APPPATH\Views\consultorio\add.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lastDireccion', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/add', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(141): view('consultorio/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-11-07 02:03:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-07 02:03:06 --> ErrorException: Undefined variable $lastDireccion
+[Method: POST, Route: consultorio/insert]
+in APPPATH\Views\consultorio\add.php on line 39.
+ 1 APPPATH\Views\consultorio\add.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lastDireccion', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/add', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(141): view('consultorio/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-11-07 02:04:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-07 02:04:27 --> ErrorException: Undefined variable $lastDireccion
+[Method: POST, Route: consultorio/insert]
+in APPPATH\Views\consultorio\add.php on line 39.
+ 1 APPPATH\Views\consultorio\add.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lastDireccion', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/add', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(141): view('consultorio/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-11-07 02:04:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-07 02:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-07 02:04:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-07 02:04:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-07 02:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-07 02:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-07 02:05:17 --> ErrorException: Undefined variable $lastDireccion
+[Method: POST, Route: consultorio/insert]
+in APPPATH\Views\consultorio\add.php on line 39.
+ 1 APPPATH\Views\consultorio\add.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lastDireccion', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/add', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(171): view('consultorio/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-11-07 02:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-07 02:12:24 --> ErrorException: Undefined variable $lastDireccion
+[Method: POST, Route: consultorio/insert]
+in APPPATH\Views\consultorio\add.php on line 39.
+ 1 APPPATH\Views\consultorio\add.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lastDireccion', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/add', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(170): view('consultorio/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-11-07 02:14:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-07 02:14:04 --> ErrorException: Undefined variable $lastDireccion
+[Method: POST, Route: consultorio/insert]
+in APPPATH\Views\consultorio\add.php on line 39.
+ 1 APPPATH\Views\consultorio\add.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lastDireccion', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/add', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(168): view('consultorio/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-11-07 02:14:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-07 02:14:38 --> ErrorException: Undefined variable $lastDireccion
+[Method: GET, Route: consultorio/add]
+in APPPATH\Views\consultorio\add.php on line 39.
+ 1 APPPATH\Views\consultorio\add.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lastDireccion', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/add', [...], true)
+ 5 APPPATH\Controllers\Consultorio.php(50): view('consultorio/add', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-11-07 02:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-07 02:14:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-07 02:14:42 --> ErrorException: Undefined variable $lastDireccion
+[Method: GET, Route: consultorio/add]
+in APPPATH\Views\consultorio\add.php on line 39.
+ 1 APPPATH\Views\consultorio\add.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lastDireccion', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/add', [...], true)
+ 5 APPPATH\Controllers\Consultorio.php(50): view('consultorio/add', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-11-07 02:14:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-07 02:14:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-07 02:14:47 --> ErrorException: Undefined variable $lastDireccion
+[Method: GET, Route: consultorio/add]
+in APPPATH\Views\consultorio\add.php on line 39.
+ 1 APPPATH\Views\consultorio\add.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lastDireccion', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/add', [...], true)
+ 5 APPPATH\Controllers\Consultorio.php(50): view('consultorio/add', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->add()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-11-07 02:15:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-07 02:15:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-07 02:15:36 --> ErrorException: Undefined variable $lastDireccion
+[Method: POST, Route: consultorio/insert]
+in APPPATH\Views\consultorio\add.php on line 39.
+ 1 APPPATH\Views\consultorio\add.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lastDireccion', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/add', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(168): view('consultorio/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-11-07 02:22:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-07 02:22:45 --> ErrorException: Undefined variable $lastDireccion
+[Method: POST, Route: consultorio/insert]
+in APPPATH\Views\consultorio\add.php on line 39.
+ 1 APPPATH\Views\consultorio\add.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lastDireccion', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/add', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(169): view('consultorio/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-11-07 02:22:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-07 02:22:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-07 02:22:50 --> ErrorException: Undefined variable $lastDireccion
+[Method: POST, Route: consultorio/insert]
+in APPPATH\Views\consultorio\add.php on line 39.
+ 1 APPPATH\Views\consultorio\add.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lastDireccion', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\consultorio\\add.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('consultorio/add', [], true)
+ 5 APPPATH\Controllers\Consultorio.php(169): view('consultorio/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-11-07 02:22:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-07 02:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-07 20:04:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-07 20:07:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

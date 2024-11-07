@@ -1,0 +1,1223 @@
+INFO - 2024-09-12 16:10:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-12 16:10:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-12 16:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-12 16:12:08 --> ErrorException: Undefined property: stdClass::$idmarca
+[Method: GET, Route: marcas]
+in APPPATH\Views\marcas\show.php on line 19.
+ 1 APPPATH\Views\marcas\show.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idmarca', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\marcas\\show.php', 19)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\marcas\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('marcas/show', [], true)
+ 5 APPPATH\Controllers\Marcas.php(18): view('marcas/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Marcas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-12 16:12:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-12 16:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-12 16:12:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-12 16:12:41 --> mysqli_sql_exception: Unknown column 'proveedor.idEstado' in 'where clause' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select proveedo...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select proveedo...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select proveedo...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedo...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Proveedor->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-09-12 16:12:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'proveedor.idEstado' in 'where clause'
+[Method: GET, Route: proveedor]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 2 APPPATH\Controllers\Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 16:12:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'proveedor.idEstado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 3 APPPATH\Models\ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 4 APPPATH\Controllers\Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 16:12:41 --> [Caused by] mysqli_sql_exception: Unknown column 'proveedor.idEstado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 4 APPPATH\Models\ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 5 APPPATH\Controllers\Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-09-12 16:12:54 --> mysqli_sql_exception: Unknown column 'proveedor.idEstado' in 'where clause' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select proveedo...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select proveedo...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select proveedo...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedo...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Proveedor->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-09-12 16:12:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'proveedor.idEstado' in 'where clause'
+[Method: GET, Route: proveedor]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 2 APPPATH\Controllers\Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 16:12:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'proveedor.idEstado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 3 APPPATH\Models\ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 4 APPPATH\Controllers\Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 16:12:54 --> [Caused by] mysqli_sql_exception: Unknown column 'proveedor.idEstado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 4 APPPATH\Models\ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 5 APPPATH\Controllers\Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-09-12 16:15:56 --> mysqli_sql_exception: Unknown column 'proveedor.idEstado' in 'where clause' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select proveedo...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select proveedo...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select proveedo...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedo...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Proveedor->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-09-12 16:15:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'proveedor.idEstado' in 'where clause'
+[Method: GET, Route: proveedor]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 2 APPPATH\Controllers\Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 16:15:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'proveedor.idEstado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 3 APPPATH\Models\ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 4 APPPATH\Controllers\Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 16:15:56 --> [Caused by] mysqli_sql_exception: Unknown column 'proveedor.idEstado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 4 APPPATH\Models\ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 5 APPPATH\Controllers\Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-09-12 16:18:50 --> mysqli_sql_exception: Unknown column 'proveedor.idEstado' in 'where clause' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select proveedo...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select proveedo...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select proveedo...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedo...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Proveedor->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-09-12 16:18:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'proveedor.idEstado' in 'where clause'
+[Method: GET, Route: proveedor]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 2 APPPATH\Controllers\Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 16:18:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'proveedor.idEstado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 3 APPPATH\Models\ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 4 APPPATH\Controllers\Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 16:18:50 --> [Caused by] mysqli_sql_exception: Unknown column 'proveedor.idEstado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 4 APPPATH\Models\ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 5 APPPATH\Controllers\Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 16:18:52 --> ErrorException: Undefined property: stdClass::$idmarca
+[Method: GET, Route: marcas]
+in APPPATH\Views\marcas\show.php on line 19.
+ 1 APPPATH\Views\marcas\show.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idmarca', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\marcas\\show.php', 19)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\marcas\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('marcas/show', [], true)
+ 5 APPPATH\Controllers\Marcas.php(18): view('marcas/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Marcas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-09-12 16:19:22 --> mysqli_sql_exception: Unknown column 'proveedor.idEstado' in 'where clause' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select proveedo...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select proveedo...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select proveedo...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedo...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Proveedor->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-09-12 16:19:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'proveedor.idEstado' in 'where clause'
+[Method: GET, Route: proveedor]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 2 APPPATH\Controllers\Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 16:19:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'proveedor.idEstado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 3 APPPATH\Models\ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 4 APPPATH\Controllers\Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 16:19:22 --> [Caused by] mysqli_sql_exception: Unknown column 'proveedor.idEstado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 4 APPPATH\Models\ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 5 APPPATH\Controllers\Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-09-12 16:19:46 --> mysqli_sql_exception: Unknown column 'proveedor.idEstado' in 'where clause' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select proveedo...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select proveedo...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select proveedo...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedo...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Proveedor->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-09-12 16:19:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'proveedor.idEstado' in 'where clause'
+[Method: GET, Route: proveedor]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 2 APPPATH\Controllers\Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 16:19:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'proveedor.idEstado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 3 APPPATH\Models\ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 4 APPPATH\Controllers\Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 16:19:46 --> [Caused by] mysqli_sql_exception: Unknown column 'proveedor.idEstado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 4 APPPATH\Models\ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 5 APPPATH\Controllers\Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-09-12 16:20:13 --> mysqli_sql_exception: Unknown column 'idEstado' in 'field list' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `Pr...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Pr...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Pr...')
+#3 C:\xampp\htdocs\Consultorio\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Pr...', Array, false)
+#4 C:\xampp\htdocs\Consultorio\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Consultorio\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Consultorio\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\Consultorio\app\Controllers\Proveedor.php(42): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Proveedor->insert()
+#9 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+#10 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-09-12 16:20:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'idEstado' in 'field list'
+[Method: POST, Route: proveedor/insert]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Proveedor` (`nombre`, `calle`, `numero`, `cp`, `idEstado`, `created_at`, `updated_at`) VALUES (:nombre:, :calle:, :numero:, :cp:, :idEstado:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Proveedor.php(42): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Proveedor->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 16:20:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'idEstado' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Proveedor` (`nombre`, `calle`, `numero`, `cp`, `idEstado`, `created_at`, `updated_at`) VALUES (\'david\', \'1234124\', \'12342512\', \'12412\', \'1\', \'2024-09-12 16:20:13\', \'2024-09-12 16:20:13\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Proveedor` (`nombre`, `calle`, `numero`, `cp`, `idEstado`, `created_at`, `updated_at`) VALUES (\'david\', \'1234124\', \'12342512\', \'12412\', \'1\', \'2024-09-12 16:20:13\', \'2024-09-12 16:20:13\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Proveedor` (`nombre`, `calle`, `numero`, `cp`, `idEstado`, `created_at`, `updated_at`) VALUES (:nombre:, :calle:, :numero:, :cp:, :idEstado:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Proveedor.php(42): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Proveedor->insert()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 16:20:13 --> [Caused by] mysqli_sql_exception: Unknown column 'idEstado' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `Proveedor` (`nombre`, `calle`, `numero`, `cp`, `idEstado`, `created_at`, `updated_at`) VALUES (\'david\', \'1234124\', \'12342512\', \'12412\', \'1\', \'2024-09-12 16:20:13\', \'2024-09-12 16:20:13\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Proveedor` (`nombre`, `calle`, `numero`, `cp`, `idEstado`, `created_at`, `updated_at`) VALUES (\'david\', \'1234124\', \'12342512\', \'12412\', \'1\', \'2024-09-12 16:20:13\', \'2024-09-12 16:20:13\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Proveedor` (`nombre`, `calle`, `numero`, `cp`, `idEstado`, `created_at`, `updated_at`) VALUES (\'david\', \'1234124\', \'12342512\', \'12412\', \'1\', \'2024-09-12 16:20:13\', \'2024-09-12 16:20:13\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Proveedor` (`nombre`, `calle`, `numero`, `cp`, `idEstado`, `created_at`, `updated_at`) VALUES (:nombre:, :calle:, :numero:, :cp:, :idEstado:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Proveedor.php(42): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Proveedor->insert()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-09-12 16:36:53 --> mysqli_sql_exception: Unknown column 'proveedor.idEstado' in 'where clause' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select proveedo...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select proveedo...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select proveedo...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedo...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Proveedor->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-09-12 16:36:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'proveedor.idEstado' in 'where clause'
+[Method: GET, Route: proveedor]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 2 APPPATH\Controllers\Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 16:36:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'proveedor.idEstado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 3 APPPATH\Models\ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 4 APPPATH\Controllers\Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 16:36:53 --> [Caused by] mysqli_sql_exception: Unknown column 'proveedor.idEstado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 4 APPPATH\Models\ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idEstado = estado.idEstado 
+        ')
+ 5 APPPATH\Controllers\Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 17:11:37 --> ErrorException: Undefined variable $marcas
+[Method: GET, Route: paciente]
+in APPPATH\Views\paciente\show.php on line 17.
+ 1 APPPATH\Views\paciente\show.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $marcas', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\paciente\\show.php', 17)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\paciente\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('paciente/show', [], true)
+ 5 APPPATH\Controllers\Paciente.php(18): view('paciente/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 17:12:37 --> ErrorException: Undefined variable $marcas
+[Method: GET, Route: paciente]
+in APPPATH\Views\paciente\show.php on line 17.
+ 1 APPPATH\Views\paciente\show.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $marcas', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\paciente\\show.php', 17)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\paciente\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('paciente/show', [], true)
+ 5 APPPATH\Controllers\Paciente.php(18): view('paciente/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 17:12:39 --> ErrorException: Undefined variable $marcas
+[Method: GET, Route: paciente]
+in APPPATH\Views\paciente\show.php on line 17.
+ 1 APPPATH\Views\paciente\show.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $marcas', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\paciente\\show.php', 17)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\paciente\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('paciente/show', [], true)
+ 5 APPPATH\Controllers\Paciente.php(18): view('paciente/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 17:12:50 --> ErrorException: Undefined variable $marcas
+[Method: GET, Route: paciente]
+in APPPATH\Views\paciente\show.php on line 17.
+ 1 APPPATH\Views\paciente\show.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $marcas', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\paciente\\show.php', 17)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\paciente\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('paciente/show', [], true)
+ 5 APPPATH\Controllers\Paciente.php(18): view('paciente/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-12 17:14:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-12 17:27:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-12 17:27:36 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\PacienteM"
+[Method: POST, Route: paciente/insert]
+in SYSTEMPATH\Model.php on line 824.
+ 1 SYSTEMPATH\Model.php(824): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\PacienteM')
+ 2 SYSTEMPATH\BaseModel.php(821): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Paciente.php(102): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->insert()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 17:31:44 --> ErrorException: Undefined property: stdClass::$idMarca
+[Method: GET, Route: paciente]
+in APPPATH\Views\paciente\show.php on line 28.
+ 1 APPPATH\Views\paciente\show.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idMarca', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\paciente\\show.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\paciente\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('paciente/show', [], true)
+ 5 APPPATH\Controllers\Paciente.php(18): view('paciente/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 17:32:05 --> ErrorException: Undefined property: stdClass::$idMarca
+[Method: GET, Route: paciente]
+in APPPATH\Views\paciente\show.php on line 40.
+ 1 APPPATH\Views\paciente\show.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idMarca', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\paciente\\show.php', 40)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\paciente\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('paciente/show', [], true)
+ 5 APPPATH\Controllers\Paciente.php(18): view('paciente/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-12 17:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-12 17:34:26 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\xampp\htdocs\Consultorio\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\xampp\htdocs\Consultorio\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Consultorio\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Consultorio\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\Consultorio\app\Controllers\Paciente.php(102): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Paciente->insert()
+#9 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+#10 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-09-12 17:34:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '0' for key 'PRIMARY'
+[Method: POST, Route: paciente/insert]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paciente` (`nombre`, `apellidoP`, `apellidoM`, `curp`, `numeroDeSeguridadSocial`, `fechaDeNacimiento`, `telefono`, `genero`, `idDireccion`, `alergias`) VALUES (:nombre:, :apellidoP:, :apellidoM:, :curp:, :numeroDeSeguridadSocial:, :fechaDeNacimiento:, :telefono:, :genero:, :idDireccion:, :alergias:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Paciente.php(102): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 17:34:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `paciente` (`nombre`, `apellidoP`, `apellidoM`, `curp`, `numeroDeSeguridadSocial`, `fechaDeNacimiento`, `telefono`, `genero`, `idDireccion`, `alergias`) VALUES (\'mateo\', \'uwu\', \'uwuw\', \'HEGJ040301HPLRRSA8\', \'1231423\', \'2024-09-13\', \'123\', \'masculino\', \'1\', \'\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `paciente` (`nombre`, `apellidoP`, `apellidoM`, `curp`, `numeroDeSeguridadSocial`, `fechaDeNacimiento`, `telefono`, `genero`, `idDireccion`, `alergias`) VALUES (\'mateo\', \'uwu\', \'uwuw\', \'HEGJ040301HPLRRSA8\', \'1231423\', \'2024-09-13\', \'123\', \'masculino\', \'1\', \'\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paciente` (`nombre`, `apellidoP`, `apellidoM`, `curp`, `numeroDeSeguridadSocial`, `fechaDeNacimiento`, `telefono`, `genero`, `idDireccion`, `alergias`) VALUES (:nombre:, :apellidoP:, :apellidoM:, :curp:, :numeroDeSeguridadSocial:, :fechaDeNacimiento:, :telefono:, :genero:, :idDireccion:, :alergias:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Paciente.php(102): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->insert()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 17:34:26 --> [Caused by] mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `paciente` (`nombre`, `apellidoP`, `apellidoM`, `curp`, `numeroDeSeguridadSocial`, `fechaDeNacimiento`, `telefono`, `genero`, `idDireccion`, `alergias`) VALUES (\'mateo\', \'uwu\', \'uwuw\', \'HEGJ040301HPLRRSA8\', \'1231423\', \'2024-09-13\', \'123\', \'masculino\', \'1\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `paciente` (`nombre`, `apellidoP`, `apellidoM`, `curp`, `numeroDeSeguridadSocial`, `fechaDeNacimiento`, `telefono`, `genero`, `idDireccion`, `alergias`) VALUES (\'mateo\', \'uwu\', \'uwuw\', \'HEGJ040301HPLRRSA8\', \'1231423\', \'2024-09-13\', \'123\', \'masculino\', \'1\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `paciente` (`nombre`, `apellidoP`, `apellidoM`, `curp`, `numeroDeSeguridadSocial`, `fechaDeNacimiento`, `telefono`, `genero`, `idDireccion`, `alergias`) VALUES (\'mateo\', \'uwu\', \'uwuw\', \'HEGJ040301HPLRRSA8\', \'1231423\', \'2024-09-13\', \'123\', \'masculino\', \'1\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paciente` (`nombre`, `apellidoP`, `apellidoM`, `curp`, `numeroDeSeguridadSocial`, `fechaDeNacimiento`, `telefono`, `genero`, `idDireccion`, `alergias`) VALUES (:nombre:, :apellidoP:, :apellidoM:, :curp:, :numeroDeSeguridadSocial:, :fechaDeNacimiento:, :telefono:, :genero:, :idDireccion:, :alergias:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Paciente.php(102): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->insert()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-12 17:39:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-12 17:47:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-12 19:06:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-12 19:06:47 --> ErrorException: Undefined array key "genero"
+[Method: POST, Route: paciente/insert]
+in APPPATH\Controllers\Paciente.php on line 86.
+ 1 APPPATH\Controllers\Paciente.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "genero"', 'C:\\xampp\\htdocs\\Consultorio\\app\\Controllers\\Paciente.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 19:08:58 --> ErrorException: Undefined array key "genero"
+[Method: POST, Route: paciente/insert]
+in APPPATH\Controllers\Paciente.php on line 86.
+ 1 APPPATH\Controllers\Paciente.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "genero"', 'C:\\xampp\\htdocs\\Consultorio\\app\\Controllers\\Paciente.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-12 19:09:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-12 19:09:04 --> ErrorException: Undefined array key "genero"
+[Method: POST, Route: paciente/insert]
+in APPPATH\Controllers\Paciente.php on line 86.
+ 1 APPPATH\Controllers\Paciente.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "genero"', 'C:\\xampp\\htdocs\\Consultorio\\app\\Controllers\\Paciente.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 19:10:02 --> ErrorException: Undefined array key "genero"
+[Method: POST, Route: paciente/insert]
+in APPPATH\Controllers\Paciente.php on line 86.
+ 1 APPPATH\Controllers\Paciente.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "genero"', 'C:\\xampp\\htdocs\\Consultorio\\app\\Controllers\\Paciente.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 19:10:07 --> ErrorException: Undefined array key "genero"
+[Method: POST, Route: paciente/insert]
+in APPPATH\Controllers\Paciente.php on line 86.
+ 1 APPPATH\Controllers\Paciente.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "genero"', 'C:\\xampp\\htdocs\\Consultorio\\app\\Controllers\\Paciente.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-12 19:10:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-12 19:10:10 --> ErrorException: Undefined array key "genero"
+[Method: POST, Route: paciente/insert]
+in APPPATH\Controllers\Paciente.php on line 86.
+ 1 APPPATH\Controllers\Paciente.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "genero"', 'C:\\xampp\\htdocs\\Consultorio\\app\\Controllers\\Paciente.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-12 19:10:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-12 19:11:19 --> ErrorException: Undefined array key "genero"
+[Method: POST, Route: paciente/insert]
+in APPPATH\Controllers\Paciente.php on line 86.
+ 1 APPPATH\Controllers\Paciente.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "genero"', 'C:\\xampp\\htdocs\\Consultorio\\app\\Controllers\\Paciente.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 19:12:54 --> ErrorException: Undefined array key "genero"
+[Method: POST, Route: paciente/insert]
+in APPPATH\Controllers\Paciente.php on line 86.
+ 1 APPPATH\Controllers\Paciente.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "genero"', 'C:\\xampp\\htdocs\\Consultorio\\app\\Controllers\\Paciente.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-12 19:12:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-12 19:13:03 --> ErrorException: Undefined array key "genero"
+[Method: POST, Route: paciente/insert]
+in APPPATH\Controllers\Paciente.php on line 86.
+ 1 APPPATH\Controllers\Paciente.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "genero"', 'C:\\xampp\\htdocs\\Consultorio\\app\\Controllers\\Paciente.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-12 19:13:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-12 19:14:30 --> ErrorException: Undefined array key "genero"
+[Method: POST, Route: paciente/insert]
+in APPPATH\Controllers\Paciente.php on line 86.
+ 1 APPPATH\Controllers\Paciente.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "genero"', 'C:\\xampp\\htdocs\\Consultorio\\app\\Controllers\\Paciente.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 19:15:11 --> ErrorException: Undefined array key "genero"
+[Method: POST, Route: paciente/insert]
+in APPPATH\Controllers\Paciente.php on line 86.
+ 1 APPPATH\Controllers\Paciente.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "genero"', 'C:\\xampp\\htdocs\\Consultorio\\app\\Controllers\\Paciente.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-12 19:15:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-12 19:15:18 --> ErrorException: Undefined array key "genero"
+[Method: POST, Route: paciente/insert]
+in APPPATH\Controllers\Paciente.php on line 86.
+ 1 APPPATH\Controllers\Paciente.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "genero"', 'C:\\xampp\\htdocs\\Consultorio\\app\\Controllers\\Paciente.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 19:15:41 --> ErrorException: Undefined array key "genero"
+[Method: POST, Route: paciente/insert]
+in APPPATH\Controllers\Paciente.php on line 86.
+ 1 APPPATH\Controllers\Paciente.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "genero"', 'C:\\xampp\\htdocs\\Consultorio\\app\\Controllers\\Paciente.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-12 19:15:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-12 19:15:45 --> ErrorException: Undefined array key "genero"
+[Method: POST, Route: paciente/insert]
+in APPPATH\Controllers\Paciente.php on line 86.
+ 1 APPPATH\Controllers\Paciente.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "genero"', 'C:\\xampp\\htdocs\\Consultorio\\app\\Controllers\\Paciente.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-12 19:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-12 19:16:33 --> ErrorException: Undefined array key "genero"
+[Method: POST, Route: paciente/insert]
+in APPPATH\Controllers\Paciente.php on line 86.
+ 1 APPPATH\Controllers\Paciente.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "genero"', 'C:\\xampp\\htdocs\\Consultorio\\app\\Controllers\\Paciente.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-12 19:16:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-12 19:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-12 19:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-12 19:21:17 --> ErrorException: Undefined array key 0
+[Method: GET, Route: marcas/edit/2]
+in APPPATH\Views\marcas\edit.php on line 9.
+ 1 APPPATH\Views\marcas\edit.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\marcas\\edit.php', 9)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\marcas\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('marcas/edit', [], true)
+ 5 APPPATH\Controllers\Marcas.php(35): view('marcas/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Marcas->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 19:22:08 --> ErrorException: Undefined property: stdClass::$idmarca
+[Method: GET, Route: marcas/edit/3]
+in APPPATH\Views\marcas\edit.php on line 11.
+ 1 APPPATH\Views\marcas\edit.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idmarca', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\marcas\\edit.php', 11)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\marcas\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('marcas/edit', [], true)
+ 5 APPPATH\Controllers\Marcas.php(35): view('marcas/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Marcas->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 19:22:40 --> ErrorException: Undefined array key "idmarca"
+[Method: POST, Route: marcas/update/]
+in APPPATH\Controllers\Marcas.php on line 43.
+ 1 APPPATH\Controllers\Marcas.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idmarca"', 'C:\\xampp\\htdocs\\Consultorio\\app\\Controllers\\Marcas.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Marcas->update('')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-12 19:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-12 19:27:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-12 19:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-12 19:44:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-12 20:04:33 --> ErrorException: Undefined array key 0
+[Method: GET, Route: marcas/edit/5]
+in APPPATH\Views\marcas\edit.php on line 9.
+ 1 APPPATH\Views\marcas\edit.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\marcas\\edit.php', 9)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\marcas\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('marcas/edit', [], true)
+ 5 APPPATH\Controllers\Marcas.php(35): view('marcas/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Marcas->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-12 20:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-12 20:05:13 --> ErrorException: Undefined property: stdClass::$paciente
+[Method: GET, Route: paciente/edit/5]
+in APPPATH\Views\paciente\edit.php on line 11.
+ 1 APPPATH\Views\paciente\edit.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$paciente', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\paciente\\edit.php', 11)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\paciente\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('paciente/edit', [], true)
+ 5 APPPATH\Controllers\Paciente.php(35): view('paciente/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-12 20:08:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-12 20:08:23 --> ErrorException: Undefined property: stdClass::$paciente
+[Method: GET, Route: paciente/edit/5]
+in APPPATH\Views\paciente\edit.php on line 11.
+ 1 APPPATH\Views\paciente\edit.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$paciente', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\paciente\\edit.php', 11)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\paciente\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('paciente/edit', [], true)
+ 5 APPPATH\Controllers\Paciente.php(35): view('paciente/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-12 20:08:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-12 20:08:26 --> ErrorException: Undefined property: stdClass::$paciente
+[Method: GET, Route: paciente/edit/5]
+in APPPATH\Views\paciente\edit.php on line 11.
+ 1 APPPATH\Views\paciente\edit.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$paciente', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\paciente\\edit.php', 11)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\paciente\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('paciente/edit', [], true)
+ 5 APPPATH\Controllers\Paciente.php(35): view('paciente/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-12 20:29:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-12 20:29:50 --> ErrorException: Undefined property: stdClass::$paciente
+[Method: GET, Route: paciente/edit/5]
+in APPPATH\Views\paciente\edit.php on line 11.
+ 1 APPPATH\Views\paciente\edit.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$paciente', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\paciente\\edit.php', 11)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\paciente\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('paciente/edit', [], true)
+ 5 APPPATH\Controllers\Paciente.php(37): view('paciente/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-12 20:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-12 20:31:58 --> ErrorException: Undefined variable $data
+[Method: GET, Route: paciente/edit/5]
+in APPPATH\Views\paciente\edit.php on line 5.
+ 1 APPPATH\Views\paciente\edit.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\paciente\\edit.php', 5)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\paciente\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('paciente/edit', [], true)
+ 5 APPPATH\Controllers\Paciente.php(37): view('paciente/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-12 20:32:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-12 20:32:51 --> ErrorException: Undefined property: stdClass::$paciente
+[Method: GET, Route: paciente/edit/5]
+in APPPATH\Views\paciente\edit.php on line 11.
+ 1 APPPATH\Views\paciente\edit.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$paciente', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\paciente\\edit.php', 11)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\paciente\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('paciente/edit', [], true)
+ 5 APPPATH\Controllers\Paciente.php(37): view('paciente/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-12 20:33:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-12 20:33:29 --> ErrorException: Undefined property: stdClass::$paciente
+[Method: GET, Route: paciente/edit/5]
+in APPPATH\Views\paciente\edit.php on line 17.
+ 1 APPPATH\Views\paciente\edit.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$paciente', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\paciente\\edit.php', 17)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\paciente\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('paciente/edit', [], true)
+ 5 APPPATH\Controllers\Paciente.php(37): view('paciente/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-12 20:34:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-12 20:34:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-12 20:35:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-12 20:36:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-12 20:36:12 --> ErrorException: Undefined array key "alergias"
+[Method: POST, Route: paciente/update/]
+in APPPATH\Controllers\Paciente.php on line 73.
+ 1 APPPATH\Controllers\Paciente.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "alergias"', 'C:\\xampp\\htdocs\\Consultorio\\app\\Controllers\\Paciente.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->update('')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-12 20:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-12 20:36:21 --> ErrorException: Undefined array key "alergias"
+[Method: POST, Route: paciente/update/]
+in APPPATH\Controllers\Paciente.php on line 73.
+ 1 APPPATH\Controllers\Paciente.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "alergias"', 'C:\\xampp\\htdocs\\Consultorio\\app\\Controllers\\Paciente.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->update('')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 20:36:26 --> ErrorException: Undefined array key "alergias"
+[Method: POST, Route: paciente/update/]
+in APPPATH\Controllers\Paciente.php on line 73.
+ 1 APPPATH\Controllers\Paciente.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "alergias"', 'C:\\xampp\\htdocs\\Consultorio\\app\\Controllers\\Paciente.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->update('')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-09-12 20:36:29 --> ErrorException: Undefined array key "alergias"
+[Method: POST, Route: paciente/update/]
+in APPPATH\Controllers\Paciente.php on line 73.
+ 1 APPPATH\Controllers\Paciente.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "alergias"', 'C:\\xampp\\htdocs\\Consultorio\\app\\Controllers\\Paciente.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paciente->update('')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paciente))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-09-12 20:36:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-12 20:42:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

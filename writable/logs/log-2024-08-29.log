@@ -1,0 +1,651 @@
+ERROR - 2024-08-29 19:05:46 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/MySQLi/Connection.php:187
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/MySQLi/Connection.php(187): mysqli->real_connect('127.0.0.1', 'root', '', 'aod', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/dulceria/app/Controllers/Proveedor.php(16): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(933): App\Controllers\Proveedor->add()
+#8 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+#9 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/rewrite.php(44): require_once('/Applications/X...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/XAMPP/xamppfiles/htdocs/dulceria/app/Controllers/Proveedor.php(16): CodeIgniter\BaseModel->findAll()
+#6 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(933): App\Controllers\Proveedor->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+#8 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/rewrite.php(44): require_once('/Applications/X...')
+#13 {main}
+CRITICAL - 2024-08-29 19:05:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: GET, Route: proveedor/add]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Estado`', [], false)
+ 3 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/Proveedor.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Proveedor->add()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-08-29 19:28:34 --> ErrorException: Undefined variable $data
+[Method: POST, Route: proveedor/insert]
+in APPPATH/Controllers/Proveedor.php on line 30.
+ 1 APPPATH/Controllers/Proveedor.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', '/Applications/XAMPP/xamppfiles/htdocs/dulceria/app/Controllers/Proveedor.php', 30)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Proveedor->insert()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+ERROR - 2024-08-29 19:35:00 --> mysqli_sql_exception: Table 'aod.proveedor' doesn't exist in /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/MySQLi/Connection.php(312): mysqli->query('INSERT INTO `Pr...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Pr...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Pr...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Pr...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 /Applications/XAMPP/xamppfiles/htdocs/dulceria/app/Controllers/Proveedor.php(42): CodeIgniter\Model->insert(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(933): App\Controllers\Proveedor->insert()
+#9 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+#10 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/rewrite.php(44): require_once('/Applications/X...')
+#15 {main}
+CRITICAL - 2024-08-29 19:35:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'aod.proveedor' doesn't exist
+[Method: POST, Route: proveedor/insert]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Proveedor` (`nombre`, `calle`, `numero`, `cp`, `idEstado`, `created_at`, `updated_at`) VALUES (:nombre:, :calle:, :numero:, :cp:, :idEstado:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/Proveedor.php(42): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Proveedor->insert()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-08-29 19:35:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'aod.proveedor' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Proveedor` (`nombre`, `calle`, `numero`, `cp`, `idEstado`, `created_at`, `updated_at`) VALUES (\'ninini\', \'ijihn\', \'ini\', \'n908\', \'1\', \'2024-08-29 19:35:00\', \'2024-08-29 19:35:00\')')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Proveedor` (`nombre`, `calle`, `numero`, `cp`, `idEstado`, `created_at`, `updated_at`) VALUES (\'ninini\', \'ijihn\', \'ini\', \'n908\', \'1\', \'2024-08-29 19:35:00\', \'2024-08-29 19:35:00\')')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Proveedor` (`nombre`, `calle`, `numero`, `cp`, `idEstado`, `created_at`, `updated_at`) VALUES (:nombre:, :calle:, :numero:, :cp:, :idEstado:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH/Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH/Controllers/Proveedor.php(42): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Proveedor->insert()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-08-29 19:35:00 --> [Caused by] mysqli_sql_exception: Table 'aod.proveedor' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('INSERT INTO `Proveedor` (`nombre`, `calle`, `numero`, `cp`, `idEstado`, `created_at`, `updated_at`) VALUES (\'ninini\', \'ijihn\', \'ini\', \'n908\', \'1\', \'2024-08-29 19:35:00\', \'2024-08-29 19:35:00\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Proveedor` (`nombre`, `calle`, `numero`, `cp`, `idEstado`, `created_at`, `updated_at`) VALUES (\'ninini\', \'ijihn\', \'ini\', \'n908\', \'1\', \'2024-08-29 19:35:00\', \'2024-08-29 19:35:00\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Proveedor` (`nombre`, `calle`, `numero`, `cp`, `idEstado`, `created_at`, `updated_at`) VALUES (\'ninini\', \'ijihn\', \'ini\', \'n908\', \'1\', \'2024-08-29 19:35:00\', \'2024-08-29 19:35:00\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Proveedor` (`nombre`, `calle`, `numero`, `cp`, `idEstado`, `created_at`, `updated_at`) VALUES (:nombre:, :calle:, :numero:, :cp:, :idEstado:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Proveedor.php(42): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Proveedor->insert()
+10 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+11 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+ERROR - 2024-08-29 19:36:34 --> mysqli_sql_exception: Table 'aod.proveedor' doesn't exist in /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/MySQLi/Connection.php(312): mysqli->query('INSERT INTO `pr...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 /Applications/XAMPP/xamppfiles/htdocs/dulceria/app/Controllers/Proveedor.php(42): CodeIgniter\Model->insert(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(933): App\Controllers\Proveedor->insert()
+#9 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+#10 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/rewrite.php(44): require_once('/Applications/X...')
+#15 {main}
+CRITICAL - 2024-08-29 19:36:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'aod.proveedor' doesn't exist
+[Method: POST, Route: proveedor/insert]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `proveedor` (`nombre`, `calle`, `numero`, `cp`, `idEstado`, `created_at`, `updated_at`) VALUES (:nombre:, :calle:, :numero:, :cp:, :idEstado:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/Proveedor.php(42): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Proveedor->insert()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-08-29 19:36:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'aod.proveedor' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `proveedor` (`nombre`, `calle`, `numero`, `cp`, `idEstado`, `created_at`, `updated_at`) VALUES (\'ninini\', \'ijihn\', \'ini\', \'n908\', \'1\', \'2024-08-29 19:36:34\', \'2024-08-29 19:36:34\')')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `proveedor` (`nombre`, `calle`, `numero`, `cp`, `idEstado`, `created_at`, `updated_at`) VALUES (\'ninini\', \'ijihn\', \'ini\', \'n908\', \'1\', \'2024-08-29 19:36:34\', \'2024-08-29 19:36:34\')')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `proveedor` (`nombre`, `calle`, `numero`, `cp`, `idEstado`, `created_at`, `updated_at`) VALUES (:nombre:, :calle:, :numero:, :cp:, :idEstado:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH/Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH/Controllers/Proveedor.php(42): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Proveedor->insert()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-08-29 19:36:34 --> [Caused by] mysqli_sql_exception: Table 'aod.proveedor' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('INSERT INTO `proveedor` (`nombre`, `calle`, `numero`, `cp`, `idEstado`, `created_at`, `updated_at`) VALUES (\'ninini\', \'ijihn\', \'ini\', \'n908\', \'1\', \'2024-08-29 19:36:34\', \'2024-08-29 19:36:34\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `proveedor` (`nombre`, `calle`, `numero`, `cp`, `idEstado`, `created_at`, `updated_at`) VALUES (\'ninini\', \'ijihn\', \'ini\', \'n908\', \'1\', \'2024-08-29 19:36:34\', \'2024-08-29 19:36:34\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `proveedor` (`nombre`, `calle`, `numero`, `cp`, `idEstado`, `created_at`, `updated_at`) VALUES (\'ninini\', \'ijihn\', \'ini\', \'n908\', \'1\', \'2024-08-29 19:36:34\', \'2024-08-29 19:36:34\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `proveedor` (`nombre`, `calle`, `numero`, `cp`, `idEstado`, `created_at`, `updated_at`) VALUES (:nombre:, :calle:, :numero:, :cp:, :idEstado:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Proveedor.php(42): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Proveedor->insert()
+10 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+11 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-08-29 19:40:10 --> TypeError: App\Controllers\Proveedor::insert(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+[Method: POST, Route: proveedor/insert]
+in APPPATH/Controllers/Proveedor.php on line 43.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Proveedor->insert()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-08-29 19:46:15 --> ErrorException: Undefined property: stdClass::$no
+[Method: GET, Route: proveedor]
+in APPPATH/Views/proveedor/show.php on line 18.
+ 1 APPPATH/Views/proveedor/show.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$no', '/Applications/XAMPP/xamppfiles/htdocs/dulceria/app/Views/proveedor/show.php', 18)
+ 2 SYSTEMPATH/View/View.php(234): include('/Applications/XAMPP/xamppfiles/htdocs/dulceria/app/Views/proveedor/show.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render('proveedor/show', [], true)
+ 5 APPPATH/Controllers/Proveedor.php(15): view('proveedor/show', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+ERROR - 2024-08-29 19:53:51 --> mysqli_sql_exception: Table 'aod.proveedores' doesn't exist in /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/MySQLi/Connection.php(312): mysqli->query('select proveedo...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select proveedo...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select proveedo...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/dulceria/app/Models/ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedo...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/dulceria/app/Controllers/Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+#5 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(933): App\Controllers\Proveedor->index()
+#6 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+#7 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/rewrite.php(44): require_once('/Applications/X...')
+#12 {main}
+CRITICAL - 2024-08-29 19:53:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'aod.proveedores' doesn't exist
+[Method: GET, Route: proveedor]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 APPPATH/Models/ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedores.*, estados.estado 
+                from proveedores,estados 
+                where proveedor.idProveedor = estados.idEstado 
+        ')
+ 2 APPPATH/Controllers/Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-08-29 19:53:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'aod.proveedores' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select proveedores.*, estados.estado 
+                from proveedores,estados 
+                where proveedor.idProveedor = estados.idEstado 
+        ')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select proveedores.*, estados.estado 
+                from proveedores,estados 
+                where proveedor.idProveedor = estados.idEstado 
+        ')
+ 3 APPPATH/Models/ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedores.*, estados.estado 
+                from proveedores,estados 
+                where proveedor.idProveedor = estados.idEstado 
+        ')
+ 4 APPPATH/Controllers/Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-08-29 19:53:51 --> [Caused by] mysqli_sql_exception: Table 'aod.proveedores' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('select proveedores.*, estados.estado 
+                from proveedores,estados 
+                where proveedor.idProveedor = estados.idEstado 
+        ', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select proveedores.*, estados.estado 
+                from proveedores,estados 
+                where proveedor.idProveedor = estados.idEstado 
+        ')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select proveedores.*, estados.estado 
+                from proveedores,estados 
+                where proveedor.idProveedor = estados.idEstado 
+        ')
+ 4 APPPATH/Models/ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedores.*, estados.estado 
+                from proveedores,estados 
+                where proveedor.idProveedor = estados.idEstado 
+        ')
+ 5 APPPATH/Controllers/Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+ERROR - 2024-08-29 19:54:50 --> mysqli_sql_exception: Unknown column 'Estados.estado' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/MySQLi/Connection.php(312): mysqli->query('select proveedo...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select proveedo...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select proveedo...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/dulceria/app/Models/ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedo...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/dulceria/app/Controllers/Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+#5 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(933): App\Controllers\Proveedor->index()
+#6 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+#7 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/rewrite.php(44): require_once('/Applications/X...')
+#12 {main}
+CRITICAL - 2024-08-29 19:54:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'Estados.estado' in 'field list'
+[Method: GET, Route: proveedor]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 APPPATH/Models/ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedor.*, Estados.estado 
+                from proveedor,Estado 
+                where proveedor.idProveedor = estados.idEstado 
+        ')
+ 2 APPPATH/Controllers/Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-08-29 19:54:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'Estados.estado' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select proveedor.*, Estados.estado 
+                from proveedor,Estado 
+                where proveedor.idProveedor = estados.idEstado 
+        ')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select proveedor.*, Estados.estado 
+                from proveedor,Estado 
+                where proveedor.idProveedor = estados.idEstado 
+        ')
+ 3 APPPATH/Models/ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedor.*, Estados.estado 
+                from proveedor,Estado 
+                where proveedor.idProveedor = estados.idEstado 
+        ')
+ 4 APPPATH/Controllers/Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-08-29 19:54:50 --> [Caused by] mysqli_sql_exception: Unknown column 'Estados.estado' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('select proveedor.*, Estados.estado 
+                from proveedor,Estado 
+                where proveedor.idProveedor = estados.idEstado 
+        ', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select proveedor.*, Estados.estado 
+                from proveedor,Estado 
+                where proveedor.idProveedor = estados.idEstado 
+        ')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select proveedor.*, Estados.estado 
+                from proveedor,Estado 
+                where proveedor.idProveedor = estados.idEstado 
+        ')
+ 4 APPPATH/Models/ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedor.*, Estados.estado 
+                from proveedor,Estado 
+                where proveedor.idProveedor = estados.idEstado 
+        ')
+ 5 APPPATH/Controllers/Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+ERROR - 2024-08-29 19:55:00 --> mysqli_sql_exception: Unknown column 'estados.idEstado' in 'where clause' in /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/MySQLi/Connection.php(312): mysqli->query('select proveedo...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select proveedo...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select proveedo...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/dulceria/app/Models/ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedo...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/dulceria/app/Controllers/Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+#5 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(933): App\Controllers\Proveedor->index()
+#6 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+#7 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/rewrite.php(44): require_once('/Applications/X...')
+#12 {main}
+CRITICAL - 2024-08-29 19:55:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'estados.idEstado' in 'where clause'
+[Method: GET, Route: proveedor]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 APPPATH/Models/ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idProveedor = estados.idEstado 
+        ')
+ 2 APPPATH/Controllers/Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-08-29 19:55:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'estados.idEstado' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idProveedor = estados.idEstado 
+        ')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idProveedor = estados.idEstado 
+        ')
+ 3 APPPATH/Models/ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idProveedor = estados.idEstado 
+        ')
+ 4 APPPATH/Controllers/Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-08-29 19:55:00 --> [Caused by] mysqli_sql_exception: Unknown column 'estados.idEstado' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idProveedor = estados.idEstado 
+        ', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idProveedor = estados.idEstado 
+        ')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idProveedor = estados.idEstado 
+        ')
+ 4 APPPATH/Models/ProveedorM.php(50): CodeIgniter\Database\BaseConnection->query('select proveedor.*, Estado.estado
+                from proveedor,Estado 
+                where proveedor.idProveedor = estados.idEstado 
+        ')
+ 5 APPPATH/Controllers/Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-08-29 19:55:57 --> BadMethodCallException: Call to undefined method App\Models\ProveedorM::last_query
+[Method: GET, Route: proveedor]
+in SYSTEMPATH/Model.php on line 932.
+ 1 APPPATH/Models/ProveedorM.php(52): CodeIgniter\Model->__call('last_query', [])
+ 2 APPPATH/Controllers/Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-08-29 19:56:06 --> BadMethodCallException: Call to undefined method App\Models\ProveedorM::lastQuery
+[Method: GET, Route: proveedor]
+in SYSTEMPATH/Model.php on line 932.
+ 1 APPPATH/Models/ProveedorM.php(52): CodeIgniter\Model->__call('lastQuery', [])
+ 2 APPPATH/Controllers/Proveedor.php(11): App\Models\ProveedorM->getProveedores()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Proveedor->index()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedor))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+ERROR - 2024-08-29 20:24:51 --> mysqli_sql_exception: Table 'aod.categoria' doesn't exist in /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/dulceria/app/Controllers/Categoria.php(11): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(933): App\Controllers\Categoria->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+#9 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/rewrite.php(44): require_once('/Applications/X...')
+#14 {main}
+CRITICAL - 2024-08-29 20:24:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'aod.categoria' doesn't exist
+[Method: GET, Route: categoria]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Categoria`
+WHERE `Categoria`.`deleted_at` IS NULL', [], false)
+ 2 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Categoria.php(11): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Categoria->index()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-08-29 20:24:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'aod.categoria' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `Categoria`
+WHERE `Categoria`.`deleted_at` IS NULL')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `Categoria`
+WHERE `Categoria`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Categoria`
+WHERE `Categoria`.`deleted_at` IS NULL', [], false)
+ 4 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Categoria.php(11): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Categoria->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-08-29 20:24:51 --> [Caused by] mysqli_sql_exception: Table 'aod.categoria' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *
+FROM `Categoria`
+WHERE `Categoria`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `Categoria`
+WHERE `Categoria`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `Categoria`
+WHERE `Categoria`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Categoria`
+WHERE `Categoria`.`deleted_at` IS NULL', [], false)
+ 5 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Categoria.php(11): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Categoria->index()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+ERROR - 2024-08-29 20:25:16 --> mysqli_sql_exception: Unknown column 'categorias.deleted_at' in 'where clause' in /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/XAMPP/xamppfiles/htdocs/dulceria/app/Controllers/Categoria.php(11): CodeIgniter\BaseModel->findAll()
+#7 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(933): App\Controllers\Categoria->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+#9 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Applications/XAMPP/xamppfiles/htdocs/dulceria/system/rewrite.php(44): require_once('/Applications/X...')
+#14 {main}
+CRITICAL - 2024-08-29 20:25:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'categorias.deleted_at' in 'where clause'
+[Method: GET, Route: categoria]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `categorias`
+WHERE `categorias`.`deleted_at` IS NULL', [], false)
+ 2 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Categoria.php(11): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Categoria->index()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-08-29 20:25:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'categorias.deleted_at' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `categorias`
+WHERE `categorias`.`deleted_at` IS NULL')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `categorias`
+WHERE `categorias`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `categorias`
+WHERE `categorias`.`deleted_at` IS NULL', [], false)
+ 4 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Controllers/Categoria.php(11): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Categoria->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-08-29 20:25:16 --> [Caused by] mysqli_sql_exception: Unknown column 'categorias.deleted_at' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *
+FROM `categorias`
+WHERE `categorias`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `categorias`
+WHERE `categorias`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `categorias`
+WHERE `categorias`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `categorias`
+WHERE `categorias`.`deleted_at` IS NULL', [], false)
+ 5 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Categoria.php(11): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Categoria->index()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
+CRITICAL - 2024-08-29 20:33:55 --> ParseError: syntax error, unexpected single-quoted string ";", expecting "," or ";"
+[Method: GET, Route: categoria]
+in APPPATH/Models/CategoriaM.php on line 11.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/XAMPP/xamppfiles/htdocs/dulceria/app/Models/CategoriaM.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CategoriaM')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CategoriaM')
+ 4 SYSTEMPATH/Config/Factories.php(290): class_exists('App\\Models\\CategoriaM')
+ 5 SYSTEMPATH/Config/Factories.php(216): CodeIgniter\Config\Factories::locateClass([...], 'CategoriaM')
+ 6 SYSTEMPATH/Config/Factories.php(159): CodeIgniter\Config\Factories::getDefinedInstance([...], 'CategoriaM', [...])
+ 7 SYSTEMPATH/Common.php(800): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH/Controllers/Categoria.php(9): model('CategoriaM')
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Categoria->index()
+10 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+11 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/dulceria/public/index.php')
