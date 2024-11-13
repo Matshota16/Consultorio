@@ -31,6 +31,7 @@ $routes->get('/direccion/add','Direccion::add');
 $routes->get('/direccion/add1','Direccion::add1');
 $routes->get('/direccion/add2','Direccion::add2');
 $routes->get('/cita/add','Cita::add');
+$routes->get('/imagen/add','Imagen::add');
 //insert
 $routes->post('/paciente/insert','Paciente::insert');
 $routes->post('/doctor/insert','Doctor::insert');
@@ -39,6 +40,7 @@ $routes->post('/direccion/insert','Direccion::insert');
 $routes->post('/direccion/insert1','Direccion::insert1');
 $routes->post('/direccion/insert2','Direccion::insert2');
 $routes->post('/cita/insert','Cita::insert');
+$routes->post('/Imagen/upload','Imagen::upload');
 //edit
 $routes->get('/paciente/edit/(:num)','Paciente::edit/$1');
 $routes->get('/doctor/edit/(:num)','Doctor::edit/$1');
@@ -66,10 +68,11 @@ $routes->get('/', 'Home::index');
 $routes->get('upload', 'Upload::index');          // Add this line.
 $routes->post('upload/upload', 'Upload::upload'); // Add this line.
 $routes->get('upload/viewFiles', 'Upload::viewFiles');
-$routes->get('upload/getFile/(:num)', 'Upload::getFile/$1');
+$routes->get('Imagen/getFile/(:num)', 'Imagen::getFile/$1');
 
 
 //rutas clientes.
 
 $routes->get('/cliente','Consultorio::Ver');
+$routes->get('/cliente/vistaCliente','Consultorio::verCliente');
 $routes->get('/Cliente/verConsultorio/(:num)','Consultorio::verConsultorio/$1');

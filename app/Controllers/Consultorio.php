@@ -7,6 +7,7 @@ class Consultorio extends BaseController
     public $csrfProtection = 'session';
     public $tokenRandomize = true;
     protected $helpers = ['form'];
+    
 
     public function valida(){
         $session = session();
@@ -20,16 +21,15 @@ class Consultorio extends BaseController
         print_r($_SESSION);
     }
     public function index(): string
-    {
-        $consultorioM = model('ConsultorioM');
-        $data['consultorio'] = $consultorioM->findAll();
-        //$consultorioM = model('ConsultorioM');
-        //$data['consultorio'] = $consultorioM->getDoctor();
-        return view('head') .
-            view('menu') .
-            view('consultorio/show', $data) .
-            view('footer');
-    }
+{
+    $consultorioM = model('ConsultorioM');
+    $data['consultorio'] = $consultorioM->getImagenConsultorio();
+
+    return view('head') .
+        view('menu') .
+        view('consultorio/show', $data) .
+        view('footer');
+}
 
     public function add()
     {  
@@ -41,9 +41,17 @@ class Consultorio extends BaseController
         $builder->selectMax('idDireccion');
         $query = $builder->get();
         $lastDireccion = $query->getRow();
+
+        // Se obtiene el id de la imagen que se agrego
+
+        $builder = $db->table('imagen');
+        $builder->selectMax('idImagen');
+        $query = $builder->get();
+        $lastImagen = $query->getRow();
         
-        // Asignar el último idDireccion a los datos pasados a la vista
+        // Asignar el último idDireccion y el ultimo idImagen a los datos pasados a la vista
         $data['lastDireccion'] = $lastDireccion->idDireccion ?? null;
+        $data['lastImagen'] = $lastImagen->idImagen ?? null;
         $data['consultorio'] = $direccionM->findAll();
         $doctorM = model('DoctorM');
         $data['consultorio1'] = $doctorM->findAll();
@@ -90,7 +98,8 @@ class Consultorio extends BaseController
             'horaDeApertura' => 'required',
             'horaDeCierre' => 'required',
             'idDireccion' => 'required',
-            'maps' => 'required'
+            'maps' => 'required',
+            'idImagen' => 'required'
         ];
         $data = [
             'nombreConsultorio' => $_POST['nombreConsultorio'],
@@ -99,7 +108,8 @@ class Consultorio extends BaseController
             'horaDeApertura' => $_POST['horaDeApertura'],
             'horaDeCierre' => $_POST['horaDeCierre'],
             'idDireccion' => $_POST['idDireccion'],
-            'maps' => $_POST['maps']
+            'maps' => $_POST['maps'],
+            'idImagen' => $_POST['idImagen']
 
         ];
         if (!$this->validate($rules)) {
@@ -132,7 +142,8 @@ class Consultorio extends BaseController
             'horaDeApertura' => 'required',
             'horaDeCierre' => 'required',
             'idDireccion' => 'required',
-            'maps' => 'required'
+            'maps' => 'required',
+            'idImagen' => 'required'
         ];
 
         $data = [
@@ -142,7 +153,8 @@ class Consultorio extends BaseController
             'horaDeApertura' => $_POST['horaDeApertura'],
             'horaDeCierre' => $_POST['horaDeCierre'],
             'idDireccion' => $_POST['idDireccion'],
-            'maps' => $_POST['maps']
+            'maps' => $_POST['maps'],
+            'idImagen' => $_POST['idImagen']
 
         ];
 
@@ -176,16 +188,24 @@ class Consultorio extends BaseController
 
     public function Ver()
     {
+       
         $consultorioM = model('ConsultorioM');
-        $data['cliente'] = $consultorioM->findAll();
+        $data['cliente'] = $consultorioM->getImagenConsultorio();
         return view('Cliente/topMenu') .
             view('Cliente/Vista', $data);
     }
     public function verConsultorio($idConsultorio)
+{
+    $consultorioM = model('ConsultorioM');
+    $data['cliente'] = $consultorioM->getImagenConsultorio1($idConsultorio); // Filtra por idConsultorio en el método del modelo
+    return view('Cliente/topMenu') .
+           view('Cliente/verConsultorio', $data);
+}
+
+
+    public function verCliente()
     {
-        $consultorioM = model('ConsultorioM');
-        $data['cliente'] = $consultorioM->where('idConsultorio', $idConsultorio)->findAll();
-        return view('Cliente/topMenu') .
-            view('Cliente/verConsultorio', $data);
+        
+        return view('Cliente/vistaCliente');
     }
 }

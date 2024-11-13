@@ -1,19 +1,21 @@
-<h1 class="texto-formal"><?=$cliente[0]->nombreConsultorio ?></h1>
-<div class="conatiner">
+<h1 class="texto-formal"><?= esc($cliente->nombreConsultorio) ?></h1>
+<div class="container">
     <div class="row">
         <div class="col-6">
-            
-      <img src="<?=base_url('consultorio.png'); ?>" class="d-block w-100" alt="">
-    </div>
+            <?php if (!empty($cliente->idImagen)) : ?>
+                <img src="<?= site_url('Imagen/getFile/' . $cliente->idImagen) ?>" class="d-block w-100" alt="<?= esc($cliente->nombreConsultorio) ?>">
+            <?php else : ?>
+                <p>No image available</p>
+            <?php endif; ?>
+        </div>
 
-    </div>
         <div class="col-6">
-            <h3>Telefono: <?=$cliente[0]->telefono; ?></h3>
-            <h3>Correo Electronico: <?=$cliente[0] ->correoElectronico;?></h3>
-                <iframe src="<?=$cliente[0]->maps; ?>"
-                width="400" height="300"> </iframe>
-    </div>
-</div> 
-</div> 
+            <h3>Teléfono: <?= esc($cliente->telefono) ?></h3>
+            <h3>Correo Electrónico: <?= esc($cliente->correoElectronico) ?></h3>
+            <iframe src="<?= esc($cliente->maps) ?>" width="400" height="300"></iframe>
+        </div>
+    </div> 
+</div>
+
 </body>
 </html>

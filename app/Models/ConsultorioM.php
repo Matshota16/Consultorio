@@ -13,7 +13,7 @@ class ConsultorioM extends Model
     protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['nombreConsultorio', 'telefono', 'correoElectronico', 'horaDeApertura', 'horaDeCierre', 'idDireccion', 'maps'];
+    protected $allowedFields    = ['nombreConsultorio', 'telefono', 'correoElectronico', 'horaDeApertura', 'horaDeCierre', 'idDireccion', 'maps', 'idImagen'];
 
     // Dates
     protected $useTimestamps = false;
@@ -40,7 +40,27 @@ class ConsultorioM extends Model
     protected $afterDelete    = [];
 
     
-    
+    public function getImagenConsultorio(){
+        $db = db_connect();
+
+        $sql= "select consultorio.*, imagen.*
+                from consultorio, imagen 
+                where consultorio.idImagen = imagen.idImagen 
+        ";
+        $query= $db->query($sql);
+
+       
+        return $query->getResult();
+
+    }
+
+    public function getImagenConsultorio1($idConsultorio)
+{
+    return $this->select('consultorio.*, imagen.nombreDelArchivo, imagen.idImagen')
+                ->join('imagen', 'imagen.idImagen = consultorio.idImagen', 'left')
+                ->where('consultorio.idConsultorio', $idConsultorio)
+                ->first();
+}
     
 }
 
