@@ -1,5 +1,5 @@
-<h1 class="texto-formal"><?= esc($cliente->nombreConsultorio) ?></h1>
-<div class="container">
+
+<div class="container-fluid">
     <div class="row">
         <div class="col-6">
             <?php if (!empty($cliente->idImagen)) : ?>

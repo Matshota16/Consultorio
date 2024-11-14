@@ -191,14 +191,14 @@ class Consultorio extends BaseController
        
         $consultorioM = model('ConsultorioM');
         $data['cliente'] = $consultorioM->getImagenConsultorio();
-        return view('Cliente/topMenu') .
+        return view('Cliente/vistaCliente') .
             view('Cliente/Vista', $data);
     }
     public function verConsultorio($idConsultorio)
 {
     $consultorioM = model('ConsultorioM');
     $data['cliente'] = $consultorioM->getImagenConsultorio1($idConsultorio); // Filtra por idConsultorio en el método del modelo
-    return view('Cliente/topMenu') .
+    return view('Cliente/vistaCliente') .
            view('Cliente/verConsultorio', $data);
 }
 
