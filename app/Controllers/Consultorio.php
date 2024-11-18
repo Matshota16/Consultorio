@@ -194,6 +194,7 @@ class Consultorio extends BaseController
         return view('Cliente/vistaCliente') .
             view('Cliente/Vista', $data);
     }
+
     public function verConsultorio($idConsultorio)
 {
     $consultorioM = model('ConsultorioM');
@@ -207,5 +208,12 @@ class Consultorio extends BaseController
     {
         
         return view('Cliente/vistaCliente');
+    }
+
+    public function agendarCitaCliente()
+    {
+        
+        return view('Cliente/vistaCliente') .
+           view('Cliente/verConsultorio', $data);
     }
 }

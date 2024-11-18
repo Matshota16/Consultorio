@@ -13,7 +13,7 @@ class CitaM extends Model
     protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['motivo', 'idPaciente', 'id'];
+    protected $allowedFields    = ['motivo', 'fechaCita', 'horaCita', 'idPaciente', 'id'];
 
     // Dates
     protected $useTimestamps = false;
@@ -52,4 +52,8 @@ class CitaM extends Model
         return $query->getResult();
 
     }
+
+    
+
+    
 }

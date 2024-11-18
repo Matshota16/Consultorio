@@ -17,6 +17,11 @@
     justify-content: space-around;
     z-index: 1000; /* Asegura que la barra esté encima del contenido */
   }
+  .Rectangle1 img {
+    height: 50px; /* Limita la altura del logo */
+    max-width: 100px; /* Limita el ancho del logo */
+    object-fit: contain; /* Ajusta la imagen sin distorsión */
+  }
   
   /* Enlaces de navegación */
   .Rectangle1 a {
@@ -26,6 +31,10 @@
     font-weight: 400;
     text-decoration: none;
     padding: 10px;
+  }
+
+  .Rectangle1 a:hover {
+    text-decoration: underline;
   }
   
   .Perfil, .VerCitas, .Consultorios {
@@ -153,7 +162,36 @@
     font-weight: 400;
     line-height: 1.5; /* Espaciado entre líneas para mejor legibilidad */
     word-wrap: break-word;
-    background: white;
+    background: rgb(215, 209, 209);
+}
+
+.texto-datoConsultorio {
+  width: 90%; /* Ajusta al 90% del contenedor */
+  max-width: 1142px; /* Ancho máximo */
+  margin: 20px auto; /* Centra el texto horizontalmente */
+  text-align: center;
+  color: black;
+  font-size: 32px;
+  font-family: 'Roboto Serif', serif;
+  font-weight: 400;
+  line-height: 1.5; /* Espaciado entre líneas para mejor legibilidad */
+  word-wrap: break-word;
+  background: white;
+}
+.titulo {
+  width: 90%; /* Ajusta al 90% del contenedor */
+  max-width: 1142px; /* Ancho máximo */
+  margin: 20px auto; /* Centra el texto horizontalmente */
+  text-align: center;
+  color: black;
+  font-size: 48px; /* Tamaño más grande para un título */
+  font-family: 'Roboto Serif', serif; /* Mantiene la misma familia tipográfica */
+  font-weight: 700; /* Hace la fuente más gruesa para destacar como título */
+  line-height: 1.2; /* Menor espaciado entre líneas */
+  word-wrap: break-word;
+  background: rgb(215, 209, 209); /* Fondo mantenido */
+  padding: 10px; /* Añade espacio interno para destacar */
+  border-radius: 5px; /* Opcional: bordes redondeados */
 }
 
   
@@ -169,21 +207,58 @@
     word-wrap: break-word;
   }
 
-  .imgPrincipal {width: 90%; height: 450px; background-color: darkgrey; display: block;}
-        .imgSecundaria {width: 90%; height: 200px; background-color: darkgreen; display: block; margin-bottom: 20px;}
-        .producto {margin-bottom: 60px;}
-        .texto-formal {
-            text-align: center;
-            color: #fff;
-            font-size: 24px; /* Tamaño de letra */
-            line-height: 1.6; /* Espaciado entre líneas */
-            padding: 20px;
-            border: 1px solid #ccc; /* Borde sutil */
-            border-radius: 8px; /* Esquinas redondeadas */
-            background-color: #4CAF50; /* Fondo blanco */
-        }
+  .imgPrincipal {
+    width: 90%;
+    height: 450px;
+    background-color: darkgrey;
+    display: block;
+    overflow: hidden; /* Evitar que el contenido se salga */
+}
+
+.imgSecundaria {
+    width: 90%;
+    height: 200px;
+    background-color: darkgreen;
+    display: block;
+    margin-bottom: 20px;
+    overflow: hidden; /* Evitar que el contenido se salga */
+    position: relative; /* Asegura el comportamiento de la imagen interna */
+    border-radius: 8px; /* Opcional: redondear esquinas */
+}
+
+.imgSecundaria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen al tamaño del contenedor sin deformarla */
+    border-radius: 8px; /* Opcional: sincronizar con el borde del contenedor */
+}
+
+.producto {
+    margin-bottom: 60px;
+}
+
+.texto-formal {
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    line-height: 1.6;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #4CAF50;
+}
 
         .container-fluid {
             margin-top: 12vh; /* Añade espacio para evitar la superposición con la barra de navegación */
           }
+
+          .logo-centered-large {
+            display: block; /* Cambia la imagen a un elemento en bloque */
+            margin: 20px auto; /* Centra la imagen horizontalmente con espacio adicional */
+            width: 60%; /* Aumenta el tamaño de la imagen al 60% del ancho del contenedor */
+            max-width: 900px; /* Asegura que no supere un tamaño específico */
+            height: auto; /* Mantiene la proporción original */
+        }
+        
+        
   

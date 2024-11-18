@@ -52,4 +52,47 @@ class ConsultorioDoctorM extends Model
         return $query->getResult();
 
     }
+
+    public function getInfo(){
+        $db = db_connect();
+
+        $sql= "select consultorioDoctor.*, consultorio.*, doctor.*
+                from consultorioDoctor, consultorio, doctor
+                where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor
+        ";
+        $query= $db->query($sql);
+
+       
+        return $query->getResult();
+
+    }
+
+    public function getDoctorsByConsultorio($idConsultorio)
+    {
+        $db = db_connect();
+
+        // Consulta SQL
+        $sql = "
+            SELECT 
+                consultorioDoctor.horaDeEntrada,
+                consultorioDoctor.horaDeSalida,
+                doctor.idDoctor,
+                doctor.nombreD,
+                doctor.apellidoPD,
+                doctor.apellidoMD
+            FROM 
+                consultorioDoctor
+            JOIN 
+                doctor ON consultorioDoctor.idDoctor = doctor.idDoctor
+            WHERE 
+                consultorioDoctor.idConsultorio = ?
+        ";
+
+        // Ejecutar la consulta
+        $query = $db->query($sql, [$idConsultorio]);
+
+        // Retornar resultados
+        return $query->getResult();
+    }
+
 }

@@ -10,7 +10,7 @@
         <div class="col">
             <table class="table table-striped table-bordered">
                 <thead>
-                    <th>idDireccion</th>
+                    <th>idCita</th>
                     <th>Motivo</th>
                     <th>Fecha</th>
                     <th>Hora</th>
@@ -23,13 +23,23 @@
                             <td><?= $key->idCita ?></td>
                             <td><?= $key->motivo ?></td>
                             <td><?= $key->fechaCita ?></td>
+                            <td><?= $key->horaCita ?></td>
+                            <td><?= $key->nombreP . ' ' . $key->apellidoPP . ' ' . $key->apellidoMP ?></td>
+                            <?php endforeach ?>
+
+                            <?php foreach ($cita1 as $key) : ?>
+                            <td><?= 'Doctor: ' .$key->nombreD . ' ' . $key->apellidoPD . ' ' . $key->apellidoMD. ' Consultorio: ' . $key->nombreConsultorio . ' Hora De entrada: ' . $key->horaDeEntrada. ' Hora De Salida: ' . $key->horaDeSalida ?></td>
                             <td>
-                                <a href="<?= base_url('cita/delete/' . $key->idDireccion); ?> " class="btn btn-danger">Borrar</a>
-                                <a href="<?= base_url('cita/edit/' . $key->idDireccion); ?> " class="btn btn-warning">Modificar</a>
+                            <?php endforeach ?>
+
+                            <?php foreach ($cita as $key) : ?>
+                                <a href="<?= base_url('cita/delete/' . $key->idCita); ?> " class="btn btn-danger">Borrar</a>
+                                <a href="<?= base_url('cita/edit/' . $key->idCita); ?> " class="btn btn-warning">Modificar</a>
 
                             </td>
+                            <?php endforeach ?>
                         </tr>
-                    <?php endforeach ?>
+
                 </tbody>
             </table>
         </div>

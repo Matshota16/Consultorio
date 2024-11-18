@@ -14,6 +14,7 @@ $routes->get('/doctor','Doctor::index');
 $routes->get('/consultorio','Consultorio::index');
 $routes->get('/direccion','Direccion::index');
 $routes->get('/cita','Cita::index');
+$routes->get('/consultorioDoctor','ConsultorioDoctor::index');
 $routes->get('/cita/home','Cita::home');
 
 
@@ -32,6 +33,7 @@ $routes->get('/direccion/add1','Direccion::add1');
 $routes->get('/direccion/add2','Direccion::add2');
 $routes->get('/cita/add','Cita::add');
 $routes->get('/imagen/add','Imagen::add');
+
 //insert
 $routes->post('/paciente/insert','Paciente::insert');
 $routes->post('/doctor/insert','Doctor::insert');
@@ -40,6 +42,7 @@ $routes->post('/direccion/insert','Direccion::insert');
 $routes->post('/direccion/insert1','Direccion::insert1');
 $routes->post('/direccion/insert2','Direccion::insert2');
 $routes->post('/cita/insert','Cita::insert');
+$routes->post('/consultorioDoctor/insert','ConsultorioDoctor::insert');
 $routes->post('/Imagen/upload','Imagen::upload');
 //edit
 $routes->get('/paciente/edit/(:num)','Paciente::edit/$1');
@@ -47,6 +50,7 @@ $routes->get('/doctor/edit/(:num)','Doctor::edit/$1');
 $routes->get('/consultorio/edit/(:num)','Consultorio::edit/$1');
 $routes->get('/direccion/edit/(:num)','Direccion::edit/$1');
 $routes->get('/cita/edit/(:num)','Cita::edit/$1');
+$routes->get('/Cliente/verCita/(:num)','Consultorio::edit/$1');
 //update
 $routes->post('/paciente/update','Paciente::update');
 $routes->post('/doctor/update','Doctor::update');
@@ -76,3 +80,5 @@ $routes->get('Imagen/getFile/(:num)', 'Imagen::getFile/$1');
 $routes->get('/cliente','Consultorio::Ver');
 $routes->get('/cliente/vistaCliente','Consultorio::verCliente');
 $routes->get('/Cliente/verConsultorio/(:num)','Consultorio::verConsultorio/$1');
+
+$routes->get('/Cita/formulario/(:num)','Cita::formulario/$1');

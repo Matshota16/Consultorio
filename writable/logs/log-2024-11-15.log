@@ -1,0 +1,1871 @@
+CRITICAL - 2024-11-15 01:24:05 --> ErrorException: Undefined property: stdClass::$idCita
+[Method: GET, Route: cita]
+in APPPATH\Views\cita\show.php on line 23.
+ 1 APPPATH\Views\cita\show.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idCita', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\cita\\show.php', 23)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\cita\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('cita/show', [], true)
+ 5 APPPATH\Controllers\Cita.php(35): view('cita/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 01:25:32 --> ErrorException: Undefined property: stdClass::$idCita
+[Method: GET, Route: cita]
+in APPPATH\Views\cita\show.php on line 23.
+ 1 APPPATH\Views\cita\show.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idCita', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\cita\\show.php', 23)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\cita\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('cita/show', [], true)
+ 5 APPPATH\Controllers\Cita.php(35): view('cita/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 01:25:34 --> ErrorException: Undefined property: stdClass::$idCita
+[Method: GET, Route: cita]
+in APPPATH\Views\cita\show.php on line 23.
+ 1 APPPATH\Views\cita\show.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idCita', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\cita\\show.php', 23)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\cita\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('cita/show', [], true)
+ 5 APPPATH\Controllers\Cita.php(35): view('cita/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 01:26:07 --> ErrorException: Undefined property: stdClass::$motivo
+[Method: GET, Route: cita]
+in APPPATH\Views\cita\show.php on line 24.
+ 1 APPPATH\Views\cita\show.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$motivo', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\cita\\show.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\cita\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('cita/show', [], true)
+ 5 APPPATH\Controllers\Cita.php(35): view('cita/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 01:26:38 --> ErrorException: Undefined property: stdClass::$idCita
+[Method: GET, Route: cita]
+in APPPATH\Views\cita\show.php on line 23.
+ 1 APPPATH\Views\cita\show.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idCita', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\cita\\show.php', 23)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\cita\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('cita/show', [], true)
+ 5 APPPATH\Controllers\Cita.php(35): view('cita/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 01:39:30 --> ErrorException: Undefined variable $idCita
+[Method: GET, Route: cita]
+in APPPATH\Views\cita\show.php on line 33.
+ 1 APPPATH\Views\cita\show.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idCita', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\cita\\show.php', 33)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\cita\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('cita/show', [], true)
+ 5 APPPATH\Controllers\Cita.php(35): view('cita/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-11-15 01:42:48 --> mysqli_sql_exception: Unknown column 'consultorio.nombre' in 'field list' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('\n            SE...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('\n            SE...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('\n            SE...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\CitaM.php(78): CodeIgniter\Database\BaseConnection->query('\n            SE...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Cita->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-15 01:42:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'consultorio.nombre' in 'field list'
+[Method: GET, Route: cita]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\CitaM.php(78): CodeIgniter\Database\BaseConnection->query('
+            SELECT cita.*, paciente.*, 
+                consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor,
+                subqueryConsultorioDoctor.nombreConsultorio, subqueryConsultorioDoctor.nombreDoctor
+            FROM cita
+            INNER JOIN paciente ON cita.idPaciente = paciente.idPaciente
+            INNER JOIN consultorioDoctor ON cita.id = consultorioDoctor.id
+            INNER JOIN (
+                SELECT consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor, 
+                       consultorio.nombre AS nombreConsultorio, 
+                       doctor.nombre AS nombreDoctor
+                FROM consultorioDoctor
+                INNER JOIN consultorio ON consultorioDoctor.idConsultorio = consultorio.idConsultorio
+                INNER JOIN doctor ON consultorioDoctor.idDoctor = doctor.idDoctor
+            ) AS subqueryConsultorioDoctor 
+            ON consultorioDoctor.idConsultorio = subqueryConsultorioDoctor.idConsultorio
+            AND consultorioDoctor.idDoctor = subqueryConsultorioDoctor.idDoctor
+        ')
+ 2 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 01:42:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'consultorio.nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT cita.*, paciente.*, 
+                consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor,
+                subqueryConsultorioDoctor.nombreConsultorio, subqueryConsultorioDoctor.nombreDoctor
+            FROM cita
+            INNER JOIN paciente ON cita.idPaciente = paciente.idPaciente
+            INNER JOIN consultorioDoctor ON cita.id = consultorioDoctor.id
+            INNER JOIN (
+                SELECT consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor, 
+                       consultorio.nombre AS nombreConsultorio, 
+                       doctor.nombre AS nombreDoctor
+                FROM consultorioDoctor
+                INNER JOIN consultorio ON consultorioDoctor.idConsultorio = consultorio.idConsultorio
+                INNER JOIN doctor ON consultorioDoctor.idDoctor = doctor.idDoctor
+            ) AS subqueryConsultorioDoctor 
+            ON consultorioDoctor.idConsultorio = subqueryConsultorioDoctor.idConsultorio
+            AND consultorioDoctor.idDoctor = subqueryConsultorioDoctor.idDoctor
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT cita.*, paciente.*, 
+                consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor,
+                subqueryConsultorioDoctor.nombreConsultorio, subqueryConsultorioDoctor.nombreDoctor
+            FROM cita
+            INNER JOIN paciente ON cita.idPaciente = paciente.idPaciente
+            INNER JOIN consultorioDoctor ON cita.id = consultorioDoctor.id
+            INNER JOIN (
+                SELECT consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor, 
+                       consultorio.nombre AS nombreConsultorio, 
+                       doctor.nombre AS nombreDoctor
+                FROM consultorioDoctor
+                INNER JOIN consultorio ON consultorioDoctor.idConsultorio = consultorio.idConsultorio
+                INNER JOIN doctor ON consultorioDoctor.idDoctor = doctor.idDoctor
+            ) AS subqueryConsultorioDoctor 
+            ON consultorioDoctor.idConsultorio = subqueryConsultorioDoctor.idConsultorio
+            AND consultorioDoctor.idDoctor = subqueryConsultorioDoctor.idDoctor
+        ')
+ 3 APPPATH\Models\CitaM.php(78): CodeIgniter\Database\BaseConnection->query('
+            SELECT cita.*, paciente.*, 
+                consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor,
+                subqueryConsultorioDoctor.nombreConsultorio, subqueryConsultorioDoctor.nombreDoctor
+            FROM cita
+            INNER JOIN paciente ON cita.idPaciente = paciente.idPaciente
+            INNER JOIN consultorioDoctor ON cita.id = consultorioDoctor.id
+            INNER JOIN (
+                SELECT consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor, 
+                       consultorio.nombre AS nombreConsultorio, 
+                       doctor.nombre AS nombreDoctor
+                FROM consultorioDoctor
+                INNER JOIN consultorio ON consultorioDoctor.idConsultorio = consultorio.idConsultorio
+                INNER JOIN doctor ON consultorioDoctor.idDoctor = doctor.idDoctor
+            ) AS subqueryConsultorioDoctor 
+            ON consultorioDoctor.idConsultorio = subqueryConsultorioDoctor.idConsultorio
+            AND consultorioDoctor.idDoctor = subqueryConsultorioDoctor.idDoctor
+        ')
+ 4 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 01:42:48 --> [Caused by] mysqli_sql_exception: Unknown column 'consultorio.nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('
+            SELECT cita.*, paciente.*, 
+                consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor,
+                subqueryConsultorioDoctor.nombreConsultorio, subqueryConsultorioDoctor.nombreDoctor
+            FROM cita
+            INNER JOIN paciente ON cita.idPaciente = paciente.idPaciente
+            INNER JOIN consultorioDoctor ON cita.id = consultorioDoctor.id
+            INNER JOIN (
+                SELECT consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor, 
+                       consultorio.nombre AS nombreConsultorio, 
+                       doctor.nombre AS nombreDoctor
+                FROM consultorioDoctor
+                INNER JOIN consultorio ON consultorioDoctor.idConsultorio = consultorio.idConsultorio
+                INNER JOIN doctor ON consultorioDoctor.idDoctor = doctor.idDoctor
+            ) AS subqueryConsultorioDoctor 
+            ON consultorioDoctor.idConsultorio = subqueryConsultorioDoctor.idConsultorio
+            AND consultorioDoctor.idDoctor = subqueryConsultorioDoctor.idDoctor
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT cita.*, paciente.*, 
+                consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor,
+                subqueryConsultorioDoctor.nombreConsultorio, subqueryConsultorioDoctor.nombreDoctor
+            FROM cita
+            INNER JOIN paciente ON cita.idPaciente = paciente.idPaciente
+            INNER JOIN consultorioDoctor ON cita.id = consultorioDoctor.id
+            INNER JOIN (
+                SELECT consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor, 
+                       consultorio.nombre AS nombreConsultorio, 
+                       doctor.nombre AS nombreDoctor
+                FROM consultorioDoctor
+                INNER JOIN consultorio ON consultorioDoctor.idConsultorio = consultorio.idConsultorio
+                INNER JOIN doctor ON consultorioDoctor.idDoctor = doctor.idDoctor
+            ) AS subqueryConsultorioDoctor 
+            ON consultorioDoctor.idConsultorio = subqueryConsultorioDoctor.idConsultorio
+            AND consultorioDoctor.idDoctor = subqueryConsultorioDoctor.idDoctor
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT cita.*, paciente.*, 
+                consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor,
+                subqueryConsultorioDoctor.nombreConsultorio, subqueryConsultorioDoctor.nombreDoctor
+            FROM cita
+            INNER JOIN paciente ON cita.idPaciente = paciente.idPaciente
+            INNER JOIN consultorioDoctor ON cita.id = consultorioDoctor.id
+            INNER JOIN (
+                SELECT consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor, 
+                       consultorio.nombre AS nombreConsultorio, 
+                       doctor.nombre AS nombreDoctor
+                FROM consultorioDoctor
+                INNER JOIN consultorio ON consultorioDoctor.idConsultorio = consultorio.idConsultorio
+                INNER JOIN doctor ON consultorioDoctor.idDoctor = doctor.idDoctor
+            ) AS subqueryConsultorioDoctor 
+            ON consultorioDoctor.idConsultorio = subqueryConsultorioDoctor.idConsultorio
+            AND consultorioDoctor.idDoctor = subqueryConsultorioDoctor.idDoctor
+        ')
+ 4 APPPATH\Models\CitaM.php(78): CodeIgniter\Database\BaseConnection->query('
+            SELECT cita.*, paciente.*, 
+                consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor,
+                subqueryConsultorioDoctor.nombreConsultorio, subqueryConsultorioDoctor.nombreDoctor
+            FROM cita
+            INNER JOIN paciente ON cita.idPaciente = paciente.idPaciente
+            INNER JOIN consultorioDoctor ON cita.id = consultorioDoctor.id
+            INNER JOIN (
+                SELECT consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor, 
+                       consultorio.nombre AS nombreConsultorio, 
+                       doctor.nombre AS nombreDoctor
+                FROM consultorioDoctor
+                INNER JOIN consultorio ON consultorioDoctor.idConsultorio = consultorio.idConsultorio
+                INNER JOIN doctor ON consultorioDoctor.idDoctor = doctor.idDoctor
+            ) AS subqueryConsultorioDoctor 
+            ON consultorioDoctor.idConsultorio = subqueryConsultorioDoctor.idConsultorio
+            AND consultorioDoctor.idDoctor = subqueryConsultorioDoctor.idDoctor
+        ')
+ 5 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-11-15 01:43:15 --> mysqli_sql_exception: Unknown column 'doctor.nombre' in 'field list' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('\n            SE...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('\n            SE...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('\n            SE...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\CitaM.php(78): CodeIgniter\Database\BaseConnection->query('\n            SE...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Cita->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-15 01:43:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctor.nombre' in 'field list'
+[Method: GET, Route: cita]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\CitaM.php(78): CodeIgniter\Database\BaseConnection->query('
+            SELECT cita.*, paciente.*, 
+                consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor,
+                subqueryConsultorioDoctor.nombreConsultorio, subqueryConsultorioDoctor.nombreDoctor
+            FROM cita
+            INNER JOIN paciente ON cita.idPaciente = paciente.idPaciente
+            INNER JOIN consultorioDoctor ON cita.id = consultorioDoctor.id
+            INNER JOIN (
+                SELECT consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor, 
+                       consultorio.nombreConsultorio AS nombreConsultorio, 
+                       doctor.nombre AS nombreDoctor
+                FROM consultorioDoctor
+                INNER JOIN consultorio ON consultorioDoctor.idConsultorio = consultorio.idConsultorio
+                INNER JOIN doctor ON consultorioDoctor.idDoctor = doctor.idDoctor
+            ) AS subqueryConsultorioDoctor 
+            ON consultorioDoctor.idConsultorio = subqueryConsultorioDoctor.idConsultorio
+            AND consultorioDoctor.idDoctor = subqueryConsultorioDoctor.idDoctor
+        ')
+ 2 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 01:43:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctor.nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT cita.*, paciente.*, 
+                consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor,
+                subqueryConsultorioDoctor.nombreConsultorio, subqueryConsultorioDoctor.nombreDoctor
+            FROM cita
+            INNER JOIN paciente ON cita.idPaciente = paciente.idPaciente
+            INNER JOIN consultorioDoctor ON cita.id = consultorioDoctor.id
+            INNER JOIN (
+                SELECT consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor, 
+                       consultorio.nombreConsultorio AS nombreConsultorio, 
+                       doctor.nombre AS nombreDoctor
+                FROM consultorioDoctor
+                INNER JOIN consultorio ON consultorioDoctor.idConsultorio = consultorio.idConsultorio
+                INNER JOIN doctor ON consultorioDoctor.idDoctor = doctor.idDoctor
+            ) AS subqueryConsultorioDoctor 
+            ON consultorioDoctor.idConsultorio = subqueryConsultorioDoctor.idConsultorio
+            AND consultorioDoctor.idDoctor = subqueryConsultorioDoctor.idDoctor
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT cita.*, paciente.*, 
+                consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor,
+                subqueryConsultorioDoctor.nombreConsultorio, subqueryConsultorioDoctor.nombreDoctor
+            FROM cita
+            INNER JOIN paciente ON cita.idPaciente = paciente.idPaciente
+            INNER JOIN consultorioDoctor ON cita.id = consultorioDoctor.id
+            INNER JOIN (
+                SELECT consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor, 
+                       consultorio.nombreConsultorio AS nombreConsultorio, 
+                       doctor.nombre AS nombreDoctor
+                FROM consultorioDoctor
+                INNER JOIN consultorio ON consultorioDoctor.idConsultorio = consultorio.idConsultorio
+                INNER JOIN doctor ON consultorioDoctor.idDoctor = doctor.idDoctor
+            ) AS subqueryConsultorioDoctor 
+            ON consultorioDoctor.idConsultorio = subqueryConsultorioDoctor.idConsultorio
+            AND consultorioDoctor.idDoctor = subqueryConsultorioDoctor.idDoctor
+        ')
+ 3 APPPATH\Models\CitaM.php(78): CodeIgniter\Database\BaseConnection->query('
+            SELECT cita.*, paciente.*, 
+                consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor,
+                subqueryConsultorioDoctor.nombreConsultorio, subqueryConsultorioDoctor.nombreDoctor
+            FROM cita
+            INNER JOIN paciente ON cita.idPaciente = paciente.idPaciente
+            INNER JOIN consultorioDoctor ON cita.id = consultorioDoctor.id
+            INNER JOIN (
+                SELECT consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor, 
+                       consultorio.nombreConsultorio AS nombreConsultorio, 
+                       doctor.nombre AS nombreDoctor
+                FROM consultorioDoctor
+                INNER JOIN consultorio ON consultorioDoctor.idConsultorio = consultorio.idConsultorio
+                INNER JOIN doctor ON consultorioDoctor.idDoctor = doctor.idDoctor
+            ) AS subqueryConsultorioDoctor 
+            ON consultorioDoctor.idConsultorio = subqueryConsultorioDoctor.idConsultorio
+            AND consultorioDoctor.idDoctor = subqueryConsultorioDoctor.idDoctor
+        ')
+ 4 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 01:43:15 --> [Caused by] mysqli_sql_exception: Unknown column 'doctor.nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('
+            SELECT cita.*, paciente.*, 
+                consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor,
+                subqueryConsultorioDoctor.nombreConsultorio, subqueryConsultorioDoctor.nombreDoctor
+            FROM cita
+            INNER JOIN paciente ON cita.idPaciente = paciente.idPaciente
+            INNER JOIN consultorioDoctor ON cita.id = consultorioDoctor.id
+            INNER JOIN (
+                SELECT consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor, 
+                       consultorio.nombreConsultorio AS nombreConsultorio, 
+                       doctor.nombre AS nombreDoctor
+                FROM consultorioDoctor
+                INNER JOIN consultorio ON consultorioDoctor.idConsultorio = consultorio.idConsultorio
+                INNER JOIN doctor ON consultorioDoctor.idDoctor = doctor.idDoctor
+            ) AS subqueryConsultorioDoctor 
+            ON consultorioDoctor.idConsultorio = subqueryConsultorioDoctor.idConsultorio
+            AND consultorioDoctor.idDoctor = subqueryConsultorioDoctor.idDoctor
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT cita.*, paciente.*, 
+                consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor,
+                subqueryConsultorioDoctor.nombreConsultorio, subqueryConsultorioDoctor.nombreDoctor
+            FROM cita
+            INNER JOIN paciente ON cita.idPaciente = paciente.idPaciente
+            INNER JOIN consultorioDoctor ON cita.id = consultorioDoctor.id
+            INNER JOIN (
+                SELECT consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor, 
+                       consultorio.nombreConsultorio AS nombreConsultorio, 
+                       doctor.nombre AS nombreDoctor
+                FROM consultorioDoctor
+                INNER JOIN consultorio ON consultorioDoctor.idConsultorio = consultorio.idConsultorio
+                INNER JOIN doctor ON consultorioDoctor.idDoctor = doctor.idDoctor
+            ) AS subqueryConsultorioDoctor 
+            ON consultorioDoctor.idConsultorio = subqueryConsultorioDoctor.idConsultorio
+            AND consultorioDoctor.idDoctor = subqueryConsultorioDoctor.idDoctor
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT cita.*, paciente.*, 
+                consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor,
+                subqueryConsultorioDoctor.nombreConsultorio, subqueryConsultorioDoctor.nombreDoctor
+            FROM cita
+            INNER JOIN paciente ON cita.idPaciente = paciente.idPaciente
+            INNER JOIN consultorioDoctor ON cita.id = consultorioDoctor.id
+            INNER JOIN (
+                SELECT consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor, 
+                       consultorio.nombreConsultorio AS nombreConsultorio, 
+                       doctor.nombre AS nombreDoctor
+                FROM consultorioDoctor
+                INNER JOIN consultorio ON consultorioDoctor.idConsultorio = consultorio.idConsultorio
+                INNER JOIN doctor ON consultorioDoctor.idDoctor = doctor.idDoctor
+            ) AS subqueryConsultorioDoctor 
+            ON consultorioDoctor.idConsultorio = subqueryConsultorioDoctor.idConsultorio
+            AND consultorioDoctor.idDoctor = subqueryConsultorioDoctor.idDoctor
+        ')
+ 4 APPPATH\Models\CitaM.php(78): CodeIgniter\Database\BaseConnection->query('
+            SELECT cita.*, paciente.*, 
+                consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor,
+                subqueryConsultorioDoctor.nombreConsultorio, subqueryConsultorioDoctor.nombreDoctor
+            FROM cita
+            INNER JOIN paciente ON cita.idPaciente = paciente.idPaciente
+            INNER JOIN consultorioDoctor ON cita.id = consultorioDoctor.id
+            INNER JOIN (
+                SELECT consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor, 
+                       consultorio.nombreConsultorio AS nombreConsultorio, 
+                       doctor.nombre AS nombreDoctor
+                FROM consultorioDoctor
+                INNER JOIN consultorio ON consultorioDoctor.idConsultorio = consultorio.idConsultorio
+                INNER JOIN doctor ON consultorioDoctor.idDoctor = doctor.idDoctor
+            ) AS subqueryConsultorioDoctor 
+            ON consultorioDoctor.idConsultorio = subqueryConsultorioDoctor.idConsultorio
+            AND consultorioDoctor.idDoctor = subqueryConsultorioDoctor.idDoctor
+        ')
+ 5 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-11-15 01:43:16 --> mysqli_sql_exception: Unknown column 'doctor.nombre' in 'field list' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('\n            SE...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('\n            SE...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('\n            SE...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\CitaM.php(78): CodeIgniter\Database\BaseConnection->query('\n            SE...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Cita->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-15 01:43:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctor.nombre' in 'field list'
+[Method: GET, Route: cita]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\CitaM.php(78): CodeIgniter\Database\BaseConnection->query('
+            SELECT cita.*, paciente.*, 
+                consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor,
+                subqueryConsultorioDoctor.nombreConsultorio, subqueryConsultorioDoctor.nombreDoctor
+            FROM cita
+            INNER JOIN paciente ON cita.idPaciente = paciente.idPaciente
+            INNER JOIN consultorioDoctor ON cita.id = consultorioDoctor.id
+            INNER JOIN (
+                SELECT consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor, 
+                       consultorio.nombreConsultorio AS nombreConsultorio, 
+                       doctor.nombre AS nombreDoctor
+                FROM consultorioDoctor
+                INNER JOIN consultorio ON consultorioDoctor.idConsultorio = consultorio.idConsultorio
+                INNER JOIN doctor ON consultorioDoctor.idDoctor = doctor.idDoctor
+            ) AS subqueryConsultorioDoctor 
+            ON consultorioDoctor.idConsultorio = subqueryConsultorioDoctor.idConsultorio
+            AND consultorioDoctor.idDoctor = subqueryConsultorioDoctor.idDoctor
+        ')
+ 2 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 01:43:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctor.nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT cita.*, paciente.*, 
+                consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor,
+                subqueryConsultorioDoctor.nombreConsultorio, subqueryConsultorioDoctor.nombreDoctor
+            FROM cita
+            INNER JOIN paciente ON cita.idPaciente = paciente.idPaciente
+            INNER JOIN consultorioDoctor ON cita.id = consultorioDoctor.id
+            INNER JOIN (
+                SELECT consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor, 
+                       consultorio.nombreConsultorio AS nombreConsultorio, 
+                       doctor.nombre AS nombreDoctor
+                FROM consultorioDoctor
+                INNER JOIN consultorio ON consultorioDoctor.idConsultorio = consultorio.idConsultorio
+                INNER JOIN doctor ON consultorioDoctor.idDoctor = doctor.idDoctor
+            ) AS subqueryConsultorioDoctor 
+            ON consultorioDoctor.idConsultorio = subqueryConsultorioDoctor.idConsultorio
+            AND consultorioDoctor.idDoctor = subqueryConsultorioDoctor.idDoctor
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT cita.*, paciente.*, 
+                consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor,
+                subqueryConsultorioDoctor.nombreConsultorio, subqueryConsultorioDoctor.nombreDoctor
+            FROM cita
+            INNER JOIN paciente ON cita.idPaciente = paciente.idPaciente
+            INNER JOIN consultorioDoctor ON cita.id = consultorioDoctor.id
+            INNER JOIN (
+                SELECT consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor, 
+                       consultorio.nombreConsultorio AS nombreConsultorio, 
+                       doctor.nombre AS nombreDoctor
+                FROM consultorioDoctor
+                INNER JOIN consultorio ON consultorioDoctor.idConsultorio = consultorio.idConsultorio
+                INNER JOIN doctor ON consultorioDoctor.idDoctor = doctor.idDoctor
+            ) AS subqueryConsultorioDoctor 
+            ON consultorioDoctor.idConsultorio = subqueryConsultorioDoctor.idConsultorio
+            AND consultorioDoctor.idDoctor = subqueryConsultorioDoctor.idDoctor
+        ')
+ 3 APPPATH\Models\CitaM.php(78): CodeIgniter\Database\BaseConnection->query('
+            SELECT cita.*, paciente.*, 
+                consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor,
+                subqueryConsultorioDoctor.nombreConsultorio, subqueryConsultorioDoctor.nombreDoctor
+            FROM cita
+            INNER JOIN paciente ON cita.idPaciente = paciente.idPaciente
+            INNER JOIN consultorioDoctor ON cita.id = consultorioDoctor.id
+            INNER JOIN (
+                SELECT consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor, 
+                       consultorio.nombreConsultorio AS nombreConsultorio, 
+                       doctor.nombre AS nombreDoctor
+                FROM consultorioDoctor
+                INNER JOIN consultorio ON consultorioDoctor.idConsultorio = consultorio.idConsultorio
+                INNER JOIN doctor ON consultorioDoctor.idDoctor = doctor.idDoctor
+            ) AS subqueryConsultorioDoctor 
+            ON consultorioDoctor.idConsultorio = subqueryConsultorioDoctor.idConsultorio
+            AND consultorioDoctor.idDoctor = subqueryConsultorioDoctor.idDoctor
+        ')
+ 4 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 01:43:17 --> [Caused by] mysqli_sql_exception: Unknown column 'doctor.nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('
+            SELECT cita.*, paciente.*, 
+                consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor,
+                subqueryConsultorioDoctor.nombreConsultorio, subqueryConsultorioDoctor.nombreDoctor
+            FROM cita
+            INNER JOIN paciente ON cita.idPaciente = paciente.idPaciente
+            INNER JOIN consultorioDoctor ON cita.id = consultorioDoctor.id
+            INNER JOIN (
+                SELECT consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor, 
+                       consultorio.nombreConsultorio AS nombreConsultorio, 
+                       doctor.nombre AS nombreDoctor
+                FROM consultorioDoctor
+                INNER JOIN consultorio ON consultorioDoctor.idConsultorio = consultorio.idConsultorio
+                INNER JOIN doctor ON consultorioDoctor.idDoctor = doctor.idDoctor
+            ) AS subqueryConsultorioDoctor 
+            ON consultorioDoctor.idConsultorio = subqueryConsultorioDoctor.idConsultorio
+            AND consultorioDoctor.idDoctor = subqueryConsultorioDoctor.idDoctor
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT cita.*, paciente.*, 
+                consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor,
+                subqueryConsultorioDoctor.nombreConsultorio, subqueryConsultorioDoctor.nombreDoctor
+            FROM cita
+            INNER JOIN paciente ON cita.idPaciente = paciente.idPaciente
+            INNER JOIN consultorioDoctor ON cita.id = consultorioDoctor.id
+            INNER JOIN (
+                SELECT consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor, 
+                       consultorio.nombreConsultorio AS nombreConsultorio, 
+                       doctor.nombre AS nombreDoctor
+                FROM consultorioDoctor
+                INNER JOIN consultorio ON consultorioDoctor.idConsultorio = consultorio.idConsultorio
+                INNER JOIN doctor ON consultorioDoctor.idDoctor = doctor.idDoctor
+            ) AS subqueryConsultorioDoctor 
+            ON consultorioDoctor.idConsultorio = subqueryConsultorioDoctor.idConsultorio
+            AND consultorioDoctor.idDoctor = subqueryConsultorioDoctor.idDoctor
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT cita.*, paciente.*, 
+                consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor,
+                subqueryConsultorioDoctor.nombreConsultorio, subqueryConsultorioDoctor.nombreDoctor
+            FROM cita
+            INNER JOIN paciente ON cita.idPaciente = paciente.idPaciente
+            INNER JOIN consultorioDoctor ON cita.id = consultorioDoctor.id
+            INNER JOIN (
+                SELECT consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor, 
+                       consultorio.nombreConsultorio AS nombreConsultorio, 
+                       doctor.nombre AS nombreDoctor
+                FROM consultorioDoctor
+                INNER JOIN consultorio ON consultorioDoctor.idConsultorio = consultorio.idConsultorio
+                INNER JOIN doctor ON consultorioDoctor.idDoctor = doctor.idDoctor
+            ) AS subqueryConsultorioDoctor 
+            ON consultorioDoctor.idConsultorio = subqueryConsultorioDoctor.idConsultorio
+            AND consultorioDoctor.idDoctor = subqueryConsultorioDoctor.idDoctor
+        ')
+ 4 APPPATH\Models\CitaM.php(78): CodeIgniter\Database\BaseConnection->query('
+            SELECT cita.*, paciente.*, 
+                consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor,
+                subqueryConsultorioDoctor.nombreConsultorio, subqueryConsultorioDoctor.nombreDoctor
+            FROM cita
+            INNER JOIN paciente ON cita.idPaciente = paciente.idPaciente
+            INNER JOIN consultorioDoctor ON cita.id = consultorioDoctor.id
+            INNER JOIN (
+                SELECT consultorioDoctor.idConsultorio, consultorioDoctor.idDoctor, 
+                       consultorio.nombreConsultorio AS nombreConsultorio, 
+                       doctor.nombre AS nombreDoctor
+                FROM consultorioDoctor
+                INNER JOIN consultorio ON consultorioDoctor.idConsultorio = consultorio.idConsultorio
+                INNER JOIN doctor ON consultorioDoctor.idDoctor = doctor.idDoctor
+            ) AS subqueryConsultorioDoctor 
+            ON consultorioDoctor.idConsultorio = subqueryConsultorioDoctor.idConsultorio
+            AND consultorioDoctor.idDoctor = subqueryConsultorioDoctor.idDoctor
+        ')
+ 5 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 01:50:26 --> ErrorException: Undefined property: stdClass::$idCita
+[Method: GET, Route: cita]
+in APPPATH\Views\cita\show.php on line 23.
+ 1 APPPATH\Views\cita\show.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idCita', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\cita\\show.php', 23)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\cita\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('cita/show', [], true)
+ 5 APPPATH\Controllers\Cita.php(35): view('cita/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 01:50:35 --> ErrorException: Undefined property: stdClass::$idCita
+[Method: GET, Route: cita]
+in APPPATH\Views\cita\show.php on line 23.
+ 1 APPPATH\Views\cita\show.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idCita', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\cita\\show.php', 23)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\cita\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('cita/show', [], true)
+ 5 APPPATH\Controllers\Cita.php(35): view('cita/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 01:50:36 --> ErrorException: Undefined property: stdClass::$idCita
+[Method: GET, Route: cita]
+in APPPATH\Views\cita\show.php on line 23.
+ 1 APPPATH\Views\cita\show.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idCita', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\cita\\show.php', 23)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\cita\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('cita/show', [], true)
+ 5 APPPATH\Controllers\Cita.php(35): view('cita/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-11-15 01:55:57 --> mysqli_sql_exception: Duplicate column name 'idConsultorio' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, ...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, ...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, ...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*, ...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Cita->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-15 01:55:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'idConsultorio'
+[Method: GET, Route: cita]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 01:55:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'idConsultorio'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.*, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.*, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 01:55:57 --> [Caused by] mysqli_sql_exception: Duplicate column name 'idConsultorio'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, consultorioDoctor.*, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.*, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.*, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 5 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-11-15 01:57:02 --> mysqli_sql_exception: Duplicate column name 'idConsultorio' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*,p...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*,p...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*,p...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*,p...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Cita->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-15 01:57:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'idConsultorio'
+[Method: GET, Route: cita]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ')
+ 2 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 01:57:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'idConsultorio'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ')
+ 3 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 01:57:02 --> [Caused by] mysqli_sql_exception: Duplicate column name 'idConsultorio'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ')
+ 5 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-11-15 01:57:04 --> mysqli_sql_exception: Duplicate column name 'idConsultorio' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*,p...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*,p...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*,p...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*,p...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Cita->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-15 01:57:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'idConsultorio'
+[Method: GET, Route: cita]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ')
+ 2 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 01:57:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'idConsultorio'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ')
+ 3 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 01:57:04 --> [Caused by] mysqli_sql_exception: Duplicate column name 'idConsultorio'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ')
+ 5 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-11-15 01:57:08 --> mysqli_sql_exception: Duplicate column name 'idConsultorio' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*,p...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*,p...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*,p...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*,p...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Cita->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-15 01:57:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'idConsultorio'
+[Method: GET, Route: cita]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ')
+ 2 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 01:57:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'idConsultorio'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ')
+ 3 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 01:57:08 --> [Caused by] mysqli_sql_exception: Duplicate column name 'idConsultorio'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ')
+ 5 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-11-15 01:57:09 --> mysqli_sql_exception: Duplicate column name 'idConsultorio' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*,p...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*,p...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*,p...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*,p...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Cita->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-15 01:57:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'idConsultorio'
+[Method: GET, Route: cita]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ')
+ 2 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 01:57:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'idConsultorio'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ')
+ 3 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 01:57:09 --> [Caused by] mysqli_sql_exception: Duplicate column name 'idConsultorio'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*,paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.idPaciente = paciente.idPaciente
+        ')
+ 5 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-11-15 01:59:29 --> mysqli_sql_exception: Duplicate column name 'idConsultorio' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, ...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, ...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, ...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*, ...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Cita->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-15 01:59:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'idConsultorio'
+[Method: GET, Route: cita]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 01:59:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'idConsultorio'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.*, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.*, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 01:59:29 --> [Caused by] mysqli_sql_exception: Duplicate column name 'idConsultorio'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, consultorioDoctor.*, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.*, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.*, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.*, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 5 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-11-15 02:00:20 --> mysqli_sql_exception: Duplicate column name 'idConsultorio' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, ...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, ...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, ...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*, ...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Cita->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-15 02:00:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'idConsultorio'
+[Method: GET, Route: cita]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 02:00:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'idConsultorio'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 02:00:20 --> [Caused by] mysqli_sql_exception: Duplicate column name 'idConsultorio'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 5 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-11-15 02:00:21 --> mysqli_sql_exception: Duplicate column name 'idConsultorio' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, ...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, ...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, ...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*, ...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Cita->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-15 02:00:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'idConsultorio'
+[Method: GET, Route: cita]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 02:00:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'idConsultorio'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 02:00:21 --> [Caused by] mysqli_sql_exception: Duplicate column name 'idConsultorio'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 5 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-11-15 02:01:46 --> mysqli_sql_exception: Duplicate column name 'idConsultorio' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, ...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, ...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, ...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*, ...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Cita->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-15 02:01:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'idConsultorio'
+[Method: GET, Route: cita]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 02:01:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'idConsultorio'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 02:01:46 --> [Caused by] mysqli_sql_exception: Duplicate column name 'idConsultorio'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 5 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-11-15 02:01:52 --> mysqli_sql_exception: Duplicate column name 'idConsultorio' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, ...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, ...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, ...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*, ...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Cita->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-15 02:01:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'idConsultorio'
+[Method: GET, Route: cita]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 02:01:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'idConsultorio'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 02:01:52 --> [Caused by] mysqli_sql_exception: Duplicate column name 'idConsultorio'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 5 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 02:05:23 --> ErrorException: Undefined variable $key
+[Method: GET, Route: cita]
+in APPPATH\Views\cita\show.php on line 30.
+ 1 APPPATH\Views\cita\show.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $key', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\cita\\show.php', 30)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\cita\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('cita/show', [], true)
+ 5 APPPATH\Controllers\Cita.php(35): view('cita/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 02:06:19 --> ErrorException: Undefined variable $idCita
+[Method: GET, Route: cita]
+in APPPATH\Views\cita\show.php on line 34.
+ 1 APPPATH\Views\cita\show.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idCita', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\cita\\show.php', 34)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\cita\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('cita/show', [], true)
+ 5 APPPATH\Controllers\Cita.php(35): view('cita/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 02:08:17 --> ErrorException: Undefined variable $cita1
+[Method: GET, Route: cita]
+in APPPATH\Views\cita\show.php on line 30.
+ 1 APPPATH\Views\cita\show.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cita1', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\cita\\show.php', 30)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\cita\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('cita/show', [...], true)
+ 5 APPPATH\Controllers\Cita.php(35): view('cita/show', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 02:11:26 --> ErrorException: Undefined variable $data1
+[Method: GET, Route: cita]
+in APPPATH\Controllers\Cita.php on line 35.
+ 1 APPPATH\Controllers\Cita.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data1', 'C:\\xampp\\htdocs\\Consultorio\\app\\Controllers\\Cita.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+ERROR - 2024-11-15 02:13:23 --> mysqli_sql_exception: Duplicate column name 'idConsultorio' in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, ...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, ...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, ...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*, ...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Cita->index()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-15 02:13:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'idConsultorio'
+[Method: GET, Route: cita]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 02:13:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate column name 'idConsultorio'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 02:13:23 --> [Caused by] mysqli_sql_exception: Duplicate column name 'idConsultorio'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 4 APPPATH\Models\CitaM.php(65): CodeIgniter\Database\BaseConnection->query('select cita.*, consultorioDoctor.nombreConsultorio, paciente.*, uwu.*
+                from cita, consultorioDoctor, paciente, (select consultorioDoctor.*, consultorio.*, doctor.*
+                                                            from consultorioDoctor, consultorio, doctor
+                                                            where consultorioDoctor.idConsultorio = consultorio.idConsultorio and consultorioDoctor.idDoctor = doctor.idDoctor) as uwu
+                where cita.id = consultorioDoctor.id and cita.idPaciente = paciente.idPaciente
+        ')
+ 5 APPPATH\Controllers\Cita.php(28): App\Models\CitaM->getInformacion1()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-11-15 02:15:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 02:15:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 02:15:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 02:15:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 02:15:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 02:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 02:15:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 02:15:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 02:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 02:16:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 02:17:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 02:17:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 02:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 02:20:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 02:21:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 02:25:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 02:25:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 02:25:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-15 02:25:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-15 02:26:00 --> ErrorException: Undefined array key "idDoctor"
+[Method: POST, Route: cita/insert]
+in APPPATH\Controllers\Cita.php on line 140.
+ 1 APPPATH\Controllers\Cita.php(140): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idDoctor"', 'C:\\xampp\\htdocs\\Consultorio\\app\\Controllers\\Cita.php', 140)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-11-15 02:26:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-15 02:26:41 --> ErrorException: Undefined variable $idCita
+[Method: GET, Route: cita]
+in APPPATH\Views\cita\show.php on line 36.
+ 1 APPPATH\Views\cita\show.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idCita', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\cita\\show.php', 36)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\cita\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('cita/show', [], true)
+ 5 APPPATH\Controllers\Cita.php(35): view('cita/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 19:01:25 --> ErrorException: Undefined variable $idCita
+[Method: GET, Route: cita]
+in APPPATH\Views\cita\show.php on line 36.
+ 1 APPPATH\Views\cita\show.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idCita', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\cita\\show.php', 36)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\cita\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('cita/show', [], true)
+ 5 APPPATH\Controllers\Cita.php(35): view('cita/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-15 19:28:10 --> ErrorException: Undefined variable $idCita
+[Method: GET, Route: cita]
+in APPPATH\Views\cita\show.php on line 36.
+ 1 APPPATH\Views\cita\show.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idCita', 'C:\\xampp\\htdocs\\Consultorio\\app\\Views\\cita\\show.php', 36)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Consultorio\\app\\Views\\cita\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('cita/show', [], true)
+ 5 APPPATH\Controllers\Cita.php(35): view('cita/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cita->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cita))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')

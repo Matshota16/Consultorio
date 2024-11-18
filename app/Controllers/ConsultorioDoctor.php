@@ -5,9 +5,7 @@ namespace App\Controllers;
 use App\Models\PacienteM;
 use Stringable;
 
-use App\Models\ConsultorioDoctorM;
-
-class Cita extends BaseController
+class ConsultorioDoctor extends BaseController
 {
     public $csrfProtection = 'session';
     public $tokenRandomize = true;
@@ -26,15 +24,11 @@ class Cita extends BaseController
     }
     public function index(): string
     {
-        $citaM = model('CitaM');
-        $data['cita'] = $citaM->getInformacion();
         $consultorioDoctorM = model('ConsultorioDoctorM');
-        $data['cita1'] = $consultorioDoctorM->getInfo();
-        //$consultorioM = model('ConsultorioM');
-        //$data['consultorio'] = $consultorioM->getDoctor();
+        $data['consultorioDoctor'] = $consultorioDoctorM->getInfo();
         return view('head') .
             view('menu') .
-            view('cita/show', $data) .
+            view('consultorioDoctor/show', $data) .
             view('footer');
     }
     public function home()
@@ -49,13 +43,13 @@ class Cita extends BaseController
     public function add()
     {  
         
-        $consultorioDoctorM = model('ConsultorioDoctorM');
-        $data['consultorioDoctor'] = $consultorioDoctorM->getInfo();
-        $pacienteM = model('PacienteM');
-        $data['paciente'] = $pacienteM->findAll();
+        $consultorioM = model('ConsultorioM');
+        $data['consultorio'] = $consultorioM->findAll();
+        $doctorM = model('DoctorM');
+        $data['doctor'] = $doctorM->findAll();
         return view('head') .
             view('menu') .
-            view('cita/add', $data) .
+            view('consultorioDoctor/add', $data) .
             view('footer');
     }
 
@@ -90,18 +84,16 @@ class Cita extends BaseController
 
         // Reglas de validación
         $rules = [
-            'motivo' => 'required',
-            'fechaCita' => 'required',
-            'horaCita' => 'required',
-            'idPaciente' => 'required',
-            'idDoctor' => 'required'
+            'idConsultorio' => 'required',
+            'idDoctor' => 'required',
+            'horaDeEntrada' => 'required',
+            'horaDeSalida' => 'required'
         ];
         $data = [
-            'motivo' => $_POST['motivo'],
-            'fechaCita' => $_POST['fechaCita'],
-            'horaCita' => $_POST['horaCita'],
-            'idPaciente' => $_POST['idPaciente'],
-            'idDoctor' => $_POST['idDoctor']
+            'idConsultorio' => $_POST['idConsultorio'],
+            'idDoctor' => $_POST['idDoctor'],
+            'horaDeEntrada' => $_POST['horaDeEntrada'],
+            'horaDeSalida' => $_POST['horaDeSalida']
 
         ];
         if (!$this->validate($rules)) {
@@ -128,18 +120,16 @@ class Cita extends BaseController
 
         // Reglas de validación
         $rules = [
-            'motivo' => 'required',
-            'fechaCita' => 'required',
-            'horaCita' => 'required',
-            'idPaciente' => 'required',
-            'id' => 'required'
+            'idConsultorio' => 'required',
+            'idDoctor' => 'required',
+            'horaDeEntrada' => 'required',
+            'horaDeSalida' => 'required'
         ];
         $data = [
-            'motivo' => $_POST['motivo'],
-            'fechaCita' => $_POST['fechaCita'],
-            'horaCita' => $_POST['horaCita'],
-            'idPaciente' => $_POST['idPaciente'],
-            'id' => $_POST['id']
+            'idConsultorio' => $_POST['idConsultorio'],
+            'idDoctor' => $_POST['idDoctor'],
+            'horaDeEntrada' => $_POST['horaDeEntrada'],
+            'horaDeSalida' => $_POST['horaDeSalida']
 
         ];
 
@@ -148,14 +138,14 @@ class Cita extends BaseController
             // Si la validación falla, vuelve a cargar la vista con los errores
             return view('head') .
                 view('menu') .
-                view('cita/add', [
+                view('consultorioDoctor/add', [
                     'validation' => $this->validator
                 ]) .
                 view('footer');
         } else {
-            $citaM = model('CitaM');
-            $citaM->insert($data);
-            return redirect()->to(base_url('/cita'));
+            $consultorioDoctorM = model('consultorioDoctorM');
+            $consultorioDoctorM->insert($data);
+            return redirect()->to(base_url('/consultorioDoctor'));
         }
     }
 
@@ -167,42 +157,5 @@ class Cita extends BaseController
         $citaM = model('CitaM');
         $citaM->delete($idCita);
         return redirect()->to(base_url('/cita'));
-    }
-
-    
-        public function formulario($idConsultorio)
-    {
-        $consultorioDoctorM = new ConsultorioDoctorM();
-        $pacienteM = new PacienteM();
-
-        // Obtener los doctores asociados al idConsultorio
-        $doctores = $consultorioDoctorM->getDoctorsByConsultorio($idConsultorio);
-
-        // Obtener el último idPaciente insertado
-        $db = db_connect();
-        $builder = $db->table('paciente');
-        $builder->selectMax('idPaciente');
-        $query = $builder->get();
-        $lastPaciente = $query->getRow();
-
-        // Obtener los datos del último paciente
-        $lastPacienteData = null;
-        if ($lastPaciente && $lastPaciente->idPaciente) {
-            $lastPacienteData = $pacienteM->find($lastPaciente->idPaciente);
-        }
-
-        // Pasar datos a la vista
-        $data = [
-            'consultorioId' => $idConsultorio,
-            'doctores' => $doctores,
-            'lastPacienteId' => $lastPaciente->idPaciente ?? null,
-            'lastPacienteData' => $lastPacienteData,
-        ];
-
-        // Cargar la vista
-        return view('Cliente/vistaCliente') .
-            view('Cliente/cita_formulario', $data) .
-            view('footer');
-        
     }
 }

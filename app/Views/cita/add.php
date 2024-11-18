@@ -41,9 +41,9 @@
                 <div class="mb-3">
                     <label for="id">Doctor</label>
                     <select name="id" class="form-control" name="id" required>>
-                        <?php foreach ($doctor as $key) : ?>
+                        <?php foreach ($consultorioDoctor as $key) : ?>
                             <option value="<?= $key->id ?>">
-                                <?= $key->nombreD . ' ' . $key->apellidoPD . ' ' . $key->apellidoMD ?>
+                                <?= 'Doctor: ' .$key->nombreD . ' ' . $key->apellidoPD . ' ' . $key->apellidoMD. ' Consultorio: ' . $key->nombreConsultorio . ' Hora De entrada: ' . $key->horaDeEntrada. ' Hora De Salida: ' . $key->horaDeSalida ?>
                             </option>
                         <?php endforeach ?>
 
