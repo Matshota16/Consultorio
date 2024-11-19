@@ -25,18 +25,14 @@ class Cita extends BaseController
         print_r($_SESSION);
     }
     public function index(): string
-    {
-        $citaM = model('CitaM');
-        $data['cita'] = $citaM->getInformacion();
-        $consultorioDoctorM = model('ConsultorioDoctorM');
-        $data['cita1'] = $consultorioDoctorM->getInfo();
-        //$consultorioM = model('ConsultorioM');
-        //$data['consultorio'] = $consultorioM->getDoctor();
-        return view('head') .
-            view('menu') .
-            view('cita/show', $data) .
-            view('footer');
-    }
+{
+    $citaM = model('CitaM');
+    $data['cita'] = $citaM->getCitasConDoctor();
+    return view('head') .
+        view('menu') .
+        view('cita/show', $data) .
+        view('footer');
+}
     public function home()
     {
         return view('head') .

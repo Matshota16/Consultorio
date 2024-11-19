@@ -1,4 +1,5 @@
 <div class="container-fluid">
+    <div class="container">
     <div class="row">
         <div class="col-12 text-center"> <!-- Añadido text-center para centrar contenido -->
             <img class="logo-centered-large" src="<?= base_url('logo.jpeg') ?>" alt="Logo">
@@ -26,6 +27,7 @@
             </div>
         <?php endforeach; ?>
     </div>
+</div>
 </div>
 
 </body>

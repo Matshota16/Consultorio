@@ -13,7 +13,7 @@ class UsuarioM extends Model
     protected $returnType       = 'object';
     protected $useSoftDeletes   = true;
     protected $protectFields    = true;
-    protected $allowedFields    = ['nombre','pass','tipo'];
+    protected $allowedFields    = ['nombre', 'apellidoPaterno', 'apellidoMaterno', 'correoElectronico' ,'pass','tipo'];
 
     // Dates
     protected $useTimestamps = false;
@@ -40,16 +40,15 @@ class UsuarioM extends Model
     protected $afterDelete    = [];
 
 
-    public function valida($nombre, $pass){
-        $db = db_connect();
-        $sql ="select nombre, tipo
-        from usuario 
-        where nombre = '".$nombre."' and pass ='". $pass."'";
-        //print $sql;
-        $query= $db->query($sql);
-        //print $db->lastQuery;
-        return $query->getResult();
-     }
+    public function valida($correoElectronico, $pass)
+{
+    $db = db_connect();
+    $sql = "SELECT correoElectronico, tipo
+            FROM usuario
+            WHERE correoElectronico = '" . $correoElectronico . "' AND pass = '" . $pass . "'";
+    $query = $db->query($sql);
+    return $query->getResult();
+}
     
 
 }

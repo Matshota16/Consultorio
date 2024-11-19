@@ -12,10 +12,19 @@
   <!-- Barra de navegación -->
   <div class="Rectangle1">
     <img src="<?=base_url('logo-simi.png')?>" alt="">
-    <a href="#perfil" class="Perfil">Perfil</a>
+    <a href="<?=base_url('/Cliente/verPerfil'); ?>" class="Perfil">Perfil</a>
     <a href="#ver-citas" class="VerCitas">Ver citas</a>
     <a href="<?=base_url('cliente')?>" class="Consultorios">Consultorios</a>
     <a href="#consultorios" class="Consultorios">Buscar</a>
+    <a href="<?=base_url('/usuario/salir'); ?>">Salir</a>
+
+    <?php 
+                     $session = session();
+                    if ($session->get('logged_in') != null): ?>
+                        
+                            <a href="<?= base_url('pagina/salir') ?>" class="nav-link"> Salir <?= $session->get('correoElectronico ') ?> </a>
+                        
+                    <?php endif ?>
   </div>
 
 

@@ -81,4 +81,7 @@ $routes->get('/cliente','Consultorio::Ver');
 $routes->get('/cliente/vistaCliente','Consultorio::verCliente');
 $routes->get('/Cliente/verConsultorio/(:num)','Consultorio::verConsultorio/$1');
 
+$routes->get('/Cliente/verPerfil','Usuario::verPerfil');
+
 $routes->get('/Cita/formulario/(:num)','Cita::formulario/$1');
+

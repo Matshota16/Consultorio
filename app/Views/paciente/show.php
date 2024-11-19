@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col">
             <h1>Paciente</h1>
-            <a href="<?= base_url('direccion/add/'); ?> " class="btn btn-success">Agregar</a>
+            <a href="<?= base_url('paciente/add/'); ?> " class="btn btn-success">Agregar</a>
         </div>
     </div>
     <div class="row">
@@ -19,10 +19,6 @@
                     <th>Fecha de Nacimiento</th>
                     <th>telefono</th>
                     <th>Genero</th>
-                    <th>Calle</th>
-                    <th>Codigo Postal</th>
-                    <th>Municipio</th>
-                    <th>Estado</th>
                     <th>Alergias</th>
                 </thead>
                 <tbody>
@@ -37,10 +33,6 @@
                             <td><?= $key->fechaDeNacimiento ?></td>
                             <td><?= $key->telefono ?></td>
                             <td><?= $key->genero ?></td>
-                            <td><?= $key->calle ?></td>
-                            <td><?= $key->codigoPostal ?></td>
-                            <td><?= $key->municipio ?></td>
-                            <td><?= $key->estado ?></td>
                             <td><?= $key->alergias ?></td>
 
                             <td>

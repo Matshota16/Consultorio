@@ -1,4 +1,5 @@
 <div class="container-fluid">
+    <div class="container">
     <div class="row">
         <div class="col">
             <h2>Agregar Cita</h2>
@@ -46,4 +47,5 @@
             </form>
         </div>
     </div>
+</div>
 </div>

@@ -35,9 +35,9 @@
                             <td><?= $key->curp ?></td>
                             <td><?= $key->fechaDeNacimiento ?></td>
                             <td><?= $key->telefono ?></td>
+                            <td><?= $key->genero ?></td>
                             <td><?= $key->especialidad ?></td>
                             <td><?= $key->cedulaProfecional ?></td>
-                            <td><?= $key->genero ?></td>
                             <td><?= $key->calle ?></td>
                             <td><?= $key->codigoPostal ?></td>
                             <td><?= $key->municipio ?></td>

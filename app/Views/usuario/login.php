@@ -1,11 +1,11 @@
 <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
     <div class="row">
         <div class="col-1000">
-            <form action="<?=base_url('usuario/acceder'); ?>" method="POST" class="border p-4 rounded bg-light shadow">
+            <form action="<?= base_url('usuario/acceder'); ?>" method="POST" class="border p-4 rounded bg-light shadow">
                 <h2 class="text-center">Acceso</h2>
                 <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre de usuario</label>
-                    <input type="text" name="nombre" class="form-control" id="nombre" required>
+                    <label for="correoElectronico" class="form-label">Correo Electrónico</label>
+                    <input type="email" name="correoElectronico" class="form-control" id="correoElectronico" required>
                 </div>
                 <div class="mb-3">
                     <label for="pass" class="form-label">Contraseña</label>

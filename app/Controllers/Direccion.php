@@ -106,43 +106,7 @@ class Direccion extends BaseController
     }
 
 
-    public function insert()
-    { // post
-        if (!$this->request->is('post')) {
-            $this->index();
-        }
-
-        // Reglas de validación
-        $rules = [
-            'calle' => 'required',
-            'numero' => 'required',
-            'codigoPostal' => 'required',
-            'municipio' => 'required',
-            'estado' => 'required'
-        ];
-        $data = [
-            'calle' => $_POST['calle'],
-            'numero' => $_POST['numero'],
-            'codigoPostal' => $_POST['codigoPostal'],
-            'municipio' => $_POST['municipio'],
-            'estado' => $_POST['estado']
-            
-        ];
-        // Valida los datos
-        if (!$this->validate($rules)) {
-            // Si la validación falla, vuelve a cargar la vista con los errores
-            return view('head') .
-                view('menu') .
-                view('direccion/add', [
-                    'validation' => $this->validator
-                ]) .
-                view('footer');
-        } else {
-            $direccionM = model('DireccionM');
-            $direccionM->insert($data);
-            return redirect()->to(base_url('/paciente/add'));
-        }
-    }
+    
     public function insert1()
     { 
         if (!$this->request->is('post')) {

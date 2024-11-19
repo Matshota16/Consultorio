@@ -53,6 +53,26 @@ class CitaM extends Model
 
     }
 
+    public function getCitasConDoctor()
+{
+    $db = \Config\Database::connect();
+    $sql = "
+        SELECT 
+            c.idCita, c.motivo, c.fechaCita, c.horaCita,
+            p.nombreP, p.apellidoPP, p.apellidoMP,
+            d.nombreD, d.apellidoPD, d.apellidoMD,
+            cd.horaDeEntrada, cd.horaDeSalida,
+            con.nombreConsultorio
+        FROM cita c
+        INNER JOIN paciente p ON c.idPaciente = p.idPaciente
+        INNER JOIN consultorioDoctor cd ON c.id = cd.id
+        INNER JOIN doctor d ON cd.idDoctor = d.idDoctor
+        INNER JOIN consultorio con ON cd.idConsultorio = con.idConsultorio
+    ";
+    $query = $db->query($sql);
+    return $query->getResult();
+}
+
     
 
     

@@ -25,19 +25,18 @@
                             <td><?= $key->fechaCita ?></td>
                             <td><?= $key->horaCita ?></td>
                             <td><?= $key->nombreP . ' ' . $key->apellidoPP . ' ' . $key->apellidoMP ?></td>
-                            <?php endforeach ?>
 
-                            <?php foreach ($cita1 as $key) : ?>
-                            <td><?= 'Doctor: ' .$key->nombreD . ' ' . $key->apellidoPD . ' ' . $key->apellidoMD. ' Consultorio: ' . $key->nombreConsultorio . ' Hora De entrada: ' . $key->horaDeEntrada. ' Hora De Salida: ' . $key->horaDeSalida ?></td>
+
+
+                            <td><?= 'Doctor: ' . $key->nombreD . ' ' . $key->apellidoPD . ' ' . $key->apellidoMD . ' Consultorio: ' . $key->nombreConsultorio . ' Hora De entrada: ' . $key->horaDeEntrada . ' Hora De Salida: ' . $key->horaDeSalida ?></td>
                             <td>
-                            <?php endforeach ?>
 
-                            <?php foreach ($cita as $key) : ?>
+
                                 <a href="<?= base_url('cita/delete/' . $key->idCita); ?> " class="btn btn-danger">Borrar</a>
                                 <a href="<?= base_url('cita/edit/' . $key->idCita); ?> " class="btn btn-warning">Modificar</a>
 
                             </td>
-                            <?php endforeach ?>
+                        <?php endforeach ?>
                         </tr>
 
                 </tbody>

@@ -1,5 +1,6 @@
 
 <div class="container-fluid">
+    <div class="container">
     <div class="row">
         <div class="col-12">
     <h3 class="titulo"><?= esc($cliente->nombreConsultorio) ?></h3>
@@ -22,6 +23,7 @@
 
         </div>
     </div> 
+</div>
 </div>
 
 </body>

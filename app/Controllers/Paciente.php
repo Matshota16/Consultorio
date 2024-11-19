@@ -23,10 +23,14 @@ class Paciente extends BaseController
         }
     }
 
-    public function index(): string
+    public function index()
     {
+        $session = session();
+        if($session->get('logged_in')!=true || $session->get('tipo')!=0){
+            return redirect()->to(base_url('/usuario'));
+        }
         $pacienteM = model('PacienteM');
-        $data['paciente'] = $pacienteM->getDireccion();
+        $data['paciente'] = $pacienteM->findAll(); // Obtener todos los pacientes
         return view('head') .
             view('menu') .
             view('paciente/show', $data) .
@@ -35,32 +39,25 @@ class Paciente extends BaseController
 
     public function add()
     {  
-        $direccionM = model('DireccionM');
-        
-        // Obtener el último idDireccion insertado
-        $db = \Config\Database::connect();
-        $builder = $db->table('direccion');
-        $builder->selectMax('idDireccion');
-        $query = $builder->get();
-        $lastDireccion = $query->getRow();
-        
-        // Asignar el último idDireccion a los datos pasados a la vista
-        $data['lastDireccion'] = $lastDireccion->idDireccion ?? null;
-        $data['paciente'] = $direccionM->findAll();
-
+        $session = session();
+        if($session->get('logged_in')!=true || $session->get('tipo')!=0){
+            return redirect()->to(base_url('/usuario'));
+        }
         return view('head') .
             view('menu') .
-            view('paciente/add', $data) .
+            view('paciente/add') . // No se pasa lastDireccion ni idDireccion
             view('footer');
     }
 
     public function edit($idPaciente)
     {   
-        $direccionM = model('DireccionM');
-        $data['direccion'] = $direccionM->findAll();
-        $idPaciente = $data['idPaciente'] = $idPaciente;
+        $session = session();
+        if($session->get('logged_in')!=true || $session->get('tipo')!=0){
+            return redirect()->to(base_url('/usuario'));
+        }
         $pacienteM = model('PacienteM');
         $data['paciente'] = $pacienteM->where('idPaciente', $idPaciente)->findAll();
+        $data['idPaciente'] = $idPaciente;
         return view('head') .
             view('menu') .
             view('paciente/edit', $data) .
@@ -86,7 +83,6 @@ class Paciente extends BaseController
             'fechaDeNacimiento' => 'required',
             'telefono' => 'required',
             'genero' => 'required',
-            'idDireccion' => 'required',
             'alergias' => 'permit_empty' // Permitir vacío si no es obligatorio
         ];
         
@@ -99,7 +95,6 @@ class Paciente extends BaseController
             'fechaDeNacimiento' => $_POST['fechaDeNacimiento'],
             'telefono' => $_POST['telefono'],
             'genero' => $_POST['genero'],
-            'idDireccion' => $_POST['idDireccion'],
             'alergias' => $_POST['alergias'] ?? ''
         ];
 
@@ -134,7 +129,6 @@ class Paciente extends BaseController
             'fechaDeNacimiento' => 'required',
             'telefono' => 'required',
             'genero' => 'required',
-            'idDireccion' => 'required',
             'alergias' => 'permit_empty' // Permitir vacío si no es obligatorio
         ];
 
@@ -147,7 +141,6 @@ class Paciente extends BaseController
             'fechaDeNacimiento' => $_POST['fechaDeNacimiento'],
             'telefono' => $_POST['telefono'],
             'genero' => $_POST['genero'],
-            'idDireccion' => $_POST['idDireccion'],
             'alergias' => $_POST['alergias']
         ];
 

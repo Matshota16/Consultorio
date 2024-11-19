@@ -50,12 +50,6 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="idDireccion">ID Dirección</label>
-                    <input type="hidden" name="idDireccion" class="form-control" value="<?= $lastDireccion ?>" readonly>
-                    <input type="text" class="form-control" value="<?= $lastDireccion ?>" disabled>
-                </div>
-
-                <div class="mb-3">
                     <label for="alergias">Alergias</label>
                     <textarea class="form-control" name="alergias" rows="3"></textarea>
                 </div>

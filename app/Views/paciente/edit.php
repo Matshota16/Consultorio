@@ -53,18 +53,6 @@
                         class="form-control" id="paciente" placeholder="Paciente">
                     <input type="hidden" name="idPaciente" value="<?= $paciente[0]->idPaciente; ?>">
                 </div>
-                <div class="mb-3">
-                    <label for="idDireccion" class="form-label">Dirección</label>
-                    <select name="idDireccion" class="form-control" id="paciente" required>
-                        <?php foreach ($direccion as $key): ?>
-                            <option value="<?= $key->idDireccion ?>"
-                                <?= $paciente[0]->idDireccion == $key->idDireccion ? 'selected' : '' ?>>
-                                <?= $key->estado ?>
-                            </option>
-                        <?php endforeach; ?>
-                    </select>
-                    <input type="hidden" name="idPaciente" value="<?= $paciente[0]->idPaciente; ?>">
-                </div>
 
                 <div class="mb-3">
                     <label for="alergias" class="form-label">Alergias</label>

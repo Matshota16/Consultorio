@@ -13,7 +13,7 @@ class PacienteM extends Model
     protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['nombreP', 'apellidoPP', 'apellidoMP', 'curp', 'numeroDeSeguridadSocial', 'fechaDeNacimiento', 'telefono', 'genero', 'idDireccion', 'alergias'];
+    protected $allowedFields    = ['nombreP', 'apellidoPP', 'apellidoMP', 'curp', 'numeroDeSeguridadSocial', 'fechaDeNacimiento', 'telefono', 'genero', 'alergias'];
 
     // Dates
     protected $useTimestamps = false;
