@@ -3,7 +3,6 @@
     <div class="row">
         <div class="col">
             <h1>Paciente</h1>
-            <a href="<?= base_url('paciente/add/'); ?> " class="btn btn-success">Agregar</a>
         </div>
     </div>
     <div class="row">

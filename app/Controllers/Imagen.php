@@ -39,6 +39,10 @@ class imagen extends BaseController
 
     public function add()
     {
+        $session = session();
+        if ($session->get('logged_in') != true || $session->get('tipo') != 0) {
+            return redirect()->to(base_url('/usuario/salir')); // Llamar a la función salir
+        }
         return view('head') .
             view('menu') .
             view('imagen/imagen', ['errors' => []]) .

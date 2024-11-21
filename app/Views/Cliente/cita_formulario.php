@@ -4,7 +4,7 @@
         <div class="col">
             <h2>Agregar Cita</h2>
 
-            <form action="<?= base_url('cita/insert') ?>" method="POST">
+            <form action="<?= base_url('citaUsuario/insert') ?>" method="POST">
                 <?= csrf_field() ?>
                 <input type="hidden" name="idConsultorio" value="<?= esc($consultorioId) ?>" />
 
@@ -26,10 +26,11 @@
                 
 
                 <div class="mb-3">
-                    <label for="lastPaciente">ID Dirección</label>
+                    <label for="lastPaciente">Paciente</label>
                     <input type="hidden" name="idPaciente" class="form-control" value="<?= $lastPacienteId ?>" readonly>
                     <input type="text" class="form-control" value="<?= $lastPacienteId ?>" disabled>
                 </div>
+                <a href="<?= base_url('paciente/add/'); ?>" class="btn btn-danger">Agendar</a>
 
                 <div class="mb-3">
                     <label for="id">Doctor</label>

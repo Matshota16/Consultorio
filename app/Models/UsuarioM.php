@@ -13,7 +13,7 @@ class UsuarioM extends Model
     protected $returnType       = 'object';
     protected $useSoftDeletes   = true;
     protected $protectFields    = true;
-    protected $allowedFields    = ['nombre', 'apellidoPaterno', 'apellidoMaterno', 'correoElectronico' ,'pass','tipo'];
+    protected $allowedFields    = ['nombre' , 'apellidoPaterno' , 'apellidoMaterno' , 'correoElectronico ', 'curp', 'numeroDeSeguridadSocial', 'fechaDeNacimiento', 'telefono','genero','alergias', 'pass', 'tipo'];
 
     // Dates
     protected $useTimestamps = false;
@@ -43,12 +43,13 @@ class UsuarioM extends Model
     public function valida($correoElectronico, $pass)
 {
     $db = db_connect();
-    $sql = "SELECT correoElectronico, tipo
+    $sql = "SELECT * 
             FROM usuario
-            WHERE correoElectronico = '" . $correoElectronico . "' AND pass = '" . $pass . "'";
-    $query = $db->query($sql);
+            WHERE correoElectronico = ? AND pass = ?";
+    $query = $db->query($sql, [$correoElectronico, $pass]);
     return $query->getResult();
 }
+
     
 
 }

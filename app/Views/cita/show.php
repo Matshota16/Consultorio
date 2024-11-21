@@ -3,7 +3,6 @@
     <div class="row">
         <div class="col">
             <h1>Cita</h1>
-            <a href="<?= base_url('cita/add'); ?> " class="btn btn-success">Agregar</a>
         </div>
     </div>
     <div class="row">

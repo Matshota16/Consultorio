@@ -26,8 +26,8 @@ class Paciente extends BaseController
     public function index()
     {
         $session = session();
-        if($session->get('logged_in')!=true || $session->get('tipo')!=0){
-            return redirect()->to(base_url('/usuario'));
+        if ($session->get('logged_in') != true || $session->get('tipo') != 0) {
+            return redirect()->to(base_url('/usuario/salir')); // Llamar a la función salir
         }
         $pacienteM = model('PacienteM');
         $data['paciente'] = $pacienteM->findAll(); // Obtener todos los pacientes
@@ -38,10 +38,10 @@ class Paciente extends BaseController
     }
 
     public function add()
-    {  
+    {
         $session = session();
-        if($session->get('logged_in')!=true || $session->get('tipo')!=0){
-            return redirect()->to(base_url('/usuario'));
+        if ($session->get('logged_in') != true || $session->get('tipo') != 0) {
+            return redirect()->to(base_url('/usuario/salir')); // Llamar a la función salir
         }
         return view('head') .
             view('menu') .
@@ -50,10 +50,10 @@ class Paciente extends BaseController
     }
 
     public function edit($idPaciente)
-    {   
+    {
         $session = session();
-        if($session->get('logged_in')!=true || $session->get('tipo')!=0){
-            return redirect()->to(base_url('/usuario'));
+        if ($session->get('logged_in') != true || $session->get('tipo') != 0) {
+            return redirect()->to(base_url('/usuario/salir')); // Llamar a la función salir
         }
         $pacienteM = model('PacienteM');
         $data['paciente'] = $pacienteM->where('idPaciente', $idPaciente)->findAll();
@@ -85,7 +85,7 @@ class Paciente extends BaseController
             'genero' => 'required',
             'alergias' => 'permit_empty' // Permitir vacío si no es obligatorio
         ];
-        
+
         $data = [
             'nombreP' => $_POST['nombreP'],
             'apellidoPP' => $_POST['apellidoPP'],
@@ -114,7 +114,7 @@ class Paciente extends BaseController
     }
 
     public function insert()
-    { 
+    {
         if (!$this->request->is('post')) {
             $this->index();
         }

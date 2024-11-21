@@ -7,34 +7,42 @@ class Consultorio extends BaseController
     public $csrfProtection = 'session';
     public $tokenRandomize = true;
     protected $helpers = ['form'];
-    
 
-    public function valida(){
+
+    public function valida()
+    {
         $session = session();
         $session->has('logged_in');
-        
-            if($session->has('logged_in')){
-                return redirect()->to(base_url('/usuario'));
-                
-            }
-        
+
+        if ($session->has('logged_in')) {
+            return redirect()->to(base_url('/usuario'));
+        }
+
         print_r($_SESSION);
     }
     public function index(): string
-{
-    $consultorioM = model('ConsultorioM');
-    $data['consultorio'] = $consultorioM->getImagenConsultorio();
+    {
+        $session = session();
+        if ($session->get('logged_in') != true || $session->get('tipo') != 0) {
+            return redirect()->to(base_url('/usuario/salir')); // Llamar a la función salir
+        }
+        $consultorioM = model('ConsultorioM');
+        $data['consultorio'] = $consultorioM->getImagenConsultorio();
 
-    return view('head') .
-        view('menu') .
-        view('consultorio/show', $data) .
-        view('footer');
-}
+        return view('head') .
+            view('menu') .
+            view('consultorio/show', $data) .
+            view('footer');
+    }
 
     public function add()
-    {  
+    {
+        $session = session();
+        if ($session->get('logged_in') != true || $session->get('tipo') != 0) {
+            return redirect()->to(base_url('/usuario/salir')); // Llamar a la función salir
+        }
         $direccionM = model('DireccionM');
-        
+
         // Obtener el último idDireccion insertado
         $db = \Config\Database::connect();
         $builder = $db->table('direccion');
@@ -48,7 +56,7 @@ class Consultorio extends BaseController
         $builder->selectMax('idImagen');
         $query = $builder->get();
         $lastImagen = $query->getRow();
-        
+
         // Asignar el último idDireccion y el ultimo idImagen a los datos pasados a la vista
         $data['lastDireccion'] = $lastDireccion->idDireccion ?? null;
         $data['lastImagen'] = $lastImagen->idImagen ?? null;
@@ -63,6 +71,10 @@ class Consultorio extends BaseController
 
     public function edit($idConsultorio)
     {   //get
+        $session = session();
+        if ($session->get('logged_in') != true || $session->get('tipo') != 0) {
+            return redirect()->to(base_url('/usuario/salir')); // Llamar a la función salir
+        }
         $direccionM = model('DireccionM');
         $data['direccion'] = $direccionM->findAll();
         $doctorM = model('DoctorM');
@@ -115,7 +127,7 @@ class Consultorio extends BaseController
         if (!$this->validate($rules)) {
             // Si la validación falla, vuelve a cargar la vista con los errores
             return view('head') .
-                view('menu',$data1) .
+                view('menu', $data1) .
                 view('consultorio/edit', [
                     'validation' => $this->validator
                 ]) .
@@ -188,7 +200,7 @@ class Consultorio extends BaseController
 
     public function Ver()
     {
-       
+
         $consultorioM = model('ConsultorioM');
         $data['cliente'] = $consultorioM->getImagenConsultorio();
         return view('Cliente/vistaCliente') .
@@ -196,24 +208,24 @@ class Consultorio extends BaseController
     }
 
     public function verConsultorio($idConsultorio)
-{
-    $consultorioM = model('ConsultorioM');
-    $data['cliente'] = $consultorioM->getImagenConsultorio1($idConsultorio); // Filtra por idConsultorio en el método del modelo
-    return view('Cliente/vistaCliente') .
-           view('Cliente/verConsultorio', $data);
-}
+    {
+        $consultorioM = model('ConsultorioM');
+        $data['cliente'] = $consultorioM->getImagenConsultorio1($idConsultorio); // Filtra por idConsultorio en el método del modelo
+        return view('Cliente/vistaCliente') .
+            view('Cliente/verConsultorio', $data);
+    }
 
 
     public function verCliente()
     {
-        
+
         return view('Cliente/vistaCliente');
     }
 
     public function agendarCitaCliente()
     {
-        
+
         return view('Cliente/vistaCliente') .
-           view('Cliente/verConsultorio', $data);
+            view('Cliente/verConsultorio', $data);
     }
 }

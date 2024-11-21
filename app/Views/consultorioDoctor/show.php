@@ -2,7 +2,7 @@
 
     <div class="row">
         <div class="col">
-            <h1>Cita</h1>
+            <h1>Consultorios y sus Doctores</h1>
             <a href="<?= base_url('consultorioDoctor/add'); ?> " class="btn btn-success">Agregar</a>
         </div>
     </div>

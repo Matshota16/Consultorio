@@ -42,6 +42,7 @@
                             <td>
                                 <a href="<?= base_url('consultorio/delete/' . $key->idConsultorio); ?>" class="btn btn-danger">Borrar</a>
                                 <a href="<?= base_url('consultorio/edit/' . $key->idConsultorio); ?>" class="btn btn-warning">Modificar</a>
+                                <a href="<?= base_url('Cita/formulario1/' . $key->idConsultorio); ?>" class="btn btn-danger">Agendar</a>
                             </td>
                         </tr>
                     <?php endforeach ?>

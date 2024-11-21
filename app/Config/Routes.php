@@ -33,6 +33,7 @@ $routes->get('/direccion/add1','Direccion::add1');
 $routes->get('/direccion/add2','Direccion::add2');
 $routes->get('/cita/add','Cita::add');
 $routes->get('/imagen/add','Imagen::add');
+$routes->get('/consultorioDoctor/add','ConsultorioDoctor::add');
 
 //insert
 $routes->post('/paciente/insert','Paciente::insert');
@@ -42,6 +43,8 @@ $routes->post('/direccion/insert','Direccion::insert');
 $routes->post('/direccion/insert1','Direccion::insert1');
 $routes->post('/direccion/insert2','Direccion::insert2');
 $routes->post('/cita/insert','Cita::insert');
+$routes->post('/cita/insert1','Cita::insert1');
+$routes->post('/citaUsuario/insert','CitaUsuario::insert');
 $routes->post('/consultorioDoctor/insert','ConsultorioDoctor::insert');
 $routes->post('/Imagen/upload','Imagen::upload');
 //edit
@@ -84,4 +87,13 @@ $routes->get('/Cliente/verConsultorio/(:num)','Consultorio::verConsultorio/$1');
 $routes->get('/Cliente/verPerfil','Usuario::verPerfil');
 
 $routes->get('/Cita/formulario/(:num)','Cita::formulario/$1');
+
+$routes->get('/Cita/formulario1/(:num)','Cita::formulario1/$1');
+
+$routes->get('/cita/usuario', 'Cita::getCitasUsuario');
+
+$routes->post('cliente/agregar', 'CitaUsuario::agregar');
+$routes->get('citaUsuario/misCitas', 'CitaUsuario::misCitas');
+
+
 

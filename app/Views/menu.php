@@ -23,7 +23,10 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="<?=base_url('/cita'); ?>">Administrar Cita</a>
-        </li> 
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?=base_url('/consultorioDoctor'); ?>">Administrar Doctor y su consultorio</a>
+        </li>  
         <li class="nav-item">
           <a class="nav-link disabled" aria-disabled="true">
             
