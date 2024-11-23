@@ -96,4 +96,10 @@ $routes->post('cliente/agregar', 'CitaUsuario::agregar');
 $routes->get('citaUsuario/misCitas', 'CitaUsuario::misCitas');
 
 
+$routes->get('paciente/insertFromSession', 'Paciente::insertFromSession');
+$routes->post('paciente/insertFromSession', 'Paciente::insertFromSession');
+$routes->get('citaUsuario/add', 'CitaUsuarioController::add'); // Ruta para el formulario de citas
+
+
+
 

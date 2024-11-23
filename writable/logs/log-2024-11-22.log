@@ -1,0 +1,137 @@
+INFO - 2024-11-22 17:31:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-22 17:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-22 17:31:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-22 17:31:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-22 17:31:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-22 17:31:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-22 17:31:37 --> mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(312): mysqli->query('select consulto...', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select consulto...')
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select consulto...')
+#3 C:\xampp\htdocs\Consultorio\app\Models\ConsultorioM.php(50): CodeIgniter\Database\BaseConnection->query('select consulto...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Consultorio.php(200): App\Models\ConsultorioM->getImagenConsultorio()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Consultorio->Ver()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-22 17:31:37 --> CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away
+[Method: GET, Route: cliente]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\ConsultorioM.php(50): CodeIgniter\Database\BaseConnection->query('select consultorio.*, imagen.*
+                from consultorio, imagen 
+                where consultorio.idImagen = imagen.idImagen 
+        ')
+ 2 APPPATH\Controllers\Consultorio.php(200): App\Models\ConsultorioM->getImagenConsultorio()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->Ver()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-22 17:31:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select consultorio.*, imagen.*
+                from consultorio, imagen 
+                where consultorio.idImagen = imagen.idImagen 
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select consultorio.*, imagen.*
+                from consultorio, imagen 
+                where consultorio.idImagen = imagen.idImagen 
+        ')
+ 3 APPPATH\Models\ConsultorioM.php(50): CodeIgniter\Database\BaseConnection->query('select consultorio.*, imagen.*
+                from consultorio, imagen 
+                where consultorio.idImagen = imagen.idImagen 
+        ')
+ 4 APPPATH\Controllers\Consultorio.php(200): App\Models\ConsultorioM->getImagenConsultorio()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->Ver()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+CRITICAL - 2024-11-22 17:31:37 --> [Caused by] mysqli_sql_exception: MySQL server has gone away
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('select consultorio.*, imagen.*
+                from consultorio, imagen 
+                where consultorio.idImagen = imagen.idImagen 
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('select consultorio.*, imagen.*
+                from consultorio, imagen 
+                where consultorio.idImagen = imagen.idImagen 
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('select consultorio.*, imagen.*
+                from consultorio, imagen 
+                where consultorio.idImagen = imagen.idImagen 
+        ')
+ 4 APPPATH\Models\ConsultorioM.php(50): CodeIgniter\Database\BaseConnection->query('select consultorio.*, imagen.*
+                from consultorio, imagen 
+                where consultorio.idImagen = imagen.idImagen 
+        ')
+ 5 APPPATH\Controllers\Consultorio.php(200): App\Models\ConsultorioM->getImagenConsultorio()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->Ver()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-11-22 17:31:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-22 17:31:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-22 17:31:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-22 17:31:42 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'consultorio', 3306, '', 0)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Consultorio\app\Models\ConsultorioM.php(50): CodeIgniter\Database\BaseConnection->query('select consulto...')
+#4 C:\xampp\htdocs\Consultorio\app\Controllers\Consultorio.php(200): App\Models\ConsultorioM->getImagenConsultorio()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Consultorio->Ver()
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+#7 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Consultorio\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Consultorio\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Consultorio\app\Models\ConsultorioM.php(50): CodeIgniter\Database\BaseConnection->query('select consulto...')
+#3 C:\xampp\htdocs\Consultorio\app\Controllers\Consultorio.php(200): App\Models\ConsultorioM->getImagenConsultorio()
+#4 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(933): App\Controllers\Consultorio->Ver()
+#5 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+#6 C:\xampp\htdocs\Consultorio\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Consultorio\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Consultorio\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\Consultorio\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\xampp\htdocs\Consultorio\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-11-22 17:31:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+[Method: GET, Route: cliente]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\ConsultorioM.php(50): CodeIgniter\Database\BaseConnection->query('select consultorio.*, imagen.*
+                from consultorio, imagen 
+                where consultorio.idImagen = imagen.idImagen 
+        ')
+ 3 APPPATH\Controllers\Consultorio.php(200): App\Models\ConsultorioM->getImagenConsultorio()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultorio->Ver()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultorio))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Consultorio\\public\\index.php')
+INFO - 2024-11-22 17:31:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-22 17:32:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-22 17:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

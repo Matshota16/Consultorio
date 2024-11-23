@@ -89,55 +89,50 @@ class Consultorio extends BaseController
     }
 
     public function update()
-    {
-        $consultorioM = model('ConsultorioM');
-        $idConsultorio = $_POST['idConsultorio'];
-        $data1['consultorio'] = $consultorioM->where('idConsultorio', $idConsultorio)->findAll();
-        $direccionM = model('DireccionM');
-        $data1['direccion'] = $direccionM->findAll();
-        $doctorM = model('DoctorM');
-        $data1['doctor'] = $doctorM->findAll();
+{
+    $consultorioM = model('ConsultorioM');
+    $idConsultorio = $this->request->getPost('idConsultorio');
 
-        if (!$this->request->is('post')) {
-            $this->index();
-        }
+    // Validación
+    $rules = [
+        'nombreConsultorio' => 'required',
+        'telefono' => 'required',
+        'correoElectronico' => 'required',
+        'horaDeApertura' => 'required',
+        'horaDeCierre' => 'required',
+        'idDireccion' => 'required',
+        'maps' => 'required'
+    ];
 
-        // Reglas de validación
-        $rules = [
-            'nombreConsultorio' => 'required',
-            'telefono' => 'required',
-            'correoElectronico' => 'required',
-            'horaDeApertura' => 'required',
-            'horaDeCierre' => 'required',
-            'idDireccion' => 'required',
-            'maps' => 'required',
-            'idImagen' => 'required'
-        ];
-        $data = [
-            'nombreConsultorio' => $_POST['nombreConsultorio'],
-            'telefono' => $_POST['telefono'],
-            'correoElectronico' => $_POST['correoElectronico'],
-            'horaDeApertura' => $_POST['horaDeApertura'],
-            'horaDeCierre' => $_POST['horaDeCierre'],
-            'idDireccion' => $_POST['idDireccion'],
-            'maps' => $_POST['maps'],
-            'idImagen' => $_POST['idImagen']
-
-        ];
-        if (!$this->validate($rules)) {
-            // Si la validación falla, vuelve a cargar la vista con los errores
-            return view('head') .
-                view('menu', $data1) .
-                view('consultorio/edit', [
-                    'validation' => $this->validator
-                ]) .
-                view('footer');
-        } else {
-            $consultorioM = model('ConsultorioM');
-            $consultorioM->set($data)->where('idConsultorio', $idConsultorio)->update();
-            return redirect()->to(base_url('/consultorio'));
-        }
+    if (!$this->validate($rules)) {
+        return redirect()->back()->withInput()->with('validation', $this->validator);
     }
+
+    // Datos del formulario
+    $data = [
+        'nombreConsultorio' => $this->request->getPost('nombreConsultorio'),
+        'telefono' => $this->request->getPost('telefono'),
+        'correoElectronico' => $this->request->getPost('correoElectronico'),
+        'horaDeApertura' => $this->request->getPost('horaDeApertura'),
+        'horaDeCierre' => $this->request->getPost('horaDeCierre'),
+        'idDireccion' => $this->request->getPost('idDireccion'),
+        'maps' => $this->request->getPost('maps')
+    ];
+
+    // Manejo de la imagen
+    $imagen = $this->request->getFile('imagen');
+    if ($imagen && $imagen->isValid()) {
+        $imagenModel = model('ImagenM');
+        $idImagen = $imagenModel->saveFile($imagen); // Implementa la lógica para guardar la imagen
+        $data['idImagen'] = $idImagen;
+    } else {
+        $data['idImagen'] = $this->request->getPost('idImagen'); // Mantiene la imagen actual
+    }
+
+    // Actualizar consultorio
+    $consultorioM->update($idConsultorio, $data);
+    return redirect()->to(base_url('/consultorio'));
+}
 
 
     public function insert()

@@ -164,4 +164,44 @@ class Paciente extends BaseController
         $pacienteM->delete($idPaciente);
         return redirect()->to(base_url('/paciente'));
     }
+
+    public function insertFromSession()
+{
+    $session = session();
+
+    // Validar sesión activa
+    if (!$session->has('logged_in') || !$session->get('logged_in')) {
+        return redirect()->to(base_url('/usuario/salir'));
+    }
+
+    // Obtener datos del usuario logueado desde la sesión
+    $idUsuario = $session->get('idUsuario');
+    $data = [
+        'nombreP' => $session->get('nombre'),
+        'apellidoPP' => $session->get('apellidoPaterno'),
+        'apellidoMP' => $session->get('apellidoMaterno'),
+        'curp' => $session->get('curp'),
+        'numeroDeSeguridadSocial' => $session->get('numeroDeSeguridadSocial'),
+        'fechaDeNacimiento' => $session->get('fechaDeNacimiento'),
+        'telefono' => $session->get('telefono'),
+        'genero' => $session->get('genero'),
+        'alergias' => $session->get('alergias') ?? '',
+        'created_at' => date('Y-m-d H:i:s'),
+        'updated_at' => date('Y-m-d H:i:s'),
+    ];
+
+    // Insertar paciente en la tabla `paciente`
+    $pacienteM = new \App\Models\PacienteM();
+    $pacienteId = $pacienteM->insert($data);
+
+    if (!$pacienteId) {
+        return redirect()->back()->with('errors', $pacienteM->errors());
+    }
+
+    // Redirigir al formulario de citas con el ID del paciente recién agregado
+    return redirect()->back()->with('success', 'Paciente agregado exitosamente.');
 }
+
+}
+
+

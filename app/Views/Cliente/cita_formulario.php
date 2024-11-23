@@ -30,7 +30,7 @@
                     <input type="hidden" name="idPaciente" class="form-control" value="<?= $lastPacienteId ?>" readonly>
                     <input type="text" class="form-control" value="<?= $lastPacienteId ?>" disabled>
                 </div>
-                <a href="<?= base_url('paciente/add/'); ?>" class="btn btn-danger">Agendar</a>
+                <a href="<?= base_url('paciente/insertFromSession'); ?>" class="btn btn-danger">Agregar datos del paciente</a>
 
                 <div class="mb-3">
                     <label for="id">Doctor</label>
