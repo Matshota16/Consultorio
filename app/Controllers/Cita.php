@@ -287,24 +287,24 @@ class Cita extends BaseController
     }
 
     public function getCitasUsuario()
-{
-    $session = session();
+    {
+        $session = session();
 
-    // Verificar que el usuario esté autenticado
-    
+        // Verificar que el usuario esté autenticado
 
-    // Obtener el idUsuario desde la sesión
-    $idUsuario = $session->get('idUsuario');
 
-    // Verificar que el idUsuario esté disponible
-    if (!$idUsuario) {
-        return redirect()->to(base_url('/usuario/salir')); // Redirigir si no hay un idUsuario válido
-    }
+        // Obtener el idUsuario desde la sesión
+        $idUsuario = $session->get('idUsuario');
 
-    // Conectar con la base de datos
-    $db = db_connect();
-    $builder = $db->table('citaUsuario');
-    $builder->select('
+        // Verificar que el idUsuario esté disponible
+        if (!$idUsuario) {
+            return redirect()->to(base_url('/usuario/salir')); // Redirigir si no hay un idUsuario válido
+        }
+
+        // Conectar con la base de datos
+        $db = db_connect();
+        $builder = $db->table('citaUsuario');
+        $builder->select('
         citaUsuario.idCitaUsuario,
         cita.motivo,
         cita.fechaCita,
@@ -316,21 +316,20 @@ class Cita extends BaseController
         consultorioDoctor.horaDeEntrada,
         consultorioDoctor.horaDeSalida
     ');
-    $builder->join('cita', 'cita.idCita = citaUsuario.idCita');
-    $builder->join('consultorioDoctor', 'consultorioDoctor.id = cita.id');
-    $builder->join('doctor', 'doctor.idDoctor = consultorioDoctor.idDoctor');
-    $builder->where('citaUsuario.idUsuario', $idUsuario);
-    $builder->where('citaUsuario.deleted_at IS NULL');
-    $query = $builder->get();
+        $builder->join('cita', 'cita.idCita = citaUsuario.idCita');
+        $builder->join('consultorioDoctor', 'consultorioDoctor.id = cita.id');
+        $builder->join('doctor', 'doctor.idDoctor = consultorioDoctor.idDoctor');
+        $builder->where('citaUsuario.idUsuario', $idUsuario);
+        $builder->where('citaUsuario.deleted_at IS NULL');
+        $query = $builder->get();
 
-    // Obtener los resultados
-    $data['citas'] = $query->getResult();
+        // Obtener los resultados
+        $data['citas'] = $query->getResult();
 
-    // Cargar la vista con los datos
-    return view('head') .
-        view('menu') .
-        view('cita/usuario_citas', $data) .
-        view('footer');
-}
-
+        // Cargar la vista con los datos
+        return view('head') .
+            view('menu') .
+            view('cita/usuario_citas', $data) .
+            view('footer');
+    }
 }

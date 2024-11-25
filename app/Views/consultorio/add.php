@@ -34,24 +34,13 @@
                     <input type="text" class="form-control" name="horaDeCierre" required>
                 </div>
 
-                <div class="mb-3">
-                    <label for="idDireccion">ID Dirección</label>
-                    <input type="hidden" name="idDireccion" class="form-control" value="<?= $lastDireccion ?>" readonly>
-                    <input type="text" class="form-control" value="<?= $lastDireccion ?>" disabled>
-                </div>
 
                 
-
                 <div class="mb-3">
                     <label for="maps">Maps</label>
                     <input type="text" class="form-control" name="maps" required>
                 </div>
 
-                <div class="mb-3">
-                    <label for="idImagen">ID Imagen</label>
-                    <input type="hidden" name="idImagen" class="form-control" value="<?= $lastImagen ?>" readonly>
-                    <input type="num" class="form-control" value="<?= $lastImagen ?>" disabled>
-                </div>
 
                 <input type="submit" class="btn btn-success mt-3" value="Guardar">
 

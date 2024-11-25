@@ -12,6 +12,11 @@
                     <input type="password" name="pass" class="form-control" id="pass" required>
                 </div>
                 <button type="submit" class="btn btn-primary w-100">Acceder</button>
+
+                <div class="mb-3 text-center">
+    <p>¿No tienes una cuenta? <a href="<?= base_url('usuario/registrar'); ?>" class="btn btn-link">Crear una cuenta</a></p>
+</div>
+
             </form>
         </div>
     </div>

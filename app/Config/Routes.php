@@ -21,6 +21,8 @@ $routes->get('/cita/home','Cita::home');
 $routes->get('/usuario/salir','Usuario::salir');
 
 $routes->post('/usuario/acceder','Usuario::acceder');
+$routes->get('/usuario/registrar','Usuario::registrar');
+$routes->post('/usuario/registrar', 'Usuario::registrar');
 
 $routes->get('acceso-denegado', 'Usuario::accesoDenegado');
 

@@ -31,14 +31,6 @@ class ConsultorioDoctor extends BaseController
             view('consultorioDoctor/show', $data) .
             view('footer');
     }
-    public function home()
-    {
-        return view('head') .
-            view('menu') .
-            view('cita/home') .
-            view('footer');
-
-    }
 
     public function add()
     {  

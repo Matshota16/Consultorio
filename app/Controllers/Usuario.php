@@ -76,4 +76,50 @@ class Usuario extends Controller{
             view('footer');
         
     }
+
+    public function registrar()
+    {
+        $usuarioM = model('UsuarioM');
+
+        $rules = [
+            'nombre' => 'required',
+            'apellidoPaterno' => 'required',
+            'apellidoMaterno' => 'required',
+            'correoElectronico' => 'required|valid_email|is_unique[usuario.correoElectronico]',
+            'curp' => 'required',
+            'numeroDeSeguridadSocial' => 'required',
+            'fechaDeNacimiento' => 'required',
+            'telefono' => 'required',
+            'genero' => 'required',
+            'alergias' => 'permit_empty',
+            'pass' => 'required|min_length[6]',
+        ];
+
+        if (!$this->validate($rules)) {
+            return view('head') .
+                view('usuario/registrar', ['validation' => $this->validator]) .
+                view('footer');
+        }
+
+        $data = [
+            'nombre' => $this->request->getPost('nombre'),
+            'apellidoPaterno' => $this->request->getPost('apellidoPaterno'),
+            'apellidoMaterno' => $this->request->getPost('apellidoMaterno'),
+            'correoElectronico' => $this->request->getPost('correoElectronico'),
+            'curp' => $this->request->getPost('curp'),
+            'numeroDeSeguridadSocial' => $this->request->getPost('numeroDeSeguridadSocial'),
+            'fechaDeNacimiento' => $this->request->getPost('fechaDeNacimiento'),
+            'telefono' => $this->request->getPost('telefono'),
+            'genero' => $this->request->getPost('genero'),
+            'alergias' => $this->request->getPost('alergias') ?? '',
+            'pass' => password_hash($this->request->getPost('pass'), PASSWORD_BCRYPT),
+            'tipo' => 1, // Tipo cliente
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s'),
+        ];
+
+        $usuarioM->insert($data);
+
+        return redirect()->to(base_url('/usuario'))->with('success', 'Cuenta creada con éxito. Ahora puedes iniciar sesión.');
+    }
 }
