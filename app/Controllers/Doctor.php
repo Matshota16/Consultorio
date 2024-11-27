@@ -126,9 +126,22 @@ class Doctor extends BaseController
         if (!$this->request->is('post')) {
             $this->index();
         }
+
+        $db = \Config\Database::connect();
+
+        // Obtener el último idDireccion insertado
+        $builder = $db->table('direccion');
+        $builder->selectMax('idDireccion');
+        $query = $builder->get();
+        $lastDireccion = $query->getRow();
         
         // Reglas de validación
         $rules = [
+            'calle' => 'required',
+            'numero' => 'required',
+            'codigoPostal' => 'required',
+            'municipio' => 'required',
+            'estado' => 'required',
             'nombreD' => 'required',
             'apellidoPD' => 'required',
             'apellidoMD' => 'required',
@@ -138,10 +151,17 @@ class Doctor extends BaseController
             'genero' => 'required', 
             'especialidad' => 'required',
             'cedulaProfecional' => 'required',
-            'idDireccion' => 'required',
         ];
 
         $data = [
+            'calle' => $_POST['calle'],
+            'numero' => $_POST['numero'],
+            'codigoPostal' => $_POST['codigoPostal'],
+            'municipio' => $_POST['municipio'],
+            'estado' => $_POST['estado']
+        ];
+
+        $data1 = [
             'nombreD' => $_POST['nombreD'],
             'apellidoPD' => $_POST['apellidoPD'],
             'apellidoMD' => $_POST['apellidoMD'],
@@ -151,7 +171,7 @@ class Doctor extends BaseController
             'genero' => $_POST['genero'],
             'especialidad' => $_POST['especialidad'],
             'cedulaProfecional' => $_POST['cedulaProfecional'],
-            'idDireccion' => $_POST['idDireccion'],
+            'idDireccion' => $lastDireccion->idDireccion ?? null
         ];
 
         // Valida los datos
@@ -164,9 +184,10 @@ class Doctor extends BaseController
                 ]) .
                 view('footer');
         } else {
-            
+            $direccionM = model('DireccionM');
+            $direccionM->insert($data);
             $DoctorM = model('DoctorM');
-            $DoctorM->insert($data);
+            $DoctorM->insert($data1);
             return redirect()->to(base_url('/doctor'));
         }
     }

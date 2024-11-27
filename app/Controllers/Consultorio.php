@@ -144,6 +144,11 @@ class Consultorio extends BaseController
 
         // Reglas de validación
         $rules = [
+            'calle' => 'required',
+            'numero' => 'required',
+            'codigoPostal' => 'required',
+            'municipio' => 'required',
+            'estado' => 'required',
             'nombreConsultorio' => 'required',
             'telefono' => 'required',
             'correoElectronico' => 'required',
@@ -152,8 +157,16 @@ class Consultorio extends BaseController
             'maps' => 'required'
         ];
 
-        // Datos del formulario junto con lastDireccion y lastImagen
         $data = [
+            'calle' => $_POST['calle'],
+            'numero' => $_POST['numero'],
+            'codigoPostal' => $_POST['codigoPostal'],
+            'municipio' => $_POST['municipio'],
+            'estado' => $_POST['estado']
+        ];
+
+        // Datos del formulario junto con lastDireccion y lastImagen
+        $data1 = [
             'nombreConsultorio' => $_POST['nombreConsultorio'],
             'telefono' => $_POST['telefono'],
             'correoElectronico' => $_POST['correoElectronico'],
@@ -175,8 +188,10 @@ class Consultorio extends BaseController
                 view('footer');
         } else {
             // Insertar los datos en la base
+            $direccionM = model('DireccionM');
+            $direccionM->insert($data);
             $consultorioM = model('ConsultorioM');
-            $consultorioM->insert($data);
+            $consultorioM->insert($data1);
 
             // Redirigir a la lista de consultorios
             return redirect()->to(base_url('/consultorio'));

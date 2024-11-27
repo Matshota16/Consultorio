@@ -70,6 +70,13 @@
             </div>
         <?php endif; ?>
     </div>
+
+    <div class="row bg-dark text-white text-center py-5">
+        <div class="col-12">
+            <h3>Gracias por elegir SimiMaps</h3>
+            <p>Tu salud, nuestra prioridad. Simplifica tus citas médicas con nosotros.</p>
+        </div>
+    </div>
 </div>
 </body>
 

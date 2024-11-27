@@ -47,6 +47,12 @@ class ConsultorioDoctor extends BaseController
 
     public function edit($idCita)
     {   
+        $consultorioDoctorM = model('ConsultorioDoctorM');
+        $data['consultorioDoctor'] = $consultorioDoctorM->getInfo();
+        $consultorioM = model('ConsultorioM');
+        $data['consultorios'] = $consultorioM->findAll();
+        $doctorM = model('DoctorM');
+        $data['doctor'] = $doctorM->findAll();
         $doctorM = model('DoctorM');
         $data['doctor'] = $doctorM->findAll();
         $pacienteM = model('PacienteM');
@@ -56,17 +62,15 @@ class ConsultorioDoctor extends BaseController
         $data['cita'] = $citaM->where('idCita', $idCita)->findAll();
         return view('head') .
             view('menu') .
-            view('cita/edit', $data) .
+            view('consultorioDoctor/edit', $data) .
             view('footer');
     }
 
     public function update()
     {
-        $citaM = model('CitaM');
-        $idCita = $_POST['idCita'];
-        $data1['cita'] = $citaM->where('idCita', $idCita)->findAll();
-        $pacienteM = model('PacienteM');
-        $data1['paciente'] = $pacienteM->findAll();
+        $consultorioDoctorM = model('ConsultorioDoctorM');
+        $id = $_POST['id'];
+        $data1['consultorioDoctor'] = $consultorioDoctorM->where('id', $id)->findAll();
         $doctorM = model('DoctorM');
         $data1['doctor'] = $doctorM->findAll();  
 
@@ -92,14 +96,14 @@ class ConsultorioDoctor extends BaseController
             // Si la validación falla, vuelve a cargar la vista con los errores
             return view('head') .
                 view('menu', $data1) .
-                view('cita/edit', [
+                view('consultorioDoctor/edit', [
                     'validation' => $this->validator
                 ]) .
                 view('footer');
         } else {
-            $citaM = model('CitaM');
-            $citaM->set($data)->where('idCita', $idCita)->update();
-            return redirect()->to(base_url('/cita'));
+            $consultorioDoctorM = model('ConsultorioDoctorM');
+            $consultorioDoctorM->set($data)->where('id', $id)->update();
+            return redirect()->to(base_url('/consultorioDoctor'));
         }
     }
 

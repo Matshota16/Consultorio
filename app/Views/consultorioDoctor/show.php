@@ -27,8 +27,8 @@
                             <td><?= $key->horaDeEntrada ?></td>
                             <td><?= $key->horaDeSalida ?></td>
                             <td>
-                                <a href="<?= base_url('cita/delete/' . $key->id); ?> " class="btn btn-danger">Borrar</a>
-                                <a href="<?= base_url('cita/edit/' . $key->id); ?> " class="btn btn-warning">Modificar</a>
+                                <a href="<?= base_url('consultorioDoctor/delete/' . $key->id); ?> " class="btn btn-danger">Borrar</a>
+                                <a href="<?= base_url('consultorioDoctor/edit/' . $key->id); ?> " class="btn btn-warning">Modificar</a>
 
                             </td>
                         </tr>

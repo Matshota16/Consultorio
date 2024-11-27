@@ -53,6 +53,7 @@ $routes->post('/Imagen/upload','Imagen::upload');
 $routes->get('/paciente/edit/(:num)','Paciente::edit/$1');
 $routes->get('/doctor/edit/(:num)','Doctor::edit/$1');
 $routes->get('/consultorio/edit/(:num)','Consultorio::edit/$1');
+$routes->get('/consultorioDoctor/edit/(:num)','ConsultorioDoctor::edit/$1');
 $routes->get('/direccion/edit/(:num)','Direccion::edit/$1');
 $routes->get('/cita/edit/(:num)','Cita::edit/$1');
 $routes->get('/Cliente/verCita/(:num)','Consultorio::edit/$1');
@@ -60,6 +61,7 @@ $routes->get('/Cliente/verCita/(:num)','Consultorio::edit/$1');
 $routes->post('/paciente/update','Paciente::update');
 $routes->post('/doctor/update','Doctor::update');
 $routes->post('/consultorio/update','Consultorio::update');
+$routes->post('/consultorioDoctor/update','ConsultorioDoctor::update');
 $routes->post('/direccion/update','Direccion::update');
 $routes->post('/cita/update','Cita::update');
 //delete

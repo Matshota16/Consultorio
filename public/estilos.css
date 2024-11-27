@@ -27,7 +27,7 @@
   .Rectangle1 a {
     color: black;
     font-size: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
     font-weight: 400;
     text-decoration: none;
     padding: 10px;
@@ -50,49 +50,7 @@
     position: absolute;
   }
   
-  .Image1 {
-    width: 1311px;
-    height: 305px;
-    left: 72px;
-    top: 210px;
-    position: absolute;
-  }
-  
-  .Image2, .Image3, .Image4, .Image5, .Image6, .Image7 {
-    width: 383px;
-    height: 242px;
-    position: absolute;
-  }
-  
-  .Image2 {
-    left: 72px;
-    top: 1059px;
-  }
-  
-  .Image3 {
-    left: 992px;
-    top: 1059px;
-  }
-  
-  .Image4 {
-    left: 528px;
-    top: 1059px;
-  }
-  
-  .Image5 {
-    left: 64px;
-    top: 1502px;
-  }
-  
-  .Image6 {
-    left: 984px;
-    top: 1502px;
-  }
-  
-  .Image7 {
-    left: 520px;
-    top: 1502px;
-  }
+
   
   .HorariosDirecciN {
     width: 383px;
@@ -156,13 +114,13 @@
     max-width: 1142px; /* Ancho máximo */
     margin: 20px auto; /* Centra el texto horizontalmente */
     text-align: center;
-    color: black;
+    color: white;
     font-size: 32px;
     font-family: 'Roboto Serif', serif;
     font-weight: 400;
     line-height: 1.5; /* Espaciado entre líneas para mejor legibilidad */
     word-wrap: break-word;
-    background: rgb(215, 209, 209);
+    
 }
 
 .texto-datoConsultorio {
@@ -184,12 +142,12 @@
   margin: 20px auto; /* Centra el texto horizontalmente */
   text-align: center;
   color: black;
-  font-size: 48px; /* Tamaño más grande para un título */
-  font-family: 'Roboto Serif', serif; /* Mantiene la misma familia tipográfica */
+  font-size: 32px; /* Tamaño más grande para un título */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow'; /* Mantiene la misma familia tipográfica */
   font-weight: 700; /* Hace la fuente más gruesa para destacar como título */
   line-height: 1.2; /* Menor espaciado entre líneas */
   word-wrap: break-word;
-  background: rgb(215, 209, 209); /* Fondo mantenido */
+   /* Fondo mantenido */
   padding: 10px; /* Añade espacio interno para destacar */
   border-radius: 5px; /* Opcional: bordes redondeados */
 }
@@ -216,7 +174,7 @@
 }
 
 .imgSecundaria {
-    width: 90%;
+    width: 100%;
     height: 200px;
     background-color: darkgreen;
     display: block;

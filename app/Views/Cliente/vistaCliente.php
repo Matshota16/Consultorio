@@ -17,7 +17,6 @@
     <a href="<?= base_url('/Cliente/verPerfil'); ?>" class="Perfil">Perfil</a>
     <a href="<?= base_url('/citaUsuario/misCitas') ?>" class="VerCitas">Ver citas</a>
     <a href="<?= base_url('cliente') ?>" class="Consultorios">Consultorios</a>
-    <a href="#consultorios" class="Consultorios">Buscar</a>
 
 
     <?php

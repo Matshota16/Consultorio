@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col">
             <h1>Consultorio</h1>
-            <a href="<?= base_url('direccion/add2'); ?>" class="btn btn-success">Agregar</a>
+            <a href="<?= base_url('consultorio/add'); ?>" class="btn btn-success">Agregar</a>
         </div>
     </div>
     <div class="row">
@@ -15,7 +15,6 @@
                     <th>Correo Electronico</th>
                     <th>Hora De Apertura</th>
                     <th>Hora De Cierre</th>
-                    <th>Id Imagen</th>
 
                     <th>Imagen</th> <!-- Nueva columna para la imagen -->
                 </thead>
@@ -28,7 +27,6 @@
                             <td><?= $key->correoElectronico ?></td>
                             <td><?= $key->horaDeApertura ?></td>
                             <td><?= $key->horaDeCierre ?></td>
-                            <td><?= $key->idImagen ?></td>
 
                             <td>
                                 <?php if (!empty($key->idImagen)) : ?>
