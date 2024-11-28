@@ -8,15 +8,15 @@ class Doctor extends BaseController
     public $tokenRandomize = true;
     protected $helpers = ['form'];
 
-    public function valida(){
+    public function valida()
+    {
         $session = session();
         $session->has('logged_in');
-        
-            if($session->has('logged_in')){
-                return redirect()->to(base_url('/usuario'));
-                
-            }
-        
+
+        if ($session->has('logged_in')) {
+            return redirect()->to(base_url('/usuario'));
+        }
+
         print_r($_SESSION);
     }
     public function index(): string
@@ -31,16 +31,16 @@ class Doctor extends BaseController
     }
 
     public function add()
-    {  
+    {
         $direccionM = model('DireccionM');
-        
+
         // Obtener el último idDireccion insertado
         $db = \Config\Database::connect();
         $builder = $db->table('direccion');
         $builder->selectMax('idDireccion');
         $query = $builder->get();
         $lastDireccion = $query->getRow();
-        
+
         // Asignar el último idDireccion a los datos pasados a la vista
         $data['lastDireccion'] = $lastDireccion->idDireccion ?? null;
         $data['doctor'] = $direccionM->findAll();
@@ -66,33 +66,43 @@ class Doctor extends BaseController
 
     public function update()
     {
+        // Instanciar modelos
         $doctorM = model('DoctorM');
-        $idDoctor = $_POST['idDoctor'];
-        $data1['doctor'] = $doctorM->where('idDoctor', $idDoctor)->findAll();
         $direccionM = model('DireccionM');
-        $data1['direccion'] = $direccionM->findAll();
-        
 
-        if (!$this->request->is('post')) {
-            $this->index();
-        }
+        // Obtener datos enviados por POST
+        $idDoctor = $this->request->getPost('idDoctor');
+        $idDireccion = $this->request->getPost('idDireccion');
 
-
-
-      // Reglas de validación
+        // Reglas de validación
         $rules = [
+            'calle' => 'required',
+            'numero' => 'required',
+            'codigoPostal' => 'required',
+            'municipio' => 'required',
+            'estado' => 'required',
             'nombreD' => 'required',
             'apellidoPD' => 'required',
             'apellidoMD' => 'required',
             'curp' => 'required',
-            'fechaDeNacimiento' => 'required',
-            'telefono' => 'required',
-            'genero' => 'required', 
+            'fechaDeNacimiento' => 'required|valid_date',
+            'telefono' => 'required|numeric',
+            'genero' => 'required',
             'especialidad' => 'required',
             'cedulaProfecional' => 'required',
-            'idDireccion' => 'required',
         ];
-        $data = [
+
+        // Datos de la dirección
+        $direccionData = [
+            'calle' => $_POST['calle'],
+            'numero' => $_POST['numero'],
+            'codigoPostal' => $_POST['codigoPostal'],
+            'municipio' => $_POST['municipio'],
+            'estado' => $_POST['estado'],
+        ];
+
+        // Datos del doctor
+        $doctorData = [
             'nombreD' => $_POST['nombreD'],
             'apellidoPD' => $_POST['apellidoPD'],
             'apellidoMD' => $_POST['apellidoMD'],
@@ -102,23 +112,32 @@ class Doctor extends BaseController
             'genero' => $_POST['genero'],
             'especialidad' => $_POST['especialidad'],
             'cedulaProfecional' => $_POST['cedulaProfecional'],
-            'idDireccion' => $_POST['idDireccion'],
+            'idDireccion' => $idDireccion, // Dirección asociada
         ];
- 
+
+        // Validar datos
         if (!$this->validate($rules)) {
-            // Si la validación falla, vuelve a cargar la vista con los errores
+            // Si la validación falla, cargar vista con errores
             return view('head') .
-                view('menu',$data1) .
+                view('menu') .
                 view('doctor/edit', [
-                    'validation' => $this->validator
+                    'validation' => $this->validator,
+                    'doctor' => $doctorM->where('idDoctor', $idDoctor)->first(),
+                    'direccion' => $direccionM->where('idDireccion', $idDireccion)->first(),
                 ]) .
                 view('footer');
-        } else {
-            $doctorM = model('DoctorM');
-            $doctorM->set($data)->where('idDoctor', $idDoctor)->update();
-            return redirect()->to(base_url('/doctor'));
         }
+
+        // Actualizar la dirección
+        $direccionM->set($direccionData)->where('idDireccion', $idDireccion)->update();
+
+        // Actualizar datos del doctor
+        $doctorM->set($doctorData)->where('idDoctor', $idDoctor)->update();
+
+        // Redirigir a la lista de doctores
+        return redirect()->to(base_url('/doctor'))->with('message', 'Datos actualizados correctamente');
     }
+
 
 
     public function insert()
@@ -134,7 +153,7 @@ class Doctor extends BaseController
         $builder->selectMax('idDireccion');
         $query = $builder->get();
         $lastDireccion = $query->getRow();
-        
+
         // Reglas de validación
         $rules = [
             'calle' => 'required',
@@ -148,7 +167,7 @@ class Doctor extends BaseController
             'curp' => 'required',
             'fechaDeNacimiento' => 'required',
             'telefono' => 'required',
-            'genero' => 'required', 
+            'genero' => 'required',
             'especialidad' => 'required',
             'cedulaProfecional' => 'required',
         ];

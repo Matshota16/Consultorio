@@ -46,7 +46,7 @@ class Usuario extends Controller{
    
            // Redirigir según el tipo de usuario
            if ($user->tipo == 0) {
-               return redirect()->to(base_url('/cita/home'));
+               return redirect()->to(base_url('/consultorio'));
            } elseif ($user->tipo == 1) {
                return redirect()->to(base_url('/cliente'));
            }

@@ -22,8 +22,13 @@ class ConsultorioDoctor extends BaseController
         
         print_r($_SESSION);
     }
-    public function index(): string
+    public function index()
     {
+
+        $session = session();
+        if ($session->get('logged_in') != true || $session->get('tipo') != 0) {
+            return redirect()->to(base_url('/usuario/salir')); // Llamar a la función salir
+        }
         $consultorioDoctorM = model('ConsultorioDoctorM');
         $data['consultorioDoctor'] = $consultorioDoctorM->getInfo();
         return view('head') .

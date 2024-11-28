@@ -39,28 +39,38 @@ class ConsultorioM extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 
-    
-    public function getImagenConsultorio(){
+
+    public function getImagenConsultorio()
+    {
         $db = db_connect();
 
-        $sql= "select consultorio.*, imagen.*
+        $sql = "select consultorio.*, imagen.*
                 from consultorio, imagen 
                 where consultorio.idImagen = imagen.idImagen 
         ";
-        $query= $db->query($sql);
+        $query = $db->query($sql);
 
-       
+
         return $query->getResult();
-
     }
 
     public function getImagenConsultorio1($idConsultorio)
-{
-    return $this->select('consultorio.*, imagen.nombreDelArchivo, imagen.idImagen')
-                ->join('imagen', 'imagen.idImagen = consultorio.idImagen', 'left')
-                ->where('consultorio.idConsultorio', $idConsultorio)
-                ->first();
-}
-    
-}
+    {
+        return $this->select('consultorio.*, imagen.nombreDelArchivo, imagen.idImagen')
+            ->join('imagen', 'imagen.idImagen = consultorio.idImagen', 'left')
+            ->where('consultorio.idConsultorio', $idConsultorio)
+            ->first();
+    }
 
+    public function getDireccionConsultorio()
+    {
+        $db = db_connect();
+
+        $sql = "select consultorio.nombreConsultorio,direccion.* from consultorio join direccion on consultorio.idDireccion = direccion.idDireccion 
+        ";
+        $query = $db->query($sql);
+
+
+        return $query->getResult();
+    }
+}

@@ -30,11 +30,17 @@
     </div>
 
     <div class="row bg-dark text-white text-center py-5">
-        <div class="col-12">
-            <h3>Gracias por elegir SimiMaps</h3>
-            <p>Tu salud, nuestra prioridad. Simplifica tus citas médicas con nosotros.</p>
-        </div>
+    <div class="col-12">
+        <h3>Soporte Técnico</h3>
+        <p>¿Necesitas ayuda? Contáctanos a través de los siguientes medios:</p>
+        <ul class="list-unstyled">
+            <li><strong>Correo Electrónico:</strong> soporte@citasmedicas.com</li>
+            <li><strong>Teléfono:</strong> 800-123-4567</li>
+            <li><strong>Horario de Atención:</strong> Lunes a Viernes, de 9:00 AM a 6:00 PM</li>
+        </ul>
+        <p>Estamos aquí para ayudarte a resolver cualquier problema o duda que tengas.</p>
     </div>
+</div>
     
 </div>
 

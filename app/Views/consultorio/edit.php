@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col">
             <?= validation_list_errors() ?>
-            <h2>Actualizar Consultorio</h2>
+            <h2>Actualizar Datos del Consultorio</h2>
             <form action="<?= base_url('consultorio/update/') ?>" method="POST" enctype="multipart/form-data">
                 <input type="hidden" name="<?= csrf_token() ?>" value="<?= csrf_hash() ?>" />
 
@@ -47,7 +47,7 @@
                         <?php foreach ($direccion as $key): ?>
                             <option value="<?= $key->idDireccion ?>"
                                 <?= $consultorio[0]->idDireccion == $key->idDireccion ? 'selected' : '' ?>>
-                                <?= $key->estado ?>
+                                <?= $key->calle . ' ' . $key->numero . ' ' . $key->codigoPostal . ' ' . $key->municipio ?>
                             </option>
                         <?php endforeach; ?>
                     </select>

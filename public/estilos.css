@@ -217,6 +217,22 @@
             max-width: 900px; /* Asegura que no supere un tamaño específico */
             height: auto; /* Mantiene la proporción original */
         }
+
+        .row.bg-dark {
+          background-color: #343a40; /* Color oscuro */
+          color: #ffffff;           /* Texto blanco */
+          font-size: 1.1rem;        /* Tamaño de texto moderado */
+      }
+      
+      .list-unstyled li {
+          margin-bottom: 10px;      /* Separación entre elementos */
+      }
+      
+      h3 {
+          font-weight: bold;        /* Resaltar título */
+          margin-bottom: 20px;      
+      }
+      
         
         
   

@@ -20,7 +20,7 @@ class Consultorio extends BaseController
 
         print_r($_SESSION);
     }
-    public function index(): string
+    public function index()
     {
         $session = session();
         if ($session->get('logged_in') != true || $session->get('tipo') != 0) {
