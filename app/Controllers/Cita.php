@@ -99,16 +99,12 @@ class Cita extends BaseController
         $rules = [
             'motivo' => 'required',
             'fechaCita' => 'required',
-            'horaCita' => 'required',
-            'idPaciente' => 'required',
-            'idDoctor' => 'required'
+            'horaCita' => 'required'
         ];
         $data = [
             'motivo' => $_POST['motivo'],
             'fechaCita' => $_POST['fechaCita'],
-            'horaCita' => $_POST['horaCita'],
-            'idPaciente' => $_POST['idPaciente'],
-            'idDoctor' => $_POST['idDoctor']
+            'horaCita' => $_POST['horaCita']
 
         ];
         if (!$this->validate($rules)) {
@@ -123,6 +119,61 @@ class Cita extends BaseController
             $citaM = model('CitaM');
             $citaM->set($data)->where('idCita', $idCita)->update();
             return redirect()->to(base_url('/cita'));
+        }
+    }
+
+    public function editCliente($idCita)
+    {
+        $doctorM = model('DoctorM');
+        $data['doctor'] = $doctorM->findAll();
+        $pacienteM = model('PacienteM');
+        $data['paciente'] = $pacienteM->findAll();
+        $idCita = $data['idCita'] = $idCita;
+        $citaM = model('CitaM');
+        $data['cita'] = $citaM->where('idCita', $idCita)->findAll();
+        return view('Cliente/vistaCliente') .
+            view('Cliente/reprogramarCita', $data) .
+            view('footer');
+    }
+
+    public function updateCliente()
+    {
+        $citaM = model('CitaM');
+        $idCita = $_POST['idCita'];
+        $data1['cita'] = $citaM->where('idCita', $idCita)->findAll();
+        $pacienteM = model('PacienteM');
+        $data1['paciente'] = $pacienteM->findAll();
+        $doctorM = model('DoctorM');
+        $data1['doctor'] = $doctorM->findAll();
+
+        if (!$this->request->is('post')) {
+            $this->index();
+        }
+
+        // Reglas de validación
+        $rules = [
+            'motivo' => 'required',
+            'fechaCita' => 'required',
+            'horaCita' => 'required'
+        ];
+        $data = [
+            'motivo' => $_POST['motivo'],
+            'fechaCita' => $_POST['fechaCita'],
+            'horaCita' => $_POST['horaCita']
+
+        ];
+        if (!$this->validate($rules)) {
+            // Si la validación falla, vuelve a cargar la vista con los errores
+            return view('head') .
+                view('menu', $data1) .
+                view('cita/edit', [
+                    'validation' => $this->validator
+                ]) .
+                view('footer');
+        } else {
+            $citaM = model('CitaM');
+            $citaM->set($data)->where('idCita', $idCita)->update();
+            return redirect()->to(base_url('/citaUsuario/misCitas'));
         }
     }
 

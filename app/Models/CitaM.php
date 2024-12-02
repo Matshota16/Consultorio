@@ -59,8 +59,8 @@ class CitaM extends Model
     $sql = "
         SELECT 
             c.idCita, c.motivo, c.fechaCita, c.horaCita,
-            p.nombreP, p.apellidoPP, p.apellidoMP,
-            d.nombreD, d.apellidoPD, d.apellidoMD,
+            p.nombreP, p.apellidoPP, p.apellidoMP, p.idPaciente,
+            d.nombreD, d.apellidoPD, d.apellidoMD, d.idDoctor,
             cd.horaDeEntrada, cd.horaDeSalida,
             con.nombreConsultorio
         FROM cita c

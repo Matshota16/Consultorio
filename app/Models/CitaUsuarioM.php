@@ -46,6 +46,7 @@ class CitaUsuarioM extends Model
                 cita.motivo,
                 cita.fechaCita,
                 cita.horaCita,
+                cita.idCita,
                 doctor.nombreD as nombreDoctor,
                 doctor.apellidoPD as apellidoPDoctor,
                 doctor.apellidoMD as apellidoMDoctor,

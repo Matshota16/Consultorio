@@ -56,6 +56,7 @@ $routes->get('/consultorio/edit/(:num)','Consultorio::edit/$1');
 $routes->get('/consultorioDoctor/edit/(:num)','ConsultorioDoctor::edit/$1');
 $routes->get('/direccion/edit/(:num)','Direccion::edit/$1');
 $routes->get('/cita/edit/(:num)','Cita::edit/$1');
+$routes->get('/cita/editCliente/(:num)','Cita::editCliente/$1');
 $routes->get('/Cliente/verCita/(:num)','Consultorio::edit/$1');
 //update
 $routes->post('/paciente/update','Paciente::update');
@@ -64,6 +65,7 @@ $routes->post('/consultorio/update','Consultorio::update');
 $routes->post('/consultorioDoctor/update','ConsultorioDoctor::update');
 $routes->post('/direccion/update','Direccion::update');
 $routes->post('/cita/update','Cita::update');
+$routes->post('/cita/updateCliente','Cita::updateCliente');
 //delete
 $routes->get('/categoria/delete/(:num)','Categoria::delete/$1');
 $routes->get('/paciente/delete/(:num)','Paciente::delete/$1');

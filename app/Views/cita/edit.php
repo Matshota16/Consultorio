@@ -26,31 +26,7 @@
                     <input type="hidden" name="idCita" value="<?= $cita[0]->idCita; ?>">
                 </div>
                 
-                <div class="mb-3">
-                    <label for="idDoctor" class="form-label">Doctor</label>
-                    <select name="idDoctor" class="form-control" id="doctor" required>
-                        <?php foreach ($doctor as $key): ?>
-                            <option value="<?= $key->idDoctor ?>"
-                                <?= $doctor[0]->idDoctor == $key->idDoctor ? 'selected' : '' ?>>
-                                <?= $key->nombreD . ' ' . $key->apellidoPD . ' ' . $key->apellidoMD ?>
-                            </option>
-                        <?php endforeach; ?>
-                    </select>
-                    <input type="hidden" name="idCita" value="<?= $cita[0]->idCita; ?>">
-                </div>
-
-                <div class="mb-3">
-                    <label for="idPaciente" class="form-label">Paciente</label>
-                    <select name="idPaciente" class="form-control" id="paciente" required>
-                        <?php foreach ($paciente as $key): ?>
-                            <option value="<?= $key->idPaciente ?>"
-                                <?= $paciente[0]->idPaciente == $key->idPaciente ? 'selected' : '' ?>>
-                                <?= $key->nombreP . ' ' . $key->apellidoPP . ' ' . $key->apellidoMP ?>
-                            </option>
-                        <?php endforeach; ?>
-                    </select>
-                    <input type="hidden" name="idCita" value="<?= $cita[0]->idCita; ?>">
-                </div>
+                
                 
                 <input type="submit" class="btn btn-success" name="Modificar" value="Modificar">
             </form>
